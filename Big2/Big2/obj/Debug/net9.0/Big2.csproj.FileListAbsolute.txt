@@ -1,0 +1,28 @@
+D:\code stuff\水球軟體學院\Big2\Big2\bin\Debug\net9.0\Big2.exe
+D:\code stuff\水球軟體學院\Big2\Big2\bin\Debug\net9.0\Big2.deps.json
+D:\code stuff\水球軟體學院\Big2\Big2\bin\Debug\net9.0\Big2.runtimeconfig.json
+D:\code stuff\水球軟體學院\Big2\Big2\bin\Debug\net9.0\Big2.dll
+D:\code stuff\水球軟體學院\Big2\Big2\bin\Debug\net9.0\Big2.pdb
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\Big2.GeneratedMSBuildEditorConfig.editorconfig
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\Big2.AssemblyInfoInputs.cache
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\Big2.AssemblyInfo.cs
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\Big2.csproj.CoreCompileInputs.cache
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\Big2.dll
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\refint\Big2.dll
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\Big2.pdb
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\Big2.genruntimeconfig.cache
+D:\code stuff\水球軟體學院\Big2\Big2\obj\Debug\net9.0\ref\Big2.dll
+D:\新增資料夾\水球番\Big2\Big2\bin\Debug\net9.0\Big2.exe
+D:\新增資料夾\水球番\Big2\Big2\bin\Debug\net9.0\Big2.deps.json
+D:\新增資料夾\水球番\Big2\Big2\bin\Debug\net9.0\Big2.runtimeconfig.json
+D:\新增資料夾\水球番\Big2\Big2\bin\Debug\net9.0\Big2.dll
+D:\新增資料夾\水球番\Big2\Big2\bin\Debug\net9.0\Big2.pdb
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\Big2.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\Big2.AssemblyInfoInputs.cache
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\Big2.AssemblyInfo.cs
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\Big2.csproj.CoreCompileInputs.cache
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\Big2.dll
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\refint\Big2.dll
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\Big2.pdb
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\Big2.genruntimeconfig.cache
+D:\新增資料夾\水球番\Big2\Big2\obj\Debug\net9.0\ref\Big2.dll

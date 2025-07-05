@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "二維地圖冒險遊戲", "二維地圖冒險遊戲.csproj", "{649C09CB-F6C6-484D-9A75-327742DCE027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "二為地圖冒險遊戲測試", "..\二為地圖冒險遊戲測試\二為地圖冒險遊戲測試.csproj", "{7A4DA689-F168-40D6-AA56-A191C4E13892}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{649C09CB-F6C6-484D-9A75-327742DCE027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649C09CB-F6C6-484D-9A75-327742DCE027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649C09CB-F6C6-484D-9A75-327742DCE027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649C09CB-F6C6-484D-9A75-327742DCE027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4DA689-F168-40D6-AA56-A191C4E13892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4DA689-F168-40D6-AA56-A191C4E13892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4DA689-F168-40D6-AA56-A191C4E13892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4DA689-F168-40D6-AA56-A191C4E13892}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E38EBF98-D41B-42A5-A801-AF060B37AC38}
+	EndGlobalSection
+EndGlobal

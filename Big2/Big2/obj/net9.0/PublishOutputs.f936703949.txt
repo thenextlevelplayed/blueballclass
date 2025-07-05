@@ -1,0 +1,5 @@
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\publish\Big2.exe
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\publish\Big2.dll
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\publish\Big2.deps.json
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\publish\Big2.runtimeconfig.json
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\publish\Big2.pdb

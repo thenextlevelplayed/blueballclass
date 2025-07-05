@@ -1,0 +1,16 @@
+2025-06-17T14:23:24.9533308+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.4.3+c252b64ad913ea9411fc5d17bfd5580d2d061497
+2025-06-17T14:23:24.9656110+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2025-06-17T14:23:24.9663372+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2025-06-17T14:23:24.9663393+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 14:23:24.936
+2025-06-17T14:23:24.9672226+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 13496
+2025-06-17T14:23:24.9672394+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.2
+2025-06-17T14:23:24.9672476+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.2\System.Private.CoreLib.dll
+2025-06-17T14:23:24.9672526+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2025-06-17T14:23:24.9672544+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: D:\code stuff\水球軟體學院\狀態模式\二為地圖冒險遊戲測試\bin\Debug\net9.0\二為地圖冒險遊戲測試.dll
+2025-06-17T14:23:24.9673041+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory D:\code stuff\水球軟體學院\狀態模式\二為地圖冒險遊戲測試\bin\Debug\net9.0\Log --results-directory D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\TestResults --client-port 59966'
+2025-06-17T14:23:24.9681210+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2025-06-17T14:23:24.9848944+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2025-06-17T14:23:24.9869935+00:00 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider INFORMATION Config file 'D:\code stuff\水球軟體學院\狀態模式\二為地圖冒險遊戲測試\bin\Debug\net9.0\二為地圖冒險遊戲測試.testconfig.json' not found.
+2025-06-17T14:23:24.9877700+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2025-06-17T14:23:25.0804679+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.6.4' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2025-06-17T14:23:25.1370071+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter INFORMATION 已為 D:\code stuff\水球軟體學院\狀態模式\二為地圖冒險遊戲測試\bin\Debug\net9.0\二為地圖冒險遊戲測試.dll 啟用平行測試 (背景工作角色: 12，範圍: MethodLevel)

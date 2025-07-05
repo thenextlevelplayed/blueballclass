@@ -1,0 +1,222 @@
+D:\code stuff\水球軟體學院\Big2\Big2\CardPattern.cs(50,25): warning CS0114: 'CardPattern.Equals(object)' 會隱藏繼承的成員 'object.Equals(object?)'。若要讓目前的成員覆寫該實作，請加入 override 關鍵字; 否則請加入 new 關鍵字。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\DistinguishingCardPattern\DistinguishingSingleCardPattern.cs(3,14): warning CS0660: 'DistinguishingSingleCardPattern' 定義了運算子 == 或運算子 !=，但不會覆寫 Object.Equals(object o)。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\AI.cs(3,37): warning CS9107: 參數 'int index' 會擷取至包含類型的狀態，且其值也會傳遞給基礎建構函式。值也可能由基礎類別擷取。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\CardPattern.cs(10,12): warning CS8618: 退出建構函式時，不可為 Null 的 屬性 'Name' 必須包含非 Null 值。請考慮新增 'required' 修飾元，或將 屬性 宣告為可以為 Null。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\CompareManyCardPattern\CompareStraightCardPattern.cs(9,54): warning CS8625: 無法將 null 常值轉換成不可為 Null 的參考型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\CompareManyCardPattern\CompareFullHouseCardPattern.cs(9,55): warning CS8625: 無法將 null 常值轉換成不可為 Null 的參考型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\CardPattern.cs(29,20): warning CS8603: 可能有 Null 參考傳回。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Program.cs(12,20): warning CS8600: 正在將 Null 常值或可能的 Null 值轉換為不可為 Null 的型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Program.cs(13,22): warning CS8604: 'Deck.Deck(string orderedCardsString)' 中的參數 'orderedCardsString' 可能有 Null 參考引數。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Game.cs(14,12): warning CS8618: 退出建構函式時，不可為 Null 的 欄位 'TopPlay' 必須包含非 Null 值。請考慮新增 'required' 修飾元，或將 欄位 宣告為可以為 Null。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Game.cs(14,12): warning CS8618: 退出建構函式時，不可為 Null 的 欄位 'TopPlayer' 必須包含非 Null 值。請考慮新增 'required' 修飾元，或將 欄位 宣告為可以為 Null。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\CompareManyCardPattern\ComparePairCardPattern.cs(9,50): warning CS8625: 無法將 null 常值轉換成不可為 Null 的參考型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Human.cs(11,28): warning CS8600: 正在將 Null 常值或可能的 Null 值轉換為不可為 Null 的型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Player.cs(11,12): warning CS8618: 退出建構函式時，不可為 Null 的 屬性 'Name' 必須包含非 Null 值。請考慮新增 'required' 修飾元，或將 屬性 宣告為可以為 Null。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\DistinguishingCardPattern\DistinguishingSingleCardPattern.cs(3,79): warning CS8604: 'CardPattern.CardPattern(CardPattern next)' 中的參數 'next' 可能有 Null 參考引數。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\DistinguishingCardPattern\DistinguishingPairCardPattern.cs(12,50): warning CS8625: 無法將 null 常值轉換成不可為 Null 的參考型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\DistinguishingCardPattern\DistinguishingFullHouseCardPattern.cs(26,55): warning CS8625: 無法將 null 常值轉換成不可為 Null 的參考型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\DistinguishingCardPattern\DistinguishingStraightCardPattern.cs(13,14): warning CS0219: 已指派變數 'isNormalStraight'，但是從未使用過它的值 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Game.cs(75,24): warning CS8625: 無法將 null 常值轉換成不可為 Null 的參考型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Game.cs(76,26): warning CS8625: 無法將 null 常值轉換成不可為 Null 的參考型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Game.cs(112,45): warning CS8602: 可能 null 參考的取值 (dereference)。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\DistinguishingCardPattern\DistinguishingStraightCardPattern.cs(36,54): warning CS8625: 無法將 null 常值轉換成不可為 Null 的參考型別。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Player.cs(26,26): warning CS8602: 可能 null 參考的取值 (dereference)。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+D:\code stuff\水球軟體學院\Big2\Big2\Player.cs(35,23): warning CS8602: 可能 null 參考的取值 (dereference)。 [D:\code stuff\水球軟體學院\Big2\Big2\Big2.csproj]
+遊戲開始！
+輪到水球了
+0    1    2    3    4    5    6    7    8    9    10    11    12
+C[3] C[4] C[5] C[6] C[7] C[8] C[9] C[10] C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[3] 
+輪到火球了
+0    1    2    3    4    5    6    7    8    9    10    11    12
+D[3] D[4] D[5] D[6] D[7] D[8] D[9] D[10] D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[3] 
+輪到保齡球了
+0    1    2    3    4    5    6    7    8    9    10    11    12
+H[3] H[4] H[5] H[6] H[7] H[8] H[9] H[10] H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[3] 
+輪到地瓜球了
+0    1    2    3    4    5    6    7    8    9    10    11    12
+S[3] S[4] S[5] S[6] S[7] S[8] S[9] S[10] S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[3] 
+輪到水球了
+0    1    2    3    4    5    6    7    8    9    10    11
+C[4] C[5] C[6] C[7] C[8] C[9] C[10] C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[4] 
+輪到火球了
+0    1    2    3    4    5    6    7    8    9    10    11
+D[4] D[5] D[6] D[7] D[8] D[9] D[10] D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[4] 
+輪到保齡球了
+0    1    2    3    4    5    6    7    8    9    10    11
+H[4] H[5] H[6] H[7] H[8] H[9] H[10] H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[4] 
+輪到地瓜球了
+0    1    2    3    4    5    6    7    8    9    10    11
+S[4] S[5] S[6] S[7] S[8] S[9] S[10] S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[4] 
+輪到水球了
+0    1    2    3    4    5    6    7    8    9    10
+C[5] C[6] C[7] C[8] C[9] C[10] C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[5] 
+輪到火球了
+0    1    2    3    4    5    6    7    8    9    10
+D[5] D[6] D[7] D[8] D[9] D[10] D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[5] 
+輪到保齡球了
+0    1    2    3    4    5    6    7    8    9    10
+H[5] H[6] H[7] H[8] H[9] H[10] H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[5] 
+輪到地瓜球了
+0    1    2    3    4    5    6    7    8    9    10
+S[5] S[6] S[7] S[8] S[9] S[10] S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[5] 
+輪到水球了
+0    1    2    3    4    5    6    7    8    9
+C[6] C[7] C[8] C[9] C[10] C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[6] 
+輪到火球了
+0    1    2    3    4    5    6    7    8    9
+D[6] D[7] D[8] D[9] D[10] D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[6] 
+輪到保齡球了
+0    1    2    3    4    5    6    7    8    9
+H[6] H[7] H[8] H[9] H[10] H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[6] 
+輪到地瓜球了
+0    1    2    3    4    5    6    7    8    9
+S[6] S[7] S[8] S[9] S[10] S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[6] 
+輪到水球了
+0    1    2    3    4    5    6    7    8
+C[7] C[8] C[9] C[10] C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[7] 
+輪到火球了
+0    1    2    3    4    5    6    7    8
+D[7] D[8] D[9] D[10] D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[7] 
+輪到保齡球了
+0    1    2    3    4    5    6    7    8
+H[7] H[8] H[9] H[10] H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[7] 
+輪到地瓜球了
+0    1    2    3    4    5    6    7    8
+S[7] S[8] S[9] S[10] S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[7] 
+輪到水球了
+0    1    2    3    4    5    6    7
+C[8] C[9] C[10] C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[8] 
+輪到火球了
+0    1    2    3    4    5    6    7
+D[8] D[9] D[10] D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[8] 
+輪到保齡球了
+0    1    2    3    4    5    6    7
+H[8] H[9] H[10] H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[8] 
+輪到地瓜球了
+0    1    2    3    4    5    6    7
+S[8] S[9] S[10] S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[8] 
+輪到水球了
+0    1    2    3    4    5    6
+C[9] C[10] C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[9] 
+輪到火球了
+0    1    2    3    4    5    6
+D[9] D[10] D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[9] 
+輪到保齡球了
+0    1    2    3    4    5    6
+H[9] H[10] H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[9] 
+輪到地瓜球了
+0    1    2    3    4    5    6
+S[9] S[10] S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[9] 
+輪到水球了
+0    1    2    3    4    5
+C[10] C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[10] 
+輪到火球了
+0    1    2    3    4    5
+D[10] D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[10] 
+輪到保齡球了
+0    1    2    3    4    5
+H[10] H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[10] 
+輪到地瓜球了
+0    1    2    3    4    5
+S[10] S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[10] 
+輪到水球了
+0    1    2    3    4
+C[J] C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[J] 
+輪到火球了
+0    1    2    3    4
+D[J] D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[J] 
+輪到保齡球了
+0    1    2    3    4
+H[J] H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[J] 
+輪到地瓜球了
+0    1    2    3    4
+S[J] S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[J] 
+輪到水球了
+0    1    2    3
+C[Q] C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[Q] 
+輪到火球了
+0    1    2    3
+D[Q] D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[Q] 
+輪到保齡球了
+0    1    2    3
+H[Q] H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[Q] 
+輪到地瓜球了
+0    1    2    3
+S[Q] S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[Q] 
+輪到水球了
+0    1    2
+C[K] C[A] C[2] 
+玩家 水球 打出了 單張  C[K] 
+輪到火球了
+0    1    2
+D[K] D[A] D[2] 
+玩家 火球 打出了 單張  D[K] 
+輪到保齡球了
+0    1    2
+H[K] H[A] H[2] 
+玩家 保齡球 打出了 單張  H[K] 
+輪到地瓜球了
+0    1    2
+S[K] S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[K] 
+輪到水球了
+0    1
+C[A] C[2] 
+玩家 水球 打出了 單張  C[A] 
+輪到火球了
+0    1
+D[A] D[2] 
+玩家 火球 打出了 單張  D[A] 
+輪到保齡球了
+0    1
+H[A] H[2] 
+玩家 保齡球 打出了 單張  H[A] 
+輪到地瓜球了
+0    1
+S[A] S[2] 
+玩家 地瓜球 打出了 單張  S[A] 
+輪到水球了
+0
+C[2] 
+玩家 水球 打出了 單張  C[2] 
+遊戲結束，遊戲的勝利者為 水球

@@ -1,0 +1,14 @@
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\Big2.exe
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\Big2.deps.json
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\Big2.runtimeconfig.json
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\Big2.dll
+D:\新增資料夾\水球番\Big2\Big2\bin\net9.0\Big2.pdb
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\Big2.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\Big2.AssemblyInfoInputs.cache
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\Big2.AssemblyInfo.cs
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\Big2.csproj.CoreCompileInputs.cache
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\Big2.dll
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\refint\Big2.dll
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\Big2.pdb
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\Big2.genruntimeconfig.cache
+D:\新增資料夾\水球番\Big2\Big2\obj\net9.0\ref\Big2.dll

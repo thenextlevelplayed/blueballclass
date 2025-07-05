@@ -1,0 +1,14 @@
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\bin\Debug\net8.0\Showdown.exe
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\bin\Debug\net8.0\Showdown.deps.json
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\bin\Debug\net8.0\Showdown.runtimeconfig.json
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\bin\Debug\net8.0\Showdown.dll
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\bin\Debug\net8.0\Showdown.pdb
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\Showdown.GeneratedMSBuildEditorConfig.editorconfig
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\Showdown.AssemblyInfoInputs.cache
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\Showdown.AssemblyInfo.cs
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\Showdown.csproj.CoreCompileInputs.cache
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\Showdown.dll
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\refint\Showdown.dll
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\Showdown.pdb
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\Showdown.genruntimeconfig.cache
+D:\code stuff\水球軟體學院\鋪克牌遊戲建模\Showdown\obj\Debug\net8.0\ref\Showdown.dll

@@ -1,0 +1,28 @@
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.exe
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.deps.json
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.runtimeconfig.json
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.dll
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.pdb
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.GeneratedMSBuildEditorConfig.editorconfig
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.AssemblyInfoInputs.cache
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.AssemblyInfo.cs
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.csproj.CoreCompileInputs.cache
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.dll
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\refint\二維地圖冒險遊戲.dll
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.pdb
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.genruntimeconfig.cache
+D:\code stuff\水球軟體學院\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\ref\二維地圖冒險遊戲.dll
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.exe
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.deps.json
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.runtimeconfig.json
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.dll
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\bin\Debug\net9.0\二維地圖冒險遊戲.pdb
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.AssemblyInfoInputs.cache
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.AssemblyInfo.cs
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.csproj.CoreCompileInputs.cache
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.dll
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\refint\二維地圖冒險遊戲.dll
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.pdb
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\二維地圖冒險遊戲.genruntimeconfig.cache
+D:\新增資料夾\水球番\狀態模式\二維地圖冒險遊戲\obj\Debug\net9.0\ref\二維地圖冒險遊戲.dll

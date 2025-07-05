@@ -1,0 +1,28 @@
+D:\code stuff\水球軟體學院\模板方式\Template Method\bin\Debug\net9.0\Template Method.exe
+D:\code stuff\水球軟體學院\模板方式\Template Method\bin\Debug\net9.0\Template Method.deps.json
+D:\code stuff\水球軟體學院\模板方式\Template Method\bin\Debug\net9.0\Template Method.runtimeconfig.json
+D:\code stuff\水球軟體學院\模板方式\Template Method\bin\Debug\net9.0\Template Method.dll
+D:\code stuff\水球軟體學院\模板方式\Template Method\bin\Debug\net9.0\Template Method.pdb
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\Template Method.GeneratedMSBuildEditorConfig.editorconfig
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\Template Method.AssemblyInfoInputs.cache
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\Template Method.AssemblyInfo.cs
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\Template Method.csproj.CoreCompileInputs.cache
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\Template Method.dll
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\refint\Template Method.dll
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\Template Method.pdb
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\Template Method.genruntimeconfig.cache
+D:\code stuff\水球軟體學院\模板方式\Template Method\obj\Debug\net9.0\ref\Template Method.dll
+D:\新增資料夾\水球番\模板方式\Template Method\bin\Debug\net9.0\Template Method.exe
+D:\新增資料夾\水球番\模板方式\Template Method\bin\Debug\net9.0\Template Method.deps.json
+D:\新增資料夾\水球番\模板方式\Template Method\bin\Debug\net9.0\Template Method.runtimeconfig.json
+D:\新增資料夾\水球番\模板方式\Template Method\bin\Debug\net9.0\Template Method.dll
+D:\新增資料夾\水球番\模板方式\Template Method\bin\Debug\net9.0\Template Method.pdb
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\Template Method.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\Template Method.AssemblyInfoInputs.cache
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\Template Method.AssemblyInfo.cs
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\Template Method.csproj.CoreCompileInputs.cache
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\Template Method.dll
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\refint\Template Method.dll
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\Template Method.pdb
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\Template Method.genruntimeconfig.cache
+D:\新增資料夾\水球番\模板方式\Template Method\obj\Debug\net9.0\ref\Template Method.dll

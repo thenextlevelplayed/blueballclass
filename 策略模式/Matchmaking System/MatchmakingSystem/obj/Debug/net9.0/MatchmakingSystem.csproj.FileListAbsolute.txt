@@ -1,0 +1,28 @@
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.exe
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.deps.json
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.runtimeconfig.json
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.dll
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.pdb
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.AssemblyInfoInputs.cache
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.AssemblyInfo.cs
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.csproj.CoreCompileInputs.cache
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.dll
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\refint\MatchmakingSystem.dll
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.pdb
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.genruntimeconfig.cache
+D:\新增資料夾\水球番\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\ref\MatchmakingSystem.dll
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.exe
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.deps.json
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.runtimeconfig.json
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.dll
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\bin\Debug\net9.0\MatchmakingSystem.pdb
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.AssemblyInfoInputs.cache
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.AssemblyInfo.cs
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.csproj.CoreCompileInputs.cache
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.dll
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\refint\MatchmakingSystem.dll
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.pdb
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\MatchmakingSystem.genruntimeconfig.cache
+D:\code stuff\水球軟體學院\Matchmaking System\MatchmakingSystem\obj\Debug\net9.0\ref\MatchmakingSystem.dll

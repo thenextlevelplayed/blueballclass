@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "二維地圖冒險遊戲/1.0.0": {
+        "runtime": {
+          "二維地圖冒險遊戲.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "二維地圖冒險遊戲/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

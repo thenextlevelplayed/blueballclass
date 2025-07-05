@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\hand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:hand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\rank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:rank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|d:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\showdown\\suit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1DF9921-37D1-4087-A9B7-BD79E54EB546}|Showdown.csproj|solutionrelative:suit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 453,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Rank.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Rank.cs",
+              "RelativeDocumentMoniker": "Rank.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Rank.cs",
+              "RelativeToolTip": "Rank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T18:39:38.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Suit.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Suit.cs",
+              "RelativeDocumentMoniker": "Suit.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Suit.cs",
+              "RelativeToolTip": "Suit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T18:39:37.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Card.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Card.cs",
+              "RelativeDocumentMoniker": "Card.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Card.cs",
+              "RelativeToolTip": "Card.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T17:51:55.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Hand.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Hand.cs",
+              "RelativeDocumentMoniker": "Hand.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Hand.cs",
+              "RelativeToolTip": "Hand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T16:56:48.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Human.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Human.cs",
+              "RelativeDocumentMoniker": "Human.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Human.cs",
+              "RelativeToolTip": "Human.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAUwHMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:12:18.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AI.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\AI.cs",
+              "RelativeDocumentMoniker": "AI.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\AI.cs",
+              "RelativeToolTip": "AI.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwDUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:12:08.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Deck.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Deck.cs",
+              "RelativeDocumentMoniker": "Deck.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Deck.cs",
+              "RelativeToolTip": "Deck.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAlwB8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:15:57.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAnwFsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:15:49.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwCgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:15:31.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\code stuff\\\u6C34\u7403\u8EDF\u9AD4\u5B78\u9662\\\u92EA\u514B\u724C\u904A\u6232\u5EFA\u6A21\\Showdown\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T01:33:54.585Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
