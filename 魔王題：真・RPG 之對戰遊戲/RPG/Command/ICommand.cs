@@ -9,10 +9,15 @@ public interface ICommand
 
 public class WaterBallCommand : ICommand
 {
-    private Waterball waterball = new Waterball();
+    private WaterBall _waterBall;
+
+    public WaterBallCommand(WaterBall waterBall)
+    {
+        this._waterBall = waterBall;
+    }
     public void Execute(List<Role> targets)
     {
-        waterball.DoAction(targets);
+        _waterBall.DoAction(targets);
     }
 }
 

@@ -2,6 +2,6 @@
 
 public class SummonerAndSummon
 {
-    private Role _summoner;
-    private List<Role> _summoners;
+    public Role Summoner;
+    public List<Role> Summoned;
 }
