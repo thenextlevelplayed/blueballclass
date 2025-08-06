@@ -6,6 +6,24 @@ public interface IObserver
     void Action();
 }
 
+public class CurseBuff(Role role) : IObserver
+{
+    public Role Role { get; set; } = role;
+
+    public void Action()
+    {
+        foreach (var curse in Role.TheCursed)
+        {
+            if (curse.Caster.Hp > 0)
+            {
+                curse.Caster.Hp += Role.Mp;
+                curse.Caster.Spellcaster.Remove(curse);
+            }
+        }
+        
+    }
+}
+
 public class SummonBuff : IObserver
 {
     public Role Role { get; set; }
@@ -17,8 +35,8 @@ public class SummonBuff : IObserver
 
     public void Action()
     {
-        Role.SummonerAndSummon.Summoner.Hp += 30;
-        Role.SummonerAndSummon = new SummonerAndSummon();
-        Role.SummonerAndSummon.Summoner.SummonerAndSummon.Summoned.Remove(Role);
+        var summonerAndSummons = Role.Summoned;
+        summonerAndSummons.Summoner.Hp += 30;
+        summonerAndSummons.Summoner.Summoner.Remove(summonerAndSummons);
     }
 }

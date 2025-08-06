@@ -1,7 +1,7 @@
 ﻿namespace RPG;
 
-public class SpellcasterAndTheCursed
+public class SpellcasterAndTheCursed(Role caster, Role victim)
 {
-    private List<Role> _casters;
-    private List<Role> _victims;
+    public Role Caster { get; set; } = caster;
+    public Role Victim { get; set; } = victim;
 }

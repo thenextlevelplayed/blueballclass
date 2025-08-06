@@ -1,7 +1,7 @@
 ﻿namespace RPG;
 
-public class SummonerAndSummon
+public class SummonerAndSummon(Role summoner, Role summoned)
 {
-    public Role Summoner;
-    public List<Role> Summoned;
+    public Role Summoner = summoner;
+    public Role Summoned = summoned;
 }
