@@ -91,6 +91,10 @@ public class OnePunch : Skill
             }
         }
     }
+    public override string ToString()
+    {
+        return "一拳攻擊";
+    }
 }
 
 public class Curse(Role role) : Skill(role)
@@ -110,6 +114,10 @@ public class Curse(Role role) : Skill(role)
         SpellcasterAndTheCursed spellcasterAndTheCursed = new SpellcasterAndTheCursed(Role, roles[0]);
         Role.Spellcaster.Add(spellcasterAndTheCursed);
         roles[0].TheCursed.Add(spellcasterAndTheCursed);
+    }
+    public override string ToString()
+    {
+        return "詛咒";
     }
 }
 
@@ -136,6 +144,10 @@ public class CheerUp : Skill
             ChangeState(role);
         }
     }
+    public override string ToString()
+    {
+        return "鼓舞";
+    }
 }
 
 public class SelfExplosion : Skill
@@ -153,7 +165,7 @@ public class SelfExplosion : Skill
         return null;
     }
 
-    public override TargetCondition TargetCondition { get; set; } = new TargetCondition(TargetRelation.All, -1);
+    public override TargetCondition TargetCondition { get; set; } = new TargetCondition(TargetRelation.AllEnemy, -1);
 
     protected override void ActionHook(List<Role> roles)
     {
@@ -163,6 +175,10 @@ public class SelfExplosion : Skill
         }
 
         Role.Hp = 0;
+    }
+    public override string ToString()
+    {
+        return "自爆";
     }
 }
 
@@ -181,7 +197,7 @@ public class Summon : Skill
         return null;
     }
 
-    public override TargetCondition TargetCondition { get; set; }
+    public override TargetCondition TargetCondition { get; set; } = new TargetCondition(TargetRelation.None, 0);
 
     protected override void ActionHook(List<Role> roles)
     {
@@ -193,6 +209,10 @@ public class Summon : Skill
         Role.Summoner.Add(summonerAndSummon);
         slime.Summoned = summonerAndSummon;
         Role.RegisterObserver(new SummonBuff(slime));
+    }
+    public override string ToString()
+    {
+        return "召喚";
     }
 }
 
@@ -215,6 +235,10 @@ public class Poison(Role role) : Skill(role)
             ChangeState(role);
         }
     }
+    public override string ToString()
+    {
+        return "下毒";
+    }
 }
 
 public class Petrochemical(Role role) : Skill(role)
@@ -236,6 +260,10 @@ public class Petrochemical(Role role) : Skill(role)
             ChangeState(role);
         }
     }
+    public override string ToString()
+    {
+        return "石化";
+    }
 }
 
 public class SelfHealing(Role role) : Skill(role)
@@ -255,6 +283,10 @@ public class SelfHealing(Role role) : Skill(role)
     {
         Role.Hp += RecoveryHp;
     }
+    public override string ToString()
+    {
+        return "自我治療";
+    }
 }
 
 public class FireBall(Role role) : Skill(role)
@@ -268,7 +300,7 @@ public class FireBall(Role role) : Skill(role)
         return null;
     }
 
-    public override TargetCondition TargetCondition { get; set; } = new TargetCondition(TargetRelation.All, -1);
+    public override TargetCondition TargetCondition { get; set; } = new TargetCondition(TargetRelation.AllEnemy, -1);
 
     protected override void ActionHook(List<Role> roles)
     {
@@ -276,6 +308,10 @@ public class FireBall(Role role) : Skill(role)
         {
             role.Hp -= Str;
         }
+    }
+    public override string ToString()
+    {
+        return "火球";
     }
 }
 
@@ -297,6 +333,11 @@ public class WaterBall(Role role) : Skill(role)
     {
         roles[0].Hp -= Str;
     }
+
+    public override string ToString()
+    {
+        return "水球";
+    }
 }
 
 public class BasicAttack : IActionOption
@@ -310,5 +351,10 @@ public class BasicAttack : IActionOption
     public void DoAction(List<Role> roles)
     {
         roles[0].Hp -= Role.Str;
+    }
+
+    public override string ToString()
+    {
+        return "普通攻擊";
     }
 }

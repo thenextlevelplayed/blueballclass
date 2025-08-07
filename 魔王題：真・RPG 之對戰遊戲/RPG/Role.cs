@@ -1,6 +1,7 @@
 ﻿using System.Security.Cryptography;
 using RPG.ActionOption;
 using RPG.Command;
+using RPG.Enum;
 using RPG.Observer;
 using RPG.Status;
 
@@ -19,7 +20,7 @@ public abstract class Role
     public string Name { get; set; }
     public int Duration { get; set; }
     public abstract ICommand S1();
-    public abstract List<Role> S2();
+    public abstract List<Role> S2(ICommand s1);
     public List<ICommand> Commands { get; set; } = new List<ICommand>();
     // public List<IActionOption> ActionOptions { get; set; } = new List<IActionOption>();
 
@@ -50,6 +51,16 @@ public abstract class Role
         this.State.EntryState(state);
     }
 
+    public List<Role> GetAvailableAllyTargets()
+    {
+        return this.Troop.Roles.Where(r => r != this).ToList();
+    }
+
+    public List<Role> GetAvailableEnemyTargets()
+    {
+        return this.Troop.EnemyTroop.Roles;
+    }
+
     public void S3(ICommand command, List<Role> roles)
     {
         if (Commands.Contains(command))
@@ -59,6 +70,7 @@ public abstract class Role
                 throw new InvalidOperationException(
                     $"{this.Name} does not have enough MP to perform {command.GetType().Name}.");
             }
+
             this.Mp -= command.ActionOption.Mp;
             command.Execute(roles);
         }
@@ -161,8 +173,47 @@ public abstract class Role
 
 public class AI : Role
 {
+    public int Seed { get; set; } = 0;
+
     public AI(string name, int hp, int mp, int str, params string[]? skillNames) : base(name, hp, mp, str, skillNames)
     {
+    }
+
+    public override ICommand S1()
+    {
+        Console.WriteLine($"輪到 {Troop}{Name} (HP: {Hp}, MP: {Mp}, STR: {Str}, State: {State})。");
+
+        // 等待玩家輸入
+        int? choice = null;
+        while (choice != null)
+        {
+            string output = $"選擇行動：";
+            for (int i = 0; i < Commands.Count; i++)
+            {
+                output += $"({i}) ";
+                output += Commands[i].ActionOption + " ";
+            }
+
+            Console.WriteLine(output);
+            if (Seed >= 0 && Seed < Commands.Count
+                && Commands[choice.Value].ActionOption.Mp <= Mp)
+            {
+                choice = Seed;
+            }
+            else
+            {
+                Console.WriteLine("你缺乏 MP，不能進行此行動。");
+                Seed++;
+            }
+        }
+
+        Seed++;
+        return Commands[choice!.Value];
+    }
+
+    public override List<Role> S2(ICommand s1)
+    {
+        throw new NotImplementedException();
     }
 }
 
@@ -170,5 +221,152 @@ public class Hero : Role
 {
     public Hero(string name, int hp, int mp, int str, params string[]? skillNames) : base(name, hp, mp, str, skillNames)
     {
+    }
+
+    public override ICommand S1()
+    {
+        Console.WriteLine($"輪到 {Troop}{Name} (HP: {Hp}, MP: {Mp}, STR: {Str}, State: {State})。");
+
+        // 等待玩家輸入
+        int? choice = null;
+        while (choice != null)
+        {
+            string output = $"選擇行動：";
+            for (int i = 0; i < Commands.Count; i++)
+            {
+                output += $"({i}) ";
+                output += Commands[i].ActionOption + " ";
+            }
+
+            Console.WriteLine(output);
+            var input = Console.ReadLine();
+            if (input != null && int.TryParse(input, out int index) && index >= 0 && index < Commands.Count
+                && Commands[choice.Value].ActionOption.Mp <= Mp)
+            {
+                choice = index;
+            }
+            else
+            {
+                Console.WriteLine("你缺乏 MP，不能進行此行動。");
+            }
+        }
+
+        return Commands[choice!.Value];
+    }
+
+    public override List<Role> S2(ICommand s1)
+    {
+        if (s1.ActionOption.PassS2)
+        {
+            if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.None)
+            {
+                return new List<Role>();
+            }
+            else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.AllEnemy)
+            {
+                return Troop.EnemyTroop.Roles;
+            }
+            else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.Self)
+            {
+                return new List<Role> { this };
+            }
+            else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.All)
+            {
+                var roles = new List<Role>();
+                roles.AddRange(Troop.EnemyTroop.Roles);
+                roles.AddRange(Troop.Roles.Where(m => m != this).ToList());
+                return roles;
+            }
+            else
+            {
+                throw new InvalidOperationException("Unknown target relation.");
+            }
+        }
+        else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.Enemy)
+        {
+            if (s1.ActionOption.TargetCondition.MaxTargets >= GetAvailableEnemyTargets().Count())
+            {
+                return GetAvailableEnemyTargets();
+            }
+            else
+            {
+                // 如果目標數量小於最大目標數量，則選擇目標
+                string output = $"選擇 {s1.ActionOption.TargetCondition.MaxTargets} 位目標: ";
+                for (int i = 0; i < GetAvailableEnemyTargets().Count(); i++)
+                {
+                    output += $"({i}) [{GetAvailableEnemyTargets()[i].Troop}]{GetAvailableEnemyTargets()[i].Name} ";
+                }
+
+                Console.WriteLine(output);
+                List<int> selectedIndices = new List<int>();
+                while (selectedIndices.Count < s1.ActionOption.TargetCondition.MaxTargets && !selectedIndices.Any())
+                {
+                    var input = Console.ReadLine();
+                    if (input != null)
+                    {
+                        List<int> tempSelectedIndices = new List<int>();
+                        input.Split(',').ToList().ForEach(m => tempSelectedIndices.Add(int.Parse(m)));
+                        if (tempSelectedIndices.Count() == S1().ActionOption.TargetCondition.MaxTargets)
+                        {
+                            selectedIndices = tempSelectedIndices;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"請選擇 {s1.ActionOption.TargetCondition.MaxTargets} 個目標索引。");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("請輸入有效的目標索引。");
+                    }
+                }
+                return GetAvailableEnemyTargets().Where((_, index) => selectedIndices.Contains(index)).ToList();
+            }
+        }
+        else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.Ally)
+        {
+            if (s1.ActionOption.TargetCondition.MaxTargets >= GetAvailableAllyTargets().Count())
+            {
+                return GetAvailableAllyTargets();
+            }
+            else
+            {
+                // 如果目標數量小於最大目標數量，則選擇目標
+                string output = $"選擇 {s1.ActionOption.TargetCondition.MaxTargets} 位目標: ";
+                for (int i = 0; i < GetAvailableEnemyTargets().Count(); i++)
+                {
+                    output += $"({i}) [{GetAvailableAllyTargets()[i].Troop}]{GetAvailableAllyTargets()[i].Name} ";
+                }
+
+                Console.WriteLine(output);
+                List<int> selectedIndices = new List<int>();
+                while (selectedIndices.Count < s1.ActionOption.TargetCondition.MaxTargets && !selectedIndices.Any())
+                {
+                    var input = Console.ReadLine();
+                    if (input != null)
+                    {
+                        List<int> tempSelectedIndices = new List<int>();
+                        input.Split(',').ToList().ForEach(m => tempSelectedIndices.Add(int.Parse(m)));
+                        if (tempSelectedIndices.Count() == S1().ActionOption.TargetCondition.MaxTargets)
+                        {
+                            selectedIndices = tempSelectedIndices;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"請選擇 {s1.ActionOption.TargetCondition.MaxTargets} 個目標索引。");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("請輸入有效的目標索引。");
+                    }
+                }
+                return GetAvailableAllyTargets().Where((_, index) => selectedIndices.Contains(index)).ToList();
+            }
+        }
+        else
+        {
+            throw new InvalidOperationException("Unknown target relation.");
+        }
     }
 }

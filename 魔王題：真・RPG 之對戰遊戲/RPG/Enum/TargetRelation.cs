@@ -5,5 +5,7 @@ public enum TargetRelation
     Self,
     Ally,
     Enemy,
-    All
+    AllEnemy,
+    All,
+    None,
 }

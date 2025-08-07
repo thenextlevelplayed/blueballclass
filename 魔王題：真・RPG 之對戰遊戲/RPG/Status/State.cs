@@ -50,6 +50,10 @@ public class Petrochemical : State
     {
         this.CanAction = false;
     }
+    public override string ToString()
+    {
+        return "石化";
+    }
 }
 
 public class CheerUp : State
@@ -76,6 +80,10 @@ public class CheerUp : State
             Role.EnterState(new Normal(Role));
         }
     }
+    public override string ToString()
+    {
+        return "受到鼓舞";
+    }
 }
 
 public class Poisoned : State
@@ -96,6 +104,10 @@ public class Poisoned : State
             }
         }
     }
+    public override string ToString()
+    {
+        return "中毒";
+    }
 }
 
 public class Normal : State
@@ -108,5 +120,10 @@ public class Normal : State
     public override void HandleStartOfTurn()
     {
         this.CanAction = true;
+    }
+
+    public override string ToString()
+    {
+        return "正常";
     }
 }
