@@ -1,4 +1,4 @@
-﻿using RPG.ActionOption;
+﻿using RPG.Command;
 
 namespace RPG;
 
@@ -17,25 +17,61 @@ public class Rpg
 
     public void Battle()
     {
+        while (!Annihilate(_t1) && !Annihilate(_t2))
+        {
+            foreach (var role in  _t1.Roles.ToList())
+            {
+                if (role.CanAction())
+                {
+                    role.HandleStartOfTurn();
+                    var s1 = S1(role);
+                    var s2 = S2(role, s1);
+                    S3(role, s1, s2);
+                    role.HandleEndOfTurn();
+                    role.NotifyObservers();
+                }
+                UpdateTroop(_t1);
+                UpdateTroop(_t2);
+            }
+            
+            foreach (var role in _t2.Roles.ToList())
+            {
+                if (role.CanAction())
+                {
+                    role.HandleStartOfTurn();
+                    var s1 = S1(role);
+                    var s2 = S2(role, s1);
+                    S3(role, s1, s2);
+                    role.HandleEndOfTurn();
+                    role.NotifyObservers();
+                }
+                UpdateTroop(_t1);
+                UpdateTroop(_t2);
+            }
+        }
+        var log = Annihilate(_t1) ? "你失敗了！" : "你獲勝了！";
+        Console.WriteLine(log);
     }
 
-    public bool Annihilate(Troop troop)
+
+    private bool Annihilate(Troop troop)
     {
         return !troop.Roles.Any();
     }
 
-    public IActionOption S1()
+    private ICommand S1(Role role)
     {
-        return null;
+        return role.S1();
     }
 
-    public List<Role> S2()
+    private List<Role> S2(Role role, ICommand s1)
     {
-        return null;
+        return role.S2(s1);
     }
 
-    public void S3(IActionOption actionOption)
+    private void S3(Role role, ICommand command, List<Role> roles)
     {
+        role.S3(command, roles);
     }
 
     public void UpdateTroop(Troop troop)

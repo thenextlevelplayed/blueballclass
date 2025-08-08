@@ -36,6 +36,7 @@ public abstract class Skill : IActionOption
     {
         if (Role.CanAction())
         {
+            LogAction(roles);
             ActionHook(roles);
         }
     }
@@ -46,6 +47,18 @@ public abstract class Skill : IActionOption
     }
 
     protected abstract void ActionHook(List<Role> roles);
+    
+    protected virtual void LogAction(List<Role> roles)
+    {
+        string log = string.Join(", ", roles.Select(r => $"{r.Troop}{r.Name}"));
+        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {log} 使用了 {ToString()}");
+    }
+    
+    protected void Attack(Role role,int str)
+    {
+        role.Hp -= str;
+        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {role.Troop}{role.Name} 造成 {str} 點傷害");
+    }
 }
 
 public class OnePunch : Skill
@@ -70,24 +83,24 @@ public class OnePunch : Skill
         {
             if (role.Hp >= 500)
             {
-                role.Hp -= 300;
+                Attack(role, 300);
             }
             else if (role.State is Poisoned || role.State is Status.Petrochemical)
             {
                 for (int i = 0; i < 3; i++)
                 {
-                    role.Hp -= 80;
+                    Attack(role, 80);
                 }
 
                 ChangeState(role);
             }
             else if (role.State is Status.CheerUp)
             {
-                role.Hp -= Str;
+                Attack(role, Str);
             }
             else if (role.State is Normal)
             {
-                role.Hp -= Str;
+                Attack(role, Str);
             }
         }
     }
@@ -171,7 +184,7 @@ public class SelfExplosion : Skill
     {
         foreach (var role in roles)
         {
-            role.Hp -= Str;
+            Attack(role, Str);
         }
 
         Role.Hp = 0;
@@ -204,7 +217,6 @@ public class Summon : Skill
         var slime = new AI("Slime", 100, 0, 50);
         Role.Troop.Roles.Add(slime);
         slime.Troop = Role.Troop;
-        Role.Troop.Rpg.UpdateTroop(Role.Troop);
         SummonerAndSummon summonerAndSummon = new SummonerAndSummon(Role, slime);
         Role.Summoner.Add(summonerAndSummon);
         slime.Summoned = summonerAndSummon;
@@ -306,7 +318,7 @@ public class FireBall(Role role) : Skill(role)
     {
         foreach (var role in roles)
         {
-            role.Hp -= Str;
+            Attack(role,Str);
         }
     }
     public override string ToString()
@@ -331,7 +343,8 @@ public class WaterBall(Role role) : Skill(role)
 
     protected override void ActionHook(List<Role> roles)
     {
-        roles[0].Hp -= Str;
+        Attack(roles[0],Str);
+        
     }
 
     public override string ToString()
@@ -350,6 +363,8 @@ public class BasicAttack : IActionOption
 
     public void DoAction(List<Role> roles)
     {
+        Console.WriteLine($"{Role.Troop}{Role.Name} 攻擊 {roles[0].Troop}{roles[0].Name}。");
+        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {roles[0].Troop}{roles[0].Name} 造成 {Str} 點傷害");
         roles[0].Hp -= Role.Str;
     }
 
