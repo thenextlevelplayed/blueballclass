@@ -1,20 +1,28 @@
-﻿// Step 1: 初始化兩個獨立的軍隊
+﻿// ===================================================================
+// 步驟 2.1: 強制設定 Console 的輸出編碼為 UTF-8，這是關鍵！
+// ===================================================================
 
+using System.Text;
 using RPG;
 
-Console.WriteLine("請貼上您的測資，以 '###' 結尾：");
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+// --- 您的原始碼開頭 (讀取測資部分) ---
+string inputPath = "curse.in";
+if (!File.Exists(inputPath))
+{
+    Console.WriteLine($"找不到測資檔案：{inputPath}");
+    return;
+}
 
 var army1Roles = new List<Role>();
 var army2Roles = new List<Role>();
+int currentArmyFlag = 0;
+string[] lines = File.ReadAllLines(inputPath);
 
-int currentArmyFlag = 0; // 0=等待, 1=讀取軍隊1, 2=讀取軍隊2
-string? line;
-
-while ((line = Console.ReadLine()) != "###")
+foreach (var line in lines)
 {
     if (string.IsNullOrWhiteSpace(line)) continue;
-
-    // 更新狀態
     if (line.Trim() == "#軍隊-1-開始")
     {
         currentArmyFlag = 1;
@@ -33,75 +41,88 @@ while ((line = Console.ReadLine()) != "###")
         continue;
     }
 
-    // 解析角色資料
     if (currentArmyFlag > 0)
     {
         string[] parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
         if (parts.Length < 4) continue;
-
-        // 根據您的 Role 建構子，解析 Name, Hp, Mp, Str
         string name = parts[0];
         int hp = int.Parse(parts[1]);
         int mp = int.Parse(parts[2]);
-        int str = int.Parse(parts[3]); // 第四個參數是 Str
-
-        // 將剩餘部分全部視為技能名稱
+        int str = int.Parse(parts[3]);
         string[] skillNames = parts.Skip(4).ToArray();
-
-        Role newRole;
-
-        // 根據名稱判斷是 Hero 還是 AI
-        if (name == "英雄")
-        {
-            // 直接在建構子中傳入所有參數，包含技能
-            newRole = new Hero(name, hp, mp, str, skillNames);
-        }
-        else
-        {
-            newRole = new AI(name, hp, mp, str, skillNames);
-        }
-
-        // 將角色加入對應的列表
-        if (currentArmyFlag == 1)
-        {
-            army1Roles.Add(newRole);
-        }
-        else if (currentArmyFlag == 2)
-        {
-            army2Roles.Add(newRole);
-        }
+        Role newRole = name == "英雄"
+            ? new Hero(name, hp, mp, str, skillNames)
+            : new AI(name, hp, mp, str, skillNames);
+        if (currentArmyFlag == 1) army1Roles.Add(newRole);
+        else if (currentArmyFlag == 2) army2Roles.Add(newRole);
     }
 }
 
-Console.WriteLine("\n--- 輸入解析完畢，正在創建物件... ---\n");
-
-// 創建物件
 var troop1 = new Troop(army1Roles);
 var troop2 = new Troop(army2Roles);
-
-// 設定敵對關係
 Troop.SetRelation(troop1, troop2);
+string[] extraInputs = lines
+    .SkipWhile(l => !l.Trim().Contains("#軍隊-2-結束"))
+    .Skip(1)
+    .TakeWhile(l => l.Trim() != "###")
+    .ToArray();
+var rpg = new RPG.Rpg(troop1, troop2, extraInputs);
 
-// 驗證結果
-Console.WriteLine("========= 物件創建結果 ==========");
-Console.WriteLine($"已創建 {troop1}，成員數量: {troop1.Roles.Count}");
-foreach (var role in troop1.Roles)
+// --- 以下是新增的測試邏輯 ---
+Console.WriteLine("--- 準備進行輸出比對測試 ---");
+
+TextWriter originalConsoleOut = Console.Out;
+using var stringWriter = new StringWriter();
+Console.SetOut(stringWriter); // 將輸出捕獲到 stringWriter
+
+try
 {
-    Console.WriteLine($"- {role.Name} (HP:{role.Hp}, MP:{role.Mp}, STR:{role.Str})，隸屬於 {role.Troop}");
+    rpg.Battle();
+}
+catch (Exception ex)
+{
+    Console.SetOut(originalConsoleOut);
+    Console.WriteLine("測試過程中發生未預期的錯誤：" + ex.Message);
+    Console.WriteLine(ex.StackTrace);
+    return;
+}
+finally
+{
+    Console.SetOut(originalConsoleOut); // 確保恢復 Console 輸出
 }
 
-Console.WriteLine();
+string actualOutput = stringWriter.ToString().Trim();
+string expectedOutputPath = "curse.out";
 
-Console.WriteLine($"已創建 {troop2}，成員數量: {troop2.Roles.Count}");
-foreach (var role in troop2.Roles)
+if (!File.Exists(expectedOutputPath))
 {
-    Console.WriteLine($"- {role.Name} (HP:{role.Hp}, MP:{role.Mp}, STR:{role.Str})，隸屬於 {role.Troop}");
+    Console.WriteLine($"找不到預期的輸出檔案：{expectedOutputPath}");
+    return;
 }
 
-Console.WriteLine();
-Console.WriteLine($"關係驗證：{troop1} 的敵人是 {troop1.EnemyTroop}");
-Console.WriteLine($"關係驗證：{troop2} 的敵人是 {troop2.EnemyTroop}");
-var rpg = new RPG.Rpg(troop1, troop2);
-// 開始戰鬥
-Console.WriteLine("\n--- 戰鬥開始 ---\n");
-rpg.Battle();
+// 讀取預期輸出檔案時，也明確指定 UTF-8
+string expectedOutput = File.ReadAllText(expectedOutputPath, Encoding.UTF8).Trim();
+
+actualOutput = actualOutput.Replace("\r\n", "\n");
+expectedOutput = expectedOutput.Replace("\r\n", "\n");
+
+Console.WriteLine("\n--- 比對結果 ---");
+if (actualOutput == expectedOutput)
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("測試通過！ 您的程式輸出與 cheerup.out 完全相符！");
+    Console.ResetColor();
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("測試失敗！ 您的程式輸出與 cheerup.out 不符。");
+    Console.ResetColor();
+
+    // 將有問題的輸出寫入檔案，以便除錯
+    // 這裡使用 File.WriteAllText，它預設就是 UTF-8，最穩定
+    File.WriteAllText("my_actual_output.txt", actualOutput);
+    File.WriteAllText("expected_output.txt", expectedOutput);
+    Console.WriteLine("\n詳細的差異已寫入 my_actual_output.txt 和 expected_output.txt 以便比對。");
+    Console.WriteLine("請使用 VS Code 的檔案比對功能來查看這兩個檔案的差異。");
+}

@@ -13,6 +13,7 @@ public interface IActionOption
     TargetCondition TargetCondition { get; set; }
     void DoAction(List<Role> roles);
     Role Role { get; set; }
+    void Attack(Role role, int str);
 }
 
 public abstract class Skill : IActionOption
@@ -51,13 +52,13 @@ public abstract class Skill : IActionOption
     protected virtual void LogAction(List<Role> roles)
     {
         string log = string.Join(", ", roles.Select(r => $"{r.Troop}{r.Name}"));
-        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {log} 使用了 {ToString()}");
+        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {log} 使用了 {ToString()}。");
     }
     
-    protected void Attack(Role role,int str)
+    public void Attack(Role role,int str)
     {
         role.Hp -= str;
-        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {role.Troop}{role.Name} 造成 {str} 點傷害");
+        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {role.Troop}{role.Name} 造成 {str} 點傷害。");
     }
 }
 
@@ -127,6 +128,11 @@ public class Curse(Role role) : Skill(role)
         SpellcasterAndTheCursed spellcasterAndTheCursed = new SpellcasterAndTheCursed(Role, roles[0]);
         Role.Spellcaster.Add(spellcasterAndTheCursed);
         roles[0].TheCursed.Add(spellcasterAndTheCursed);
+        if (!roles[0].Observers.OfType<CurseBuff>().Any())
+        {
+            // 如果沒有，才註冊一個新的
+            roles[0].RegisterObserver(new CurseBuff(roles[0]));
+        }
     }
     public override string ToString()
     {
@@ -357,15 +363,25 @@ public class BasicAttack : IActionOption
 {
     public int Mp { get; set; }
     public int Str { get; set; }
-    public bool PassS2 { get; set; }
+    public bool PassS2 { get; set; } = false;
     public TargetCondition TargetCondition { get; set; } = new TargetCondition(TargetRelation.Enemy, 1);
     public Role Role { get; set; }
 
+    public BasicAttack(Role role)
+    {
+        Role = role;
+        Str = Role.Str;
+    }
+    public void Attack(Role role, int str)
+    {
+        Console.WriteLine($"{Role.Troop}{Role.Name} 攻擊 {role.Troop}{role.Name}。");
+        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {role.Troop}{role.Name} 造成 {str} 點傷害。");
+        role.Hp -= str;
+    }
+
     public void DoAction(List<Role> roles)
     {
-        Console.WriteLine($"{Role.Troop}{Role.Name} 攻擊 {roles[0].Troop}{roles[0].Name}。");
-        Console.WriteLine($"{Role.Troop}{Role.Name} 對 {roles[0].Troop}{roles[0].Name} 造成 {Str} 點傷害");
-        roles[0].Hp -= Role.Str;
+        Attack(roles[0],Str);
     }
 
     public override string ToString()

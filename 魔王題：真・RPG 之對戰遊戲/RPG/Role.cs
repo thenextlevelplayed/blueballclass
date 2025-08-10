@@ -36,7 +36,7 @@ public abstract class Role
         Name = name;
         Duration = 1;
         State = new Normal(this);
-        var bascicAttack = new BasicAttack();
+        var bascicAttack = new BasicAttack(this);
         bascicAttack.Role = this;
         Commands.Add(new BasicAttackCommand(bascicAttack));
         SetCommands(skillNames);
@@ -186,68 +186,42 @@ public class AI : Role
     public override ICommand S1()
     {
         Console.WriteLine($"輪到 {Troop}{Name} (HP: {Hp}, MP: {Mp}, STR: {Str}, State: {State})。");
-
-        int? choice = null;
-
-        // --- 策略二：在單一回合內循環尋找，直到找到或確認一輪都不可行 ---
-
-        // 1. 記錄開始尋找時的索引，作為「繞一圈」的判斷基準
-        int startingSeed = this.Seed;
-        // 2. 建立一個旗標，判斷我們是否已經從列表末端繞回起點了
-        bool hasLoopedAround = false;
-
-        while (choice == null)
+        while (true)
         {
-            // 3. 檢查是否已經繞完一整圈都找不到招式
-            // 條件：如果「已經繞回過一次」且「當前檢查的索引又回到了我們的起點」
-            // 這意味著所有指令都已經被檢查過一輪且全部失敗，必須停止。
-            if (hasLoopedAround && this.Seed == startingSeed)
+            // 1. 在每一次嘗試前，都印出可選行動
+            string output = $"選擇行動：";
+            for (int i = 0; i < Commands.Count; i++)
             {
-                Console.WriteLine($"{Name} 檢查了所有行動，但找不到可執行的。");
-                break; // 強制跳出迴圈，防止無限循環
+                output += $"({i}) ";
+                output += Commands[i].ActionOption + " ";
             }
+            Console.WriteLine(output.Trim());
 
-            // 檢查 Seed 是否超出指令列表的範圍
-            if (this.Seed >= Commands.Count)
-            {
-                // 如果超出範圍，就從 0 開始，並標記「已經繞回一次」
-                this.Seed = 0;
-                hasLoopedAround = true;
-            
-                // 再次檢查，如果起點本來就是0，繞回來後會立刻符合上面的break條件
-                if (this.Seed == startingSeed) {
-                    Console.WriteLine($"{Name} 檢查了所有行動，但找不到可執行的。");
-                    break;
-                }
-            }
-        
-            // 檢查當前指令是否可用
-            ICommand currentCommand = Commands[this.Seed];
+            // 2. 根據「目前」的 seed 決定要嘗試的行動
+            int currentIndex = this.Seed % Commands.Count;
+            ICommand currentCommand = Commands[currentIndex];
+
+            // 3. 檢查 MP 是否足夠
             if (currentCommand.ActionOption.Mp <= Mp)
             {
-                // MP足夠，決定行動！
-                Console.WriteLine($"{Name} 選擇了 {currentCommand.ActionOption}。");
-                choice = this.Seed;
+                // 如果足夠，決策成功！
+                // 將 seed+1 為「下一回合」做準備，然後返回這個行動
+                this.Seed++;
+                return currentCommand;
             }
             else
             {
-                // MP不足，準備檢查下一個指令
+                // 如果 MP 不足，決策失敗！
+                Console.WriteLine("你缺乏 MP，不能進行此行動。");
+                // 根據規則，被迫進行「下一次」決策，所以將 seed+1
+                // 迴圈將會用新的 seed 值繼續執行
                 this.Seed++;
             }
         }
 
-        if (choice.HasValue)
-        {
-            // 成功做出選擇，返回該指令。
-            // 下次輪到這個角色時，它會從下一個指令開始嘗試。
-            return Commands[choice.Value];
-        }
-        else
-        {
-            // 如果 choice 依然是 null，代表已確認沒有任何行動可用
-            Console.WriteLine($"{Name} 決定原地等待。");
-            throw new InvalidOperationException("error: No valid action available.");
-        }
+        // 如果跑完一圈都找不到，則拋出例外
+        Console.WriteLine($"{Name} 找不到可執行的行動。");
+        throw new InvalidOperationException("error: No valid action available.");
     }
 
     public override List<Role> S2(ICommand s1)
@@ -256,18 +230,22 @@ public class AI : Role
         {
             if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.None)
             {
+                // this.Seed++;
                 return new List<Role>();
             }
             else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.AllEnemy)
             {
+                // this.Seed++;
                 return Troop.EnemyTroop.Roles;
             }
             else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.Self)
             {
+                // this.Seed++;
                 return new List<Role> { this };
             }
             else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.All)
             {
+                // this.Seed++;
                 var roles = new List<Role>();
                 roles.AddRange(Troop.EnemyTroop.Roles);
                 roles.AddRange(Troop.Roles.Where(m => m != this).ToList());
@@ -278,67 +256,43 @@ public class AI : Role
                 throw new InvalidOperationException("Unknown target relation.");
             }
         }
-        else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.Enemy)
-        {
-            if (s1.ActionOption.TargetCondition.MaxTargets >= GetAvailableEnemyTargets().Count())
-            {
-                return GetAvailableEnemyTargets();
-            }
-            else
-            {
-                // 如果目標數量小於最大目標數量，則選擇目標
-                string output = $"選擇 {s1.ActionOption.TargetCondition.MaxTargets} 位目標: ";
-                for (int i = 0; i < GetAvailableEnemyTargets().Count(); i++)
-                {
-                    output += $"({i}) [{GetAvailableEnemyTargets()[i].Troop}]{GetAvailableEnemyTargets()[i].Name} ";
-                }
 
-                Console.WriteLine(output);
-                List<int> selectedIndices = new List<int>();
-                while (selectedIndices.Count != s1.ActionOption.TargetCondition.MaxTargets && !selectedIndices.Any())
-                {
-                    for(int i =0; i < s1.ActionOption.TargetCondition.MaxTargets; i++)
-                    {
-                        int numb = (Seed + i) % GetAvailableEnemyTargets().Count();
-                        selectedIndices.Add(numb);
-                    }
-                }
-                Seed++;
-                return GetAvailableEnemyTargets().Where((_, index) => selectedIndices.Contains(index)).ToList();
-            }
+        List<Role> availableTargets;
+        if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.Enemy)
+        {
+            availableTargets = GetAvailableEnemyTargets();
         }
         else if (s1.ActionOption.TargetCondition.TargetRelation == TargetRelation.Ally)
         {
-            if (s1.ActionOption.TargetCondition.MaxTargets >= GetAvailableAllyTargets().Count())
-            {
-                return GetAvailableAllyTargets();
-            }
-            else
-            {
-                // 如果目標數量小於最大目標數量，則選擇目標
-                string output = $"選擇 {s1.ActionOption.TargetCondition.MaxTargets} 位目標: ";
-                for (int i = 0; i < GetAvailableEnemyTargets().Count(); i++)
-                {
-                    output += $"({i}) [{GetAvailableAllyTargets()[i].Troop}]{GetAvailableAllyTargets()[i].Name} ";
-                }
-
-                Console.WriteLine(output);
-                List<int> selectedIndices = new List<int>();
-                while (selectedIndices.Count != s1.ActionOption.TargetCondition.MaxTargets && !selectedIndices.Any())
-                {
-                    for(int i =0; i < s1.ActionOption.TargetCondition.MaxTargets; i++)
-                    {
-                        int numb = (Seed + i) % GetAvailableAllyTargets().Count();
-                        selectedIndices.Add(numb);
-                    }
-                }
-                Seed++;
-                return GetAvailableAllyTargets().Where((_, index) => selectedIndices.Contains(index)).ToList();
-            }
+            availableTargets = GetAvailableAllyTargets();
         }
         else
         {
             throw new InvalidOperationException("Unknown target relation.");
+        }
+
+        if (s1.ActionOption.TargetCondition.MaxTargets >= availableTargets.Count())
+        {
+            // 目標足夠或過多時，選擇所有，這也算一次決策
+            this.Seed++;
+            return availableTargets;
+        }
+        else
+        {
+            var selectedIndices = new List<int>();
+            for (int i = 0; i < s1.ActionOption.TargetCondition.MaxTargets; i++)
+            {
+                // 在搜尋過程中，只使用 Seed 來計算
+                int numb = (this.Seed + i) % availableTargets.Count();
+                selectedIndices.Add(numb);
+            }
+
+            // 選擇完成，決策完成！
+            // 統一規則：完成決策後，Seed 加一
+            this.Seed++;
+
+            // 建議加上 .Distinct() 來處理 m > n 時的重複選取問題
+            return availableTargets.Where((_, index) => selectedIndices.Distinct().Contains(index)).ToList();
         }
     }
 }
@@ -357,7 +311,6 @@ public class Hero : Role
         int? choice = null;
         while (choice == null)
         {
-            
             string output = $"選擇行動：";
             for (int i = 0; i < Commands.Count; i++)
             {
@@ -365,8 +318,8 @@ public class Hero : Role
                 output += Commands[i].ActionOption + " ";
             }
 
-            Console.WriteLine(output);
-            var input = Console.ReadLine();
+            Console.WriteLine(output.Trim());
+            var input = Troop.Rpg.ReadInput(); //測資
             if (input != null && int.TryParse(input, out int index) && index >= 0 && index < Commands.Count)
             {
                 // 先判斷輸入是否有效，再檢查 MP
@@ -382,7 +335,7 @@ public class Hero : Role
             }
             else
             {
-                Console.WriteLine("你缺乏 MP，不能進行此行動。");
+                Console.WriteLine($"輸入無效。請輸入一個有效的數字選項。");
             }
         }
 
@@ -429,19 +382,19 @@ public class Hero : Role
                 string output = $"選擇 {s1.ActionOption.TargetCondition.MaxTargets} 位目標: ";
                 for (int i = 0; i < GetAvailableEnemyTargets().Count(); i++)
                 {
-                    output += $"({i}) [{GetAvailableEnemyTargets()[i].Troop}]{GetAvailableEnemyTargets()[i].Name} ";
+                    output += $"({i}) {GetAvailableEnemyTargets()[i].Troop}{GetAvailableEnemyTargets()[i].Name} ";
                 }
 
-                Console.WriteLine(output);
+                Console.WriteLine(output.Trim());
                 List<int> selectedIndices = new List<int>();
                 while (selectedIndices.Count < s1.ActionOption.TargetCondition.MaxTargets && !selectedIndices.Any())
                 {
-                    var input = Console.ReadLine();
+                    var input = Troop.Rpg.ReadInput(); //測資
                     if (input != null)
                     {
                         List<int> tempSelectedIndices = new List<int>();
                         input.Split(',').ToList().ForEach(m => tempSelectedIndices.Add(int.Parse(m)));
-                        if (tempSelectedIndices.Count() == S1().ActionOption.TargetCondition.MaxTargets)
+                        if (tempSelectedIndices.Count() == s1.ActionOption.TargetCondition.MaxTargets)
                         {
                             selectedIndices = tempSelectedIndices;
                         }
@@ -469,27 +422,36 @@ public class Hero : Role
             {
                 // 如果目標數量小於最大目標數量，則選擇目標
                 string output = $"選擇 {s1.ActionOption.TargetCondition.MaxTargets} 位目標: ";
-                for (int i = 0; i < GetAvailableEnemyTargets().Count(); i++)
+                for (int i = 0; i < GetAvailableAllyTargets().Count(); i++)
                 {
-                    output += $"({i}) [{GetAvailableAllyTargets()[i].Troop}]{GetAvailableAllyTargets()[i].Name} ";
+                    output += $"({i}) {GetAvailableAllyTargets()[i].Troop}{GetAvailableAllyTargets()[i].Name} ";
                 }
 
-                Console.WriteLine(output);
+                Console.WriteLine(output.Trim());
                 List<int> selectedIndices = new List<int>();
-                while (selectedIndices.Count < s1.ActionOption.TargetCondition.MaxTargets && !selectedIndices.Any())
+                while (selectedIndices.Count == 0) // 或者使用一個布林值 isChoiceMade = false;
                 {
-                    var input = Console.ReadLine();
+                    var input = Troop.Rpg.ReadInput();
                     if (input != null)
                     {
                         List<int> tempSelectedIndices = new List<int>();
-                        input.Split(',').ToList().ForEach(m => tempSelectedIndices.Add(int.Parse(m)));
-                        if (tempSelectedIndices.Count() == S1().ActionOption.TargetCondition.MaxTargets)
+                        try
                         {
-                            selectedIndices = tempSelectedIndices;
+                            input.Split(',').ToList()
+                                .ForEach(m => tempSelectedIndices.Add(int.Parse(m.Trim()))); // 加上 Trim() 更健壯
+                            if (tempSelectedIndices.Count() == s1.ActionOption.TargetCondition.MaxTargets)
+                            {
+                                selectedIndices = tempSelectedIndices;
+                                // 選擇成功，可以跳出迴圈了
+                            }
+                            else
+                            {
+                                Console.WriteLine($"請選擇 {s1.ActionOption.TargetCondition.MaxTargets} 個目標索引。");
+                            }
                         }
-                        else
+                        catch (FormatException)
                         {
-                            Console.WriteLine($"請選擇 {s1.ActionOption.TargetCondition.MaxTargets} 個目標索引。");
+                            Console.WriteLine("輸入格式錯誤，請輸入以逗號分隔的數字。");
                         }
                     }
                     else

@@ -6,20 +6,22 @@ public class Rpg
 {
     private Troop _t1;
     private Troop _t2;
+    private Queue<string> _inputQueue = new(); //測茲用
 
-    public Rpg(Troop t1, Troop t2)
+    public Rpg(Troop t1, Troop t2, IEnumerable<string> inputs)
     {
         _t1 = t1;
         t1.Rpg = this;
         _t2 = t2;
         t2.Rpg = this;
+        _inputQueue = new Queue<string>(inputs);
     }
 
     public void Battle()
     {
         while (!Annihilate(_t1) && !Annihilate(_t2))
         {
-            foreach (var role in  _t1.Roles.ToList())
+            foreach (var role in _t1.Roles.ToList())
             {
                 if (role.CanAction())
                 {
@@ -28,12 +30,17 @@ public class Rpg
                     var s2 = S2(role, s1);
                     S3(role, s1, s2);
                     role.HandleEndOfTurn();
-                    role.NotifyObservers();
+                    // role.NotifyObservers();
                 }
-                UpdateTroop(_t1);
+
+                // UpdateTroop(_t1);
                 UpdateTroop(_t2);
+                if (Annihilate(_t1) || Annihilate(_t2))
+                {
+                    break;
+                }
             }
-            
+
             foreach (var role in _t2.Roles.ToList())
             {
                 if (role.CanAction())
@@ -43,12 +50,18 @@ public class Rpg
                     var s2 = S2(role, s1);
                     S3(role, s1, s2);
                     role.HandleEndOfTurn();
-                    role.NotifyObservers();
+                    // role.NotifyObservers();
                 }
+
                 UpdateTroop(_t1);
-                UpdateTroop(_t2);
+                // UpdateTroop(_t2);
+                if (Annihilate(_t1) || Annihilate(_t2))
+                {
+                    break;
+                }
             }
         }
+
         var log = Annihilate(_t1) ? "你失敗了！" : "你獲勝了！";
         Console.WriteLine(log);
     }
@@ -76,6 +89,28 @@ public class Rpg
 
     public void UpdateTroop(Troop troop)
     {
-        troop.Roles.RemoveAll(r => r.Hp <= 0);
+        for (int i = troop.Roles.Count - 1; i >= 0; i--)
+        {
+            // 取得當前索引的角色
+            Role role = troop.Roles[i];
+
+            // 檢查 HP
+            if (role.Hp <= 0)
+            {
+                role.NotifyObservers();
+                // 印出死亡訊息
+                Console.WriteLine($"{role.Troop}{role.Name} 死亡。");
+
+                // 從列表中移除當前索引的元素
+                troop.Roles.RemoveAt(i);
+            }
+        }
+    }
+
+    public string ReadInput()
+    {
+        if (_inputQueue.Count > 0)
+            return _inputQueue.Dequeue();
+        return "0"; // 預設普通攻擊
     }
 }

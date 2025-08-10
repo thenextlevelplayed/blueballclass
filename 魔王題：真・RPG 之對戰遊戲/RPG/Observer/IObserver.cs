@@ -16,7 +16,7 @@ public class CurseBuff(Role role) : IObserver
         {
             if (curse.Caster.Hp > 0)
             {
-                curse.Caster.Hp += Role.Mp;
+                curse.Caster.Hp += curse.Victim.Mp;
                 curse.Caster.Spellcaster.Remove(curse);
             }
         }
