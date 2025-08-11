@@ -21,19 +21,21 @@ public class Rpg
     {
         while (!Annihilate(_t1) && !Annihilate(_t2))
         {
-            foreach (var role in _t1.Roles.ToList())
+            for (int i = 0; i < _t1.Roles.Count; i++)
             {
+                var role = _t1.Roles[i];
+                Console.WriteLine(
+                    $"輪到 {role.Troop}{role.Name} (HP: {role.Hp}, MP: {role.Mp}, STR: {role.Str}, State: {role.State})。");
+                role.HandleStartOfTurn();
                 if (role.CanAction())
                 {
-                    role.HandleStartOfTurn();
                     var s1 = S1(role);
                     var s2 = S2(role, s1);
                     S3(role, s1, s2);
-                    role.HandleEndOfTurn();
-                    // role.NotifyObservers();
                 }
 
-                // UpdateTroop(_t1);
+                role.HandleEndOfTurn();
+                UpdateTroop(_t1);
                 UpdateTroop(_t2);
                 if (Annihilate(_t1) || Annihilate(_t2))
                 {
@@ -41,20 +43,22 @@ public class Rpg
                 }
             }
 
-            foreach (var role in _t2.Roles.ToList())
+            for (int i = 0; i < _t2.Roles.Count; i++)
             {
+                var role = _t2.Roles[i];
+                Console.WriteLine(
+                    $"輪到 {role.Troop}{role.Name} (HP: {role.Hp}, MP: {role.Mp}, STR: {role.Str}, State: {role.State})。");
+                role.HandleStartOfTurn();
                 if (role.CanAction())
                 {
-                    role.HandleStartOfTurn();
                     var s1 = S1(role);
                     var s2 = S2(role, s1);
                     S3(role, s1, s2);
-                    role.HandleEndOfTurn();
-                    // role.NotifyObservers();
                 }
 
+                role.HandleEndOfTurn();
                 UpdateTroop(_t1);
-                // UpdateTroop(_t2);
+                UpdateTroop(_t2);
                 if (Annihilate(_t1) || Annihilate(_t2))
                 {
                     break;
@@ -91,17 +95,11 @@ public class Rpg
     {
         for (int i = troop.Roles.Count - 1; i >= 0; i--)
         {
-            // 取得當前索引的角色
             Role role = troop.Roles[i];
-
-            // 檢查 HP
             if (role.Hp <= 0)
             {
                 role.NotifyObservers();
-                // 印出死亡訊息
                 Console.WriteLine($"{role.Troop}{role.Name} 死亡。");
-
-                // 從列表中移除當前索引的元素
                 troop.Roles.RemoveAt(i);
             }
         }
@@ -111,6 +109,6 @@ public class Rpg
     {
         if (_inputQueue.Count > 0)
             return _inputQueue.Dequeue();
-        return "0"; // 預設普通攻擊
+        return "0";
     }
 }

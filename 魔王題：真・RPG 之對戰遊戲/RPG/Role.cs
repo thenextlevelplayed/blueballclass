@@ -1,6 +1,7 @@
 ﻿using System.Security.Cryptography;
 using RPG.ActionOption;
 using RPG.Command;
+using RPG.CommandHandler;
 using RPG.Enum;
 using RPG.Observer;
 using RPG.Status;
@@ -22,7 +23,6 @@ public abstract class Role
     public abstract ICommand S1();
     public abstract List<Role> S2(ICommand s1);
     public List<ICommand> Commands { get; set; } = new List<ICommand>();
-    // public List<IActionOption> ActionOptions { get; set; } = new List<IActionOption>();
 
     public List<IObserver> Observers { get; set; } = new List<IObserver>();
 
@@ -59,7 +59,7 @@ public abstract class Role
 
     public List<Role> GetAvailableEnemyTargets()
     {
-        return this.Troop.EnemyTroop.Roles;
+        return this.Troop.EnemyTroop.Roles.ToList();
     }
 
     public void S3(ICommand command, List<Role> roles)
@@ -88,53 +88,69 @@ public abstract class Role
             return;
         }
 
+        var waterBallHandler = new WaterBallHandler();
+        var fireBallHandler = new FireBallHandler();
+        var selfHealingHandler = new SelfHealingHandler();
+        var petrochemicalHandler = new PetrochemicalHandler();
+        var poisonHandler = new PoisonHandler();
+        var summonHandler = new SummonHandler();
+        var selfExplosionHandler = new SelfExplosionHandler();
+        var cheerUpHandler = new CheerUpHandler();
+        var curseHandler = new CurseHandler();
+        var onePunchHandler = new OnePunchHandler();
+        var unknownSkillHandler = new UnknownSkillHandler();
+        waterBallHandler.SetNext(fireBallHandler).SetNext(selfHealingHandler).SetNext(petrochemicalHandler)
+            .SetNext(poisonHandler).SetNext(summonHandler).SetNext(selfExplosionHandler)
+            .SetNext(cheerUpHandler).SetNext(curseHandler).SetNext(onePunchHandler)
+            .SetNext(unknownSkillHandler);
         foreach (var skillName in skillNames)
         {
-            switch (skillName)
-            {
-                case "水球":
-                    var waterBall = new WaterBall(this);
-                    Commands.Add(new WaterBallCommand(waterBall));
-                    break;
-                case "火球":
-                    var fireBall = new FireBall(this);
-                    Commands.Add(new FireBallCommand(fireBall));
-                    break;
-                case "自我治療":
-                    var selfHealing = new SelfHealing(this);
-                    Commands.Add(new SelfHealingCommand(selfHealing));
-                    break;
-                case "石化":
-                    var petrochemical = new ActionOption.Petrochemical(this);
-                    Commands.Add(new PetrochemicalCommand(petrochemical));
-                    break;
-                case "下毒":
-                    var poison = new Poison(this);
-                    Commands.Add(new PoisonCommand(poison));
-                    break;
-                case "召喚":
-                    var summon = new Summon(this);
-                    Commands.Add(new SummonCommand(summon));
-                    break;
-                case "自爆":
-                    var selfExplosion = new SelfExplosion(this);
-                    Commands.Add(new SelfExplosionCommand(selfExplosion));
-                    break;
-                case "鼓舞":
-                    var cheerUp = new ActionOption.CheerUp(this);
-                    Commands.Add(new CheerUpCommand(cheerUp));
-                    break;
-                case "詛咒":
-                    var curse = new Curse(this);
-                    Commands.Add(new CurseCommand(curse));
-                    break;
-                case "一拳攻擊":
-                    var onePunchAttack = new OnePunch(this);
-                    Commands.Add(new OnePunchCommand(onePunchAttack));
-                    break;
-                default:
-                    throw new ArgumentException($"Unknown skill name: {skillName}");
-            }
+            waterBallHandler.Handle(skillName, this);
+            // switch (skillName)
+            // {
+            //     case "水球":
+            //         var waterBall = new WaterBall(this);
+            //         Commands.Add(new WaterBallCommand(waterBall));
+            //         break;
+            //     case "火球":
+            //         var fireBall = new FireBall(this);
+            //         Commands.Add(new FireBallCommand(fireBall));
+            //         break;
+            //     case "自我治療":
+            //         var selfHealing = new SelfHealing(this);
+            //         Commands.Add(new SelfHealingCommand(selfHealing));
+            //         break;
+            //     case "石化":
+            //         var petrochemical = new ActionOption.Petrochemical(this);
+            //         Commands.Add(new PetrochemicalCommand(petrochemical));
+            //         break;
+            //     case "下毒":
+            //         var poison = new Poison(this);
+            //         Commands.Add(new PoisonCommand(poison));
+            //         break;
+            //     case "召喚":
+            //         var summon = new Summon(this);
+            //         Commands.Add(new SummonCommand(summon));
+            //         break;
+            //     case "自爆":
+            //         var selfExplosion = new SelfExplosion(this);
+            //         Commands.Add(new SelfExplosionCommand(selfExplosion));
+            //         break;
+            //     case "鼓舞":
+            //         var cheerUp = new ActionOption.CheerUp(this);
+            //         Commands.Add(new CheerUpCommand(cheerUp));
+            //         break;
+            //     case "詛咒":
+            //         var curse = new Curse(this);
+            //         Commands.Add(new CurseCommand(curse));
+            //         break;
+            //     case "一拳攻擊":
+            //         var onePunchAttack = new OnePunch(this);
+            //         Commands.Add(new OnePunchCommand(onePunchAttack));
+            //         break;
+            //     default:
+            //         throw new ArgumentException($"Unknown skill name: {skillName}");
+            // }
         }
     }
 
@@ -180,12 +196,8 @@ public class AI : Role
     {
     }
 
-    // 假設在你的角色類別 (Hero/Monster) 中有這個成員變數
-// private int Seed = 0;
-
     public override ICommand S1()
     {
-        Console.WriteLine($"輪到 {Troop}{Name} (HP: {Hp}, MP: {Mp}, STR: {Str}, State: {State})。");
         while (true)
         {
             // 1. 在每一次嘗試前，都印出可選行動
@@ -195,6 +207,7 @@ public class AI : Role
                 output += $"({i}) ";
                 output += Commands[i].ActionOption + " ";
             }
+
             Console.WriteLine(output.Trim());
 
             // 2. 根據「目前」的 seed 決定要嘗試的行動
@@ -274,7 +287,7 @@ public class AI : Role
         if (s1.ActionOption.TargetCondition.MaxTargets >= availableTargets.Count())
         {
             // 目標足夠或過多時，選擇所有，這也算一次決策
-            this.Seed++;
+            // this.Seed++;
             return availableTargets;
         }
         else
@@ -289,7 +302,7 @@ public class AI : Role
 
             // 選擇完成，決策完成！
             // 統一規則：完成決策後，Seed 加一
-            this.Seed++;
+            // this.Seed++;
 
             // 建議加上 .Distinct() 來處理 m > n 時的重複選取問題
             return availableTargets.Where((_, index) => selectedIndices.Distinct().Contains(index)).ToList();
@@ -305,8 +318,6 @@ public class Hero : Role
 
     public override ICommand S1()
     {
-        Console.WriteLine($"輪到 {Troop}{Name} (HP: {Hp}, MP: {Mp}, STR: {Str}, State: {State})。");
-
         // 等待玩家輸入
         int? choice = null;
         while (choice == null)

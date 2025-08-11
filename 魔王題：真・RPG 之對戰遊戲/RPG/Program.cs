@@ -1,14 +1,10 @@
-﻿// ===================================================================
-// 步驟 2.1: 強制設定 Console 的輸出編碼為 UTF-8，這是關鍵！
-// ===================================================================
-
-using System.Text;
+﻿using System.Text;
 using RPG;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 // --- 您的原始碼開頭 (讀取測資部分) ---
-string inputPath = "curse.in";
+string inputPath = "one-punch.in";
 if (!File.Exists(inputPath))
 {
     Console.WriteLine($"找不到測資檔案：{inputPath}");
@@ -81,18 +77,22 @@ try
 }
 catch (Exception ex)
 {
-    Console.SetOut(originalConsoleOut);
+    // Console.SetOut(originalConsoleOut);
     Console.WriteLine("測試過程中發生未預期的錯誤：" + ex.Message);
     Console.WriteLine(ex.StackTrace);
-    return;
+    // var failActualOutput = stringWriter.ToString().Trim();
+    // failActualOutput.Replace("\r\n", "\n");
+    // Console.WriteLine(failActualOutput.Replace("\r\n", "\n"));
+    // return;
 }
 finally
 {
+    // Console.WriteLine(stringWriter.ToString().Trim());
     Console.SetOut(originalConsoleOut); // 確保恢復 Console 輸出
 }
 
 string actualOutput = stringWriter.ToString().Trim();
-string expectedOutputPath = "curse.out";
+string expectedOutputPath = "one-punch.out";
 
 if (!File.Exists(expectedOutputPath))
 {
@@ -110,13 +110,13 @@ Console.WriteLine("\n--- 比對結果 ---");
 if (actualOutput == expectedOutput)
 {
     Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("測試通過！ 您的程式輸出與 cheerup.out 完全相符！");
+    Console.WriteLine("測試通過！ 您的程式輸出與 one-punch.out 完全相符！");
     Console.ResetColor();
 }
 else
 {
     Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("測試失敗！ 您的程式輸出與 cheerup.out 不符。");
+    Console.WriteLine("測試失敗！ 您的程式輸出與 one-punch.out 不符。");
     Console.ResetColor();
 
     // 將有問題的輸出寫入檔案，以便除錯
