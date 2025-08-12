@@ -28,7 +28,7 @@ public abstract class Skill : IActionOption
         }
     }
 
-    protected void ChangeState(Role role)
+    public void ChangeState(Role role)
     {
         role.EnterState(GetState(role)!);
     }

@@ -4,9 +4,9 @@ namespace RPG;
 
 public class Rpg
 {
-    private Troop _t1;
-    private Troop _t2;
-    private Queue<string> _inputQueue = new(); //測茲用
+    private readonly Troop _t1;
+    private readonly Troop _t2;
+    private readonly Queue<string> _inputQueue = new(); //測資用
 
     public Rpg(Troop t1, Troop t2, IEnumerable<string> inputs)
     {
@@ -17,73 +17,70 @@ public class Rpg
         _inputQueue = new Queue<string>(inputs);
     }
 
-    public void Battle()
+    private bool ProcessTurn(Troop actingTroop, Troop opposingTroop)
     {
-        while (!Annihilate(_t1) && !Annihilate(_t2))
+        for (int i = 0; i < actingTroop.Roles.Count; i++)
         {
-            for (int i = 0; i < _t1.Roles.Count; i++)
+            var role = actingTroop.Roles[i];
+            if (role.Hp <= 0) continue;
+            Console.WriteLine(
+                $"輪到 {role.Troop}{role.Name} (HP: {role.Hp}, MP: {role.Mp}, STR: {role.Str}, State: {role.State})。");
+            role.HandleStartOfTurn();
+            if (role.CanAction())
             {
-                var role = _t1.Roles[i];
-                Console.WriteLine(
-                    $"輪到 {role.Troop}{role.Name} (HP: {role.Hp}, MP: {role.Mp}, STR: {role.Str}, State: {role.State})。");
-                role.HandleStartOfTurn();
-                if (role.CanAction())
-                {
-                    var s1 = S1(role);
-                    var s2 = S2(role, s1);
-                    S3(role, s1, s2);
-                }
-
-                role.HandleEndOfTurn();
-                UpdateTroop(_t1);
-                UpdateTroop(_t2);
-                if (Annihilate(_t1) || Annihilate(_t2))
-                {
-                    break;
-                }
+                var s1 = role.TemplateS1();
+                var s2 = role.TemplateS2(s1);
+                role.S3(s1, s2);
             }
+            role.HandleEndOfTurn();
 
-            for (int i = 0; i < _t2.Roles.Count; i++)
+            // 更新雙方軍隊狀態
+            UpdateTroop(actingTroop);
+            UpdateTroop(opposingTroop);
+
+            // 檢查在該角色行動後，戰鬥是否結束
+            if (Annihilate(actingTroop) || Annihilate(opposingTroop))
             {
-                var role = _t2.Roles[i];
-                Console.WriteLine(
-                    $"輪到 {role.Troop}{role.Name} (HP: {role.Hp}, MP: {role.Mp}, STR: {role.Str}, State: {role.State})。");
-                role.HandleStartOfTurn();
-                if (role.CanAction())
-                {
-                    var s1 = S1(role);
-                    var s2 = S2(role, s1);
-                    S3(role, s1, s2);
-                }
-
-                role.HandleEndOfTurn();
-                UpdateTroop(_t1);
-                UpdateTroop(_t2);
-                if (Annihilate(_t1) || Annihilate(_t2))
-                {
-                    break;
-                }
+                return true; // 戰鬥結束，回傳 true
             }
         }
+    
+        return false; // 該軍隊回合結束，但戰鬥尚未結束，回傳 false
+    }
 
+    public void Battle()
+    {
+        while (true)
+        {
+            // 處理軍隊1的回合，如果戰鬥結束，就跳出迴圈
+            if (ProcessTurn(_t1, _t2))
+            {
+                break;
+            }
+
+            // 處理軍隊2的回合，如果戰鬥結束，就跳出迴圈
+            if (ProcessTurn(_t2, _t1))
+            {
+                break;
+            }
+        }
         var log = Annihilate(_t1) ? "你失敗了！" : "你獲勝了！";
         Console.WriteLine(log);
     }
-
 
     private bool Annihilate(Troop troop)
     {
         return !troop.Roles.Any();
     }
 
-    private ICommand S1(Role role)
+    private ICommand TemplateS1(Role role)
     {
-        return role.S1();
+        return role.TemplateS1();
     }
 
-    private List<Role> S2(Role role, ICommand s1)
+    private List<Role> TemplateS2(Role role, ICommand s1)
     {
-        return role.S2(s1);
+        return role.TemplateS2(s1);
     }
 
     private void S3(Role role, ICommand command, List<Role> roles)

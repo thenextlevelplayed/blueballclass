@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using RPG;
+using RPG.CommandHandler;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
@@ -46,9 +47,31 @@ foreach (var line in lines)
         int mp = int.Parse(parts[2]);
         int str = int.Parse(parts[3]);
         string[] skillNames = parts.Skip(4).ToArray();
+
         Role newRole = name == "英雄"
-            ? new Hero(name, hp, mp, str, skillNames)
-            : new AI(name, hp, mp, str, skillNames);
+            ? new Hero(name, hp, mp, str)
+            : new AI(name, hp, mp, str);
+
+        var waterBallHandler = new WaterBallHandler();
+        var fireBallHandler = new FireBallHandler();
+        var selfHealingHandler = new SelfHealingHandler();
+        var petrochemicalHandler = new PetrochemicalHandler();
+        var poisonHandler = new PoisonHandler();
+        var summonHandler = new SummonHandler();
+        var selfExplosionHandler = new SelfExplosionHandler();
+        var cheerUpHandler = new CheerUpHandler();
+        var curseHandler = new CurseHandler();
+        var onePunchHandler = new OnePunchHandler();
+        var unknownSkillHandler = new UnknownSkillHandler();
+        waterBallHandler.SetNext(fireBallHandler).SetNext(selfHealingHandler).SetNext(petrochemicalHandler)
+            .SetNext(poisonHandler).SetNext(summonHandler).SetNext(selfExplosionHandler)
+            .SetNext(cheerUpHandler).SetNext(curseHandler).SetNext(onePunchHandler)
+            .SetNext(unknownSkillHandler);
+        foreach (var skillName in skillNames)
+        {
+            waterBallHandler.Handle(skillName, newRole);
+        }
+
         if (currentArmyFlag == 1) army1Roles.Add(newRole);
         else if (currentArmyFlag == 2) army2Roles.Add(newRole);
     }

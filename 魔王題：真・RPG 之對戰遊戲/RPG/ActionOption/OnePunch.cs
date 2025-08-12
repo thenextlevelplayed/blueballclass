@@ -21,32 +21,42 @@ public class OnePunch : Skill
 
     protected override void ActionHook(List<Role> roles)
     {
+        var hpHandler = new HpIsBiggerThan500(this);
+        var debuffHandler = new TargetStatusIsDebuff(this);
+        var buffHandler = new TargetStatusIsBuff(this);
+        var normalHandler = new TargetStatusIsNormal(this);
+        hpHandler.SetNext(debuffHandler)
+            .SetNext(buffHandler)
+            .SetNext(normalHandler);
+
         foreach (var role in roles)
         {
-            if (role.Hp >= 500)
-            {
-                Attack(role, 300);
-            }
-            else if (role.State is Poisoned || role.State is Status.Petrochemical)
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    Attack(role, 80);
-                }
-
-                ChangeState(role);
-            }
-            else if (role.State is Status.CheerUp)
-            {
-                Attack(role, Str);
-                ChangeState(role);
-            }
-            else if (role.State is Normal)
-            {
-                Attack(role, Str);
-            }
+            hpHandler.Handle(role);
+            // if (role.Hp >= 500)
+            // {
+            //     Attack(role, 300);
+            // }
+            // else if (role.State is Poisoned || role.State is Status.Petrochemical)
+            // {
+            //     for (int i = 0; i < 3; i++)
+            //     {
+            //         Attack(role, 80);
+            //     }
+            //
+            //     ChangeState(role);
+            // }
+            // else if (role.State is Status.CheerUp)
+            // {
+            //     Attack(role, Str);
+            //     ChangeState(role);
+            // }
+            // else if (role.State is Normal)
+            // {
+            //     Attack(role, Str);
+            // }
         }
     }
+
     public override string ToString()
     {
         return "一拳攻擊";
