@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_action_option_1_1_basic_attack" kind="class" language="C#" prot="public">
+    <compoundname>RPG::ActionOption::BasicAttack</compoundname>
+    <basecompoundref refid="interface_r_p_g_1_1_action_option_1_1_i_action_option" prot="public" virt="non-virtual">RPG.ActionOption.IActionOption</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1a3a59bdbace8019b67f36d3f28f8107a2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RPG.ActionOption.BasicAttack.Mp</definition>
+        <argsstring></argsstring>
+        <name>Mp</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.Mp</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ad0b3112979ce41a4e61bf75443db3636">Mp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="7" column="16" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1a1c522eaac6581fa86ea6f23afcf5fb04" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RPG.ActionOption.BasicAttack.Str</definition>
+        <argsstring></argsstring>
+        <name>Str</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.Str</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a129d1f1c7b2ff5f052c4455fcd2a9400">Str</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="8" column="16" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1a98b3e86312ba6bc52933c355d31f8701" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool RPG.ActionOption.BasicAttack.PassS2</definition>
+        <argsstring></argsstring>
+        <name>PassS2</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.PassS2</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1abc301d38c23902af5e8760d38ecdb52c">PassS2</reimplements>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="9" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1a40a01c740502a3cf943c1c9a6421e2d6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref></type>
+        <definition>TargetCondition RPG.ActionOption.BasicAttack.TargetCondition</definition>
+        <argsstring></argsstring>
+        <name>TargetCondition</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.TargetCondition</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a983e6056c7e2265932ec7dae55530724">TargetCondition</reimplements>
+        <initializer>= new <ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref>(TargetRelation.Enemy, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="10" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1aa25e16050623b1a2904047045433bcfb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+        <definition>Role RPG.ActionOption.BasicAttack.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.Role</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a693b06d28773a0913b72962374fa90e5">Role</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="11" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1ae283a7ec32957f0cf5c7b81c511e138c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.ActionOption.BasicAttack.BasicAttack</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>BasicAttack</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.BasicAttack</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="13" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1a690929a72409b5aa71de9baed81dfcf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.ActionOption.BasicAttack.Attack</definition>
+        <argsstring>(Role role, int str)</argsstring>
+        <name>Attack</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.Attack</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ac8e1a3e747d8a612972ad396f95d6fe4">Attack</reimplements>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="18" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1a0f94096c6bb44ee017832c7b2327a561" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.ActionOption.BasicAttack.DoAction</definition>
+        <argsstring>(List&lt; Role &gt; roles)</argsstring>
+        <name>DoAction</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.DoAction</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a5c93054a7e6d11238ef2c2283eb6a408">DoAction</reimplements>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="25" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_basic_attack_1a41c021340346331be43461f9f814422e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string RPG.ActionOption.BasicAttack.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>RPG.ActionOption.BasicAttack.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="30" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.ActionOption.BasicAttack</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_basic_attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.ActionOption.BasicAttack</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_basic_attack"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="5" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" bodystart="6" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a690929a72409b5aa71de9baed81dfcf2" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>Attack</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1ae283a7ec32957f0cf5c7b81c511e138c" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>BasicAttack</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a0f94096c6bb44ee017832c7b2327a561" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>DoAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a3a59bdbace8019b67f36d3f28f8107a2" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>Mp</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a98b3e86312ba6bc52933c355d31f8701" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>PassS2</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1aa25e16050623b1a2904047045433bcfb" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a1c522eaac6581fa86ea6f23afcf5fb04" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>Str</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a40a01c740502a3cf943c1c9a6421e2d6" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>TargetCondition</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a41c021340346331be43461f9f814422e" prot="public" virt="non-virtual"><scope>RPG::ActionOption::BasicAttack</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

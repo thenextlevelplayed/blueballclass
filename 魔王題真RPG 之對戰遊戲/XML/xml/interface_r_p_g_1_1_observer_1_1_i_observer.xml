@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="interface_r_p_g_1_1_observer_1_1_i_observer" kind="interface" language="C#" prot="public">
+    <compoundname>RPG::Observer::IObserver</compoundname>
+    <derivedcompoundref refid="class_r_p_g_1_1_observer_1_1_summon_buff" prot="public" virt="non-virtual">RPG.Observer.SummonBuff</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="interface_r_p_g_1_1_observer_1_1_i_observer_1a3cbc876b0f3b6e916eab9c115c9b3832" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+        <definition>Role RPG.Observer.IObserver.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>RPG.Observer.IObserver.Role</qualifiedname>
+        <reimplementedby refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a9e06a73276f6e697beaf7c2c39f19952">Role</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer/IObserver.cs" line="5" column="10" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer/IObserver.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_p_g_1_1_observer_1_1_i_observer_1ad3043e736c1310eaefe3c92491e52674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.Observer.IObserver.Action</definition>
+        <argsstring>()</argsstring>
+        <name>Action</name>
+        <qualifiedname>RPG.Observer.IObserver.Action</qualifiedname>
+        <reimplementedby refid="class_r_p_g_1_1_observer_1_1_summon_buff_1ae04be91dedfa7270f36c6802a4617e84">Action</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer/IObserver.cs" line="6" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.Observer.IObserver</label>
+        <link refid="interface_r_p_g_1_1_observer_1_1_i_observer"/>
+      </node>
+      <node id="2">
+        <label>RPG.Observer.SummonBuff</label>
+        <link refid="class_r_p_g_1_1_observer_1_1_summon_buff"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer/IObserver.cs" line="3" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer/IObserver.cs" bodystart="4" bodyend="7"/>
+    <listofallmembers>
+      <member refid="interface_r_p_g_1_1_observer_1_1_i_observer_1ad3043e736c1310eaefe3c92491e52674" prot="public" virt="non-virtual"><scope>RPG::Observer::IObserver</scope><name>Action</name></member>
+      <member refid="interface_r_p_g_1_1_observer_1_1_i_observer_1a3cbc876b0f3b6e916eab9c115c9b3832" prot="public" virt="non-virtual"><scope>RPG::Observer::IObserver</scope><name>Role</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

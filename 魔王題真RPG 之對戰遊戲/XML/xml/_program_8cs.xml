@@ -1,0 +1,686 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <innernamespace refid="namespace_system_1_1_text">System::Text</innernamespace>
+    <innernamespace refid="namespacevar">var</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_program_8cs_1af34381d72a18d3094b1c0c79b95efc12" prot="public" static="no">
+        <type>new StringWriter()</type>
+        <definition>using stringWriter =  new StringWriter()</definition>
+        <argsstring></argsstring>
+        <name>stringWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="94" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_program_8cs_1a349d39ecb8cf69b92f64f23775abc311" prot="public" static="no" mutable="no">
+        <type>Console.</type>
+        <definition>Console. OutputEncoding</definition>
+        <argsstring></argsstring>
+        <name>OutputEncoding</name>
+        <initializer>= System.Text.Encoding.UTF8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="5" column="8" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a587987c6126244cdb7d6fdaa538f85fc" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string inputPath</definition>
+        <argsstring></argsstring>
+        <name>inputPath</name>
+        <initializer>= &quot;one-punch.in&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="8" column="8" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a71fc41fe794af7bb443f905e7921750e" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var army1Roles</definition>
+        <argsstring></argsstring>
+        <name>army1Roles</name>
+        <initializer>= new List&lt;<ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="15" column="5" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a3b2331f0590e817e483129f1c36c890a" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var army2Roles</definition>
+        <argsstring></argsstring>
+        <name>army2Roles</name>
+        <initializer>= new List&lt;<ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="16" column="5" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int currentArmyFlag</definition>
+        <argsstring></argsstring>
+        <name>currentArmyFlag</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="17" column="5" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a45baea0008353ce1cf0e59a89e02dfec" prot="public" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] lines</definition>
+        <argsstring></argsstring>
+        <name>lines</name>
+        <initializer>= File.ReadAllLines(<ref refid="_program_8cs_1a587987c6126244cdb7d6fdaa538f85fc" kindref="member">inputPath</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="18" column="8" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a39dc3eb42017896a8723ac778ff3f054" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var troop1</definition>
+        <argsstring></argsstring>
+        <name>troop1</name>
+        <initializer>= new <ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref>(<ref refid="_program_8cs_1a71fc41fe794af7bb443f905e7921750e" kindref="member">army1Roles</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="80" column="5" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a91d04dc1bda79bc36acbebb48cac4d38" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var troop2</definition>
+        <argsstring></argsstring>
+        <name>troop2</name>
+        <initializer>= new <ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref>(<ref refid="_program_8cs_1a3b2331f0590e817e483129f1c36c890a" kindref="member">army2Roles</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="81" column="5" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a5d481374df5d64bd49477079d8717462" prot="public" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] extraInputs</definition>
+        <argsstring></argsstring>
+        <name>extraInputs</name>
+        <initializer>= <ref refid="_program_8cs_1a45baea0008353ce1cf0e59a89e02dfec" kindref="member">lines</ref>
+    .SkipWhile(l =&gt; !l.Trim().Contains(&quot;#軍隊-2-結束&quot;))
+    .Skip(1)
+    .TakeWhile(l =&gt; l.Trim() != &quot;###&quot;)
+    .ToArray()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="83" column="8" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a2fb8e8d0781d256e8e61c487f4307655" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var rpg</definition>
+        <argsstring></argsstring>
+        <name>rpg</name>
+        <initializer>= new <ref refid="class_r_p_g_1_1_rpg" kindref="compound">RPG.Rpg</ref>(<ref refid="_program_8cs_1a39dc3eb42017896a8723ac778ff3f054" kindref="member">troop1</ref>, <ref refid="_program_8cs_1a91d04dc1bda79bc36acbebb48cac4d38" kindref="member">troop2</ref>, <ref refid="_program_8cs_1a5d481374df5d64bd49477079d8717462" kindref="member">extraInputs</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="88" column="5" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1ab607fb643dcd345c185ea74f1c5d9e95" prot="public" static="no" mutable="no">
+        <type>TextWriter</type>
+        <definition>TextWriter originalConsoleOut</definition>
+        <argsstring></argsstring>
+        <name>originalConsoleOut</name>
+        <initializer>= Console.Out</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="93" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1abe4cc9788f52e49485473dc699537388" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>try</definition>
+        <argsstring></argsstring>
+        <name>try</name>
+        <initializer>{
+    rpg.Battle()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="97" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1add54dddec4f0266c6fab8d04bf7d9136" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>finally</definition>
+        <argsstring></argsstring>
+        <name>finally</name>
+        <initializer>{
+    
+    <ref refid="_program_8cs_1abe3c66b02b445f1d565a1d517138e013" kindref="member">Console.SetOut</ref>(<ref refid="_program_8cs_1ab607fb643dcd345c185ea74f1c5d9e95" kindref="member">originalConsoleOut</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="111" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>actualOutput</definition>
+        <argsstring></argsstring>
+        <name>actualOutput</name>
+        <initializer>= stringWriter.ToString().Trim()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="117" column="8" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a5a69c7f0910fff70fbc3e21af48dfef1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string expectedOutputPath</definition>
+        <argsstring></argsstring>
+        <name>expectedOutputPath</name>
+        <initializer>= &quot;one-punch.out&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="118" column="8" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>expectedOutput</definition>
+        <argsstring></argsstring>
+        <name>expectedOutput</name>
+        <initializer>= File.ReadAllText(<ref refid="_program_8cs_1a5a69c7f0910fff70fbc3e21af48dfef1" kindref="member">expectedOutputPath</ref>, Encoding.UTF8).Trim()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="127" column="8" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a0544c3fe466e421738dae463968b70ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>else</definition>
+        <argsstring></argsstring>
+        <name>else</name>
+        <initializer>{
+    Console.ForegroundColor = ConsoleColor.Red</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="139" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="140" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_program_8cs_1a40407f674a9a2083220a649e634cd693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(!File.Exists(inputPath))</argsstring>
+        <name>if</name>
+        <param>
+          <type>!File.</type>
+          <declname>Exists</declname>
+          <defname>File::Exists</defname>
+          <array>inputPath</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="9" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a67cc60453fdd62450608a4a68d69f533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>foreach</definition>
+        <argsstring>(var line in lines)</argsstring>
+        <name>foreach</name>
+        <param>
+          <type>var line in</type>
+          <declname>lines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="20" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="20" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a6b50e10a377e2763d7210054bf328458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Troop.</type>
+        <definition>Troop. SetRelation</definition>
+        <argsstring>(troop1, troop2)</argsstring>
+        <name>SetRelation</name>
+        <param>
+          <type><ref refid="_program_8cs_1a39dc3eb42017896a8723ac778ff3f054" kindref="member">troop1</ref></type>
+        </param>
+        <param>
+          <type><ref refid="_program_8cs_1a91d04dc1bda79bc36acbebb48cac4d38" kindref="member">troop2</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="82" column="6" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="82" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1af7587ed3e5462b7b4d0067bdf24949d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Console.</type>
+        <definition>Console. WriteLine</definition>
+        <argsstring>(&quot;--- 準備進行輸出比對測試 ---&quot;)</argsstring>
+        <name>WriteLine</name>
+        <param>
+          <type>&quot;--- 準備進行輸出比對測試 ---&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="91" column="8" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="91" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1abe3c66b02b445f1d565a1d517138e013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Console.</type>
+        <definition>Console. SetOut</definition>
+        <argsstring>(stringWriter)</argsstring>
+        <name>SetOut</name>
+        <param>
+          <type><ref refid="_program_8cs_1af34381d72a18d3094b1c0c79b95efc12" kindref="member">stringWriter</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="95" column="8" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="95" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ab43e01d035a27754dae62444a59b3cab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catch</definition>
+        <argsstring>(Exception ex)</argsstring>
+        <name>catch</name>
+        <param>
+          <type>Exception</type>
+          <declname>ex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="101" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="101" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1aec0eeb87df165117958b59b509c064b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(!File.Exists(expectedOutputPath))</argsstring>
+        <name>if</name>
+        <param>
+          <type>!File.</type>
+          <declname>Exists</declname>
+          <defname>File::Exists</defname>
+          <array>expectedOutputPath</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="120" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a52fe587a1f7a9633c62389382f416843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Console.</type>
+        <definition>Console. WriteLine</definition>
+        <argsstring>(&quot;\n--- 比對結果 ---&quot;)</argsstring>
+        <name>WriteLine</name>
+        <param>
+          <type>&quot;\n--- 比對結果 ---&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="132" column="8" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="132" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1acc2d86a271eaa79265d57926a2341d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(actualOutput==expectedOutput)</argsstring>
+        <name>if</name>
+        <param>
+          <type><ref refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" kindref="member">actualOutput</ref></type>
+          <defval>=<ref refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" kindref="member">expectedOutput</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="133" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" bodystart="133" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ab8c5bd1c812bf8e0c395e69b7f29cf7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Console.</type>
+        <definition>Console. WriteLine</definition>
+        <argsstring>(&quot;測試失敗！ 您的程式輸出與 one-punch.out 不符。&quot;)</argsstring>
+        <name>WriteLine</name>
+        <param>
+          <type>&quot;測試失敗！ 您的程式輸出與 one-punch.out 不符。&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="142" column="12" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="142" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ac589af7a996f5fa11504db04470ef9c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Console.</type>
+        <definition>Console. ResetColor</definition>
+        <argsstring>()</argsstring>
+        <name>ResetColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="143" column="12" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="143" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1adc0790aa5e973daced543ff5d476de4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>File.</type>
+        <definition>File. WriteAllText</definition>
+        <argsstring>(&quot;my_actual_output.txt&quot;, actualOutput)</argsstring>
+        <name>WriteAllText</name>
+        <param>
+          <type>&quot;my_actual_output.txt&quot;</type>
+        </param>
+        <param>
+          <type><ref refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" kindref="member">actualOutput</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="147" column="9" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="147" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ade839134241b8ba1f86efc61c6a85a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>File.</type>
+        <definition>File. WriteAllText</definition>
+        <argsstring>(&quot;expected_output.txt&quot;, expectedOutput)</argsstring>
+        <name>WriteAllText</name>
+        <param>
+          <type>&quot;expected_output.txt&quot;</type>
+        </param>
+        <param>
+          <type><ref refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" kindref="member">expectedOutput</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="148" column="9" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="148" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ad776d400429d948391e9684898183139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Console.</type>
+        <definition>Console. WriteLine</definition>
+        <argsstring>(&quot;\n詳細的差異已寫入 my_actual_output.txt 和 expected_output.txt 以便比對。&quot;)</argsstring>
+        <name>WriteLine</name>
+        <param>
+          <type>&quot;\n詳細的差異已寫入 my_actual_output.txt 和 expected_output.txt 以便比對。&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="149" column="12" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="149" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a4b82010092585b4bbb91c02d8117ef77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Console.</type>
+        <definition>Console. WriteLine</definition>
+        <argsstring>(&quot;請使用 VS Code 的檔案比對功能來查看這兩個檔案的差異。&quot;)</argsstring>
+        <name>WriteLine</name>
+        <param>
+          <type>&quot;請使用 VS Code 的檔案比對功能來查看這兩個檔案的差異。&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" line="150" column="12" declfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs" declline="150" declcolumn="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Text;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g" kindref="compound">RPG</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_command_handler" kindref="compound">RPG.CommandHandler</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_program_8cs_1a349d39ecb8cf69b92f64f23775abc311" refkind="member"><highlight class="normal">Console.OutputEncoding<sp/>=<sp/>System.Text.Encoding.UTF8;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---<sp/>您的原始碼開頭<sp/>(讀取測資部分)<sp/>---</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_program_8cs_1a587987c6126244cdb7d6fdaa538f85fc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="_program_8cs_1a587987c6126244cdb7d6fdaa538f85fc" kindref="member">inputPath</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;one-punch.in&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9" refid="_program_8cs_1a40407f674a9a2083220a649e634cd693" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!File.Exists(<ref refid="_program_8cs_1a587987c6126244cdb7d6fdaa538f85fc" kindref="member">inputPath</ref>))</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.WriteLine($</highlight><highlight class="stringliteral">&quot;找不到測資檔案：{inputPath}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_program_8cs_1a71fc41fe794af7bb443f905e7921750e" refkind="member"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a71fc41fe794af7bb443f905e7921750e" kindref="member">army1Roles</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;Role&gt;();</highlight></codeline>
+<codeline lineno="16" refid="_program_8cs_1a3b2331f0590e817e483129f1c36c890a" refkind="member"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a3b2331f0590e817e483129f1c36c890a" kindref="member">army2Roles</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;Role&gt;();</highlight></codeline>
+<codeline lineno="17" refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" kindref="member">currentArmyFlag</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18" refid="_program_8cs_1a45baea0008353ce1cf0e59a89e02dfec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[]<sp/><ref refid="_program_8cs_1a45baea0008353ce1cf0e59a89e02dfec" kindref="member">lines</ref><sp/>=<sp/>File.ReadAllLines(<ref refid="_program_8cs_1a587987c6126244cdb7d6fdaa538f85fc" kindref="member">inputPath</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_program_8cs_1a67cc60453fdd62450608a4a68d69f533" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(var<sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/><ref refid="_program_8cs_1a45baea0008353ce1cf0e59a89e02dfec" kindref="member">lines</ref>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.IsNullOrWhiteSpace(line))<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(line.Trim()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;#軍隊-1-開始&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" kindref="member">currentArmyFlag</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(line.Trim()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;#軍隊-2-開始&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" kindref="member">currentArmyFlag</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(line.Trim().Contains(</highlight><highlight class="stringliteral">&quot;-結束&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" kindref="member">currentArmyFlag</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" kindref="member">currentArmyFlag</ref><sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[]<sp/>parts<sp/>=<sp/>line.Split(</highlight><highlight class="keyword">new</highlight><highlight class="normal">[]<sp/>{<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>},<sp/>StringSplitOptions.RemoveEmptyEntries);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parts.Length<sp/>&lt;<sp/>4)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name<sp/>=<sp/>parts[0];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hp<sp/>=<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">.Parse(parts[1]);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mp<sp/>=<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">.Parse(parts[2]);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>str<sp/>=<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">.Parse(parts[3]);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[]<sp/>skillNames<sp/>=<sp/>parts.Skip(4).ToArray();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref><sp/>newRole<sp/>=<sp/>name<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;英雄&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_hero" kindref="compound">Hero</ref>(name,<sp/>hp,<sp/>mp,<sp/>str)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_a_i" kindref="compound">AI</ref>(name,<sp/>hp,<sp/>mp,<sp/>str);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>waterBallHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_water_ball_handler" kindref="compound">WaterBallHandler</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>fireBallHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_fire_ball_handler" kindref="compound">FireBallHandler</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>selfHealingHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_self_healing_handler" kindref="compound">SelfHealingHandler</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>petrochemicalHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_petrochemical_handler" kindref="compound">PetrochemicalHandler</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>poisonHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_poison_handler" kindref="compound">PoisonHandler</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>summonHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_summon_handler" kindref="compound">SummonHandler</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>selfExplosionHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_self_explosion_handler" kindref="compound">SelfExplosionHandler</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>cheerUpHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler" kindref="compound">CheerUpHandler</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>curseHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_curse_handler" kindref="compound">CurseHandler</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>onePunchHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_one_punch_handler" kindref="compound">OnePunchHandler</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>unknownSkillHandler<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_unknown_skill_handler" kindref="compound">UnknownSkillHandler</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waterBallHandler.SetNext(fireBallHandler).SetNext(selfHealingHandler).SetNext(petrochemicalHandler)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.SetNext(poisonHandler).SetNext(summonHandler).SetNext(selfExplosionHandler)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.SetNext(cheerUpHandler).SetNext(curseHandler).SetNext(onePunchHandler)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.SetNext(unknownSkillHandler);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(var<sp/>skillName<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>skillNames)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waterBallHandler.Handle(skillName,<sp/>newRole);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" kindref="member">currentArmyFlag</ref><sp/>==<sp/>1)<sp/><ref refid="_program_8cs_1a71fc41fe794af7bb443f905e7921750e" kindref="member">army1Roles</ref>.Add(newRole);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" kindref="member">currentArmyFlag</ref><sp/>==<sp/>2)<sp/><ref refid="_program_8cs_1a3b2331f0590e817e483129f1c36c890a" kindref="member">army2Roles</ref>.Add(newRole);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="_program_8cs_1a39dc3eb42017896a8723ac778ff3f054" refkind="member"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a39dc3eb42017896a8723ac778ff3f054" kindref="member">troop1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref>(<ref refid="_program_8cs_1a71fc41fe794af7bb443f905e7921750e" kindref="member">army1Roles</ref>);</highlight></codeline>
+<codeline lineno="81" refid="_program_8cs_1a91d04dc1bda79bc36acbebb48cac4d38" refkind="member"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a91d04dc1bda79bc36acbebb48cac4d38" kindref="member">troop2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref>(<ref refid="_program_8cs_1a3b2331f0590e817e483129f1c36c890a" kindref="member">army2Roles</ref>);</highlight></codeline>
+<codeline lineno="82" refid="_program_8cs_1a6b50e10a377e2763d7210054bf328458" refkind="member"><highlight class="normal"><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref>.<ref refid="class_r_p_g_1_1_troop_1afcc9a85041b29e7be014c6e52cc62ecb" kindref="member">SetRelation</ref>(<ref refid="_program_8cs_1a39dc3eb42017896a8723ac778ff3f054" kindref="member">troop1</ref>,<sp/><ref refid="_program_8cs_1a91d04dc1bda79bc36acbebb48cac4d38" kindref="member">troop2</ref>);</highlight></codeline>
+<codeline lineno="83" refid="_program_8cs_1a5d481374df5d64bd49477079d8717462" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[]<sp/><ref refid="_program_8cs_1a5d481374df5d64bd49477079d8717462" kindref="member">extraInputs</ref><sp/>=<sp/><ref refid="_program_8cs_1a45baea0008353ce1cf0e59a89e02dfec" kindref="member">lines</ref></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>.SkipWhile(l<sp/>=&gt;<sp/>!l.Trim().Contains(</highlight><highlight class="stringliteral">&quot;#軍隊-2-結束&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>.Skip(1)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>.TakeWhile(l<sp/>=&gt;<sp/>l.Trim()<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;###&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>.ToArray();</highlight></codeline>
+<codeline lineno="88" refid="_program_8cs_1a2fb8e8d0781d256e8e61c487f4307655" refkind="member"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a2fb8e8d0781d256e8e61c487f4307655" kindref="member">rpg</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="namespace_r_p_g" kindref="compound">RPG</ref>.<ref refid="class_r_p_g_1_1_rpg" kindref="compound">Rpg</ref>(<ref refid="_program_8cs_1a39dc3eb42017896a8723ac778ff3f054" kindref="member">troop1</ref>,<sp/><ref refid="_program_8cs_1a91d04dc1bda79bc36acbebb48cac4d38" kindref="member">troop2</ref>,<sp/><ref refid="_program_8cs_1a5d481374df5d64bd49477079d8717462" kindref="member">extraInputs</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---<sp/>以下是新增的測試邏輯<sp/>---</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_program_8cs_1af7587ed3e5462b7b4d0067bdf24949d7" refkind="member"><highlight class="normal">Console.WriteLine(</highlight><highlight class="stringliteral">&quot;---<sp/>準備進行輸出比對測試<sp/>---&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_program_8cs_1ab607fb643dcd345c185ea74f1c5d9e95" refkind="member"><highlight class="normal">TextWriter<sp/><ref refid="_program_8cs_1ab607fb643dcd345c185ea74f1c5d9e95" kindref="member">originalConsoleOut</ref><sp/>=<sp/>Console.Out;</highlight></codeline>
+<codeline lineno="94" refid="_program_8cs_1af34381d72a18d3094b1c0c79b95efc12" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">var<sp/><ref refid="_program_8cs_1af34381d72a18d3094b1c0c79b95efc12" kindref="member">stringWriter</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>StringWriter();</highlight></codeline>
+<codeline lineno="95" refid="_program_8cs_1abe3c66b02b445f1d565a1d517138e013" refkind="member"><highlight class="normal">Console.SetOut(<ref refid="_program_8cs_1af34381d72a18d3094b1c0c79b95efc12" kindref="member">stringWriter</ref>);<sp/></highlight><highlight class="comment">//<sp/>將輸出捕獲到<sp/>stringWriter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="_program_8cs_1abe4cc9788f52e49485473dc699537388" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a2fb8e8d0781d256e8e61c487f4307655" kindref="member">rpg</ref>.Battle();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101" refid="_program_8cs_1ab43e01d035a27754dae62444a59b3cab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(Exception<sp/>ex)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Console.SetOut(originalConsoleOut);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.WriteLine(</highlight><highlight class="stringliteral">&quot;測試過程中發生未預期的錯誤：&quot;</highlight><highlight class="normal"><sp/>+<sp/>ex.Message);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.WriteLine(ex.StackTrace);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>var<sp/>failActualOutput<sp/>=<sp/>stringWriter.ToString().Trim();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>failActualOutput.Replace(&quot;\r\n&quot;,<sp/>&quot;\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Console.WriteLine(failActualOutput.Replace(&quot;\r\n&quot;,<sp/>&quot;\n&quot;));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111" refid="_program_8cs_1add54dddec4f0266c6fab8d04bf7d9136" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">finally</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Console.WriteLine(stringWriter.ToString().Trim());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.SetOut(<ref refid="_program_8cs_1ab607fb643dcd345c185ea74f1c5d9e95" kindref="member">originalConsoleOut</ref>);<sp/></highlight><highlight class="comment">//<sp/>確保恢復<sp/>Console<sp/>輸出</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" kindref="member">actualOutput</ref><sp/>=<sp/><ref refid="_program_8cs_1af34381d72a18d3094b1c0c79b95efc12" kindref="member">stringWriter</ref>.ToString().Trim();</highlight></codeline>
+<codeline lineno="118" refid="_program_8cs_1a5a69c7f0910fff70fbc3e21af48dfef1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="_program_8cs_1a5a69c7f0910fff70fbc3e21af48dfef1" kindref="member">expectedOutputPath</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;one-punch.out&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="_program_8cs_1aec0eeb87df165117958b59b509c064b8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!File.Exists(<ref refid="_program_8cs_1a5a69c7f0910fff70fbc3e21af48dfef1" kindref="member">expectedOutputPath</ref>))</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.WriteLine($</highlight><highlight class="stringliteral">&quot;找不到預期的輸出檔案：{expectedOutputPath}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/>讀取預期輸出檔案時，也明確指定<sp/>UTF-8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" kindref="member">expectedOutput</ref><sp/>=<sp/>File.ReadAllText(<ref refid="_program_8cs_1a5a69c7f0910fff70fbc3e21af48dfef1" kindref="member">expectedOutputPath</ref>,<sp/>Encoding.UTF8).Trim();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" kindref="member">actualOutput</ref><sp/>=<sp/><ref refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" kindref="member">actualOutput</ref>.Replace(</highlight><highlight class="stringliteral">&quot;\r\n&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><ref refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" kindref="member">expectedOutput</ref><sp/>=<sp/><ref refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" kindref="member">expectedOutput</ref>.Replace(</highlight><highlight class="stringliteral">&quot;\r\n&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="_program_8cs_1a52fe587a1f7a9633c62389382f416843" refkind="member"><highlight class="normal">Console.WriteLine(</highlight><highlight class="stringliteral">&quot;\n---<sp/>比對結果<sp/>---&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133" refid="_program_8cs_1acc2d86a271eaa79265d57926a2341d9f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" kindref="member">actualOutput</ref><sp/>==<sp/><ref refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" kindref="member">expectedOutput</ref>)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.ForegroundColor<sp/>=<sp/>ConsoleColor.Green;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.WriteLine(</highlight><highlight class="stringliteral">&quot;測試通過！<sp/>您的程式輸出與<sp/>one-punch.out<sp/>完全相符！&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.ResetColor();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139" refid="_program_8cs_1a0544c3fe466e421738dae463968b70ba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.ForegroundColor<sp/>=<sp/>ConsoleColor.Red;</highlight></codeline>
+<codeline lineno="142" refid="_program_8cs_1ab8c5bd1c812bf8e0c395e69b7f29cf7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.WriteLine(</highlight><highlight class="stringliteral">&quot;測試失敗！<sp/>您的程式輸出與<sp/>one-punch.out<sp/>不符。&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143" refid="_program_8cs_1ac589af7a996f5fa11504db04470ef9c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.ResetColor();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>將有問題的輸出寫入檔案，以便除錯</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>這裡使用<sp/>File.WriteAllText，它預設就是<sp/>UTF-8，最穩定</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="_program_8cs_1adc0790aa5e973daced543ff5d476de4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>File.WriteAllText(</highlight><highlight class="stringliteral">&quot;my_actual_output.txt&quot;</highlight><highlight class="normal">,<sp/><ref refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" kindref="member">actualOutput</ref>);</highlight></codeline>
+<codeline lineno="148" refid="_program_8cs_1ade839134241b8ba1f86efc61c6a85a5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>File.WriteAllText(</highlight><highlight class="stringliteral">&quot;expected_output.txt&quot;</highlight><highlight class="normal">,<sp/><ref refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" kindref="member">expectedOutput</ref>);</highlight></codeline>
+<codeline lineno="149" refid="_program_8cs_1ad776d400429d948391e9684898183139" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.WriteLine(</highlight><highlight class="stringliteral">&quot;\n詳細的差異已寫入<sp/>my_actual_output.txt<sp/>和<sp/>expected_output.txt<sp/>以便比對。&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="150" refid="_program_8cs_1a4b82010092585b4bbb91c02d8117ef77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Console.WriteLine(</highlight><highlight class="stringliteral">&quot;請使用<sp/>VS<sp/>Code<sp/>的檔案比對功能來查看這兩個檔案的差異。&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs"/>
+  </compounddef>
+</doxygen>

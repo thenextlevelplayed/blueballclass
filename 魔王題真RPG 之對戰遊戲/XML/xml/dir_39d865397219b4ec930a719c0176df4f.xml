@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_39d865397219b4ec930a719c0176df4f" kind="dir">
+    <compoundname>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status</compoundname>
+    <innerfile refid="_status_2_cheer_up_8cs">CheerUp.cs</innerfile>
+    <innerfile refid="_normal_8cs">Normal.cs</innerfile>
+    <innerfile refid="_status_2_petrochemical_8cs">Petrochemical.cs</innerfile>
+    <innerfile refid="_poisoned_8cs">Poisoned.cs</innerfile>
+    <innerfile refid="_state_8cs">State.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/"/>
+  </compounddef>
+</doxygen>

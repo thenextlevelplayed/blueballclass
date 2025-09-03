@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="interface_r_p_g_1_1_command_1_1_i_command" kind="interface" language="C#" prot="public">
+    <compoundname>RPG::Command::ICommand</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="interface_r_p_g_1_1_command_1_1_i_command_1a88e83658b8353913e76de2164f198bd6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_r_p_g_1_1_action_option_1_1_i_action_option" kindref="compound">IActionOption</ref></type>
+        <definition>IActionOption RPG.Command.ICommand.ActionOption</definition>
+        <argsstring></argsstring>
+        <name>ActionOption</name>
+        <qualifiedname>RPG.Command.ICommand.ActionOption</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command/ICommand.cs" line="7" column="19" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command/ICommand.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_p_g_1_1_command_1_1_i_command_1af4681030716128496df202c412be8a1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.Command.ICommand.Execute</definition>
+        <argsstring>(List&lt; Role &gt; targets)</argsstring>
+        <name>Execute</name>
+        <qualifiedname>RPG.Command.ICommand.Execute</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>targets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command/ICommand.cs" line="8" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command/ICommand.cs" line="5" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command/ICommand.cs" bodystart="6" bodyend="9"/>
+    <listofallmembers>
+      <member refid="interface_r_p_g_1_1_command_1_1_i_command_1a88e83658b8353913e76de2164f198bd6" prot="public" virt="non-virtual"><scope>RPG::Command::ICommand</scope><name>ActionOption</name></member>
+      <member refid="interface_r_p_g_1_1_command_1_1_i_command_1af4681030716128496df202c412be8a1a" prot="public" virt="non-virtual"><scope>RPG::Command::ICommand</scope><name>Execute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

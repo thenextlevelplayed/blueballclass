@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespace_r_p_g" kind="namespace" language="C#">
+    <compoundname>RPG</compoundname>
+    <innerclass refid="class_r_p_g_1_1_a_i" prot="public">RPG::AI</innerclass>
+    <innerclass refid="class_r_p_g_1_1_hero" prot="public">RPG::Hero</innerclass>
+    <innerclass refid="class_r_p_g_1_1_role" prot="public">RPG::Role</innerclass>
+    <innerclass refid="class_r_p_g_1_1_rpg" prot="public">RPG::Rpg</innerclass>
+    <innerclass refid="class_r_p_g_1_1_target_condition" prot="public">RPG::TargetCondition</innerclass>
+    <innerclass refid="class_r_p_g_1_1_troop" prot="public">RPG::Troop</innerclass>
+    <innerclass refid="class_r_p_g_1_1_troop_relation" prot="public">RPG::TroopRelation</innerclass>
+    <innernamespace refid="namespace_r_p_g_1_1_action_option">RPG::ActionOption</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_command">RPG::Command</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_command_handler">RPG::CommandHandler</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_enum">RPG::Enum</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_observer">RPG::Observer</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_status">RPG::Status</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_r_p_g_1acb812e08296199a6217dc85070f3c9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class RPG.SpellcasterAndTheCursed</definition>
+        <argsstring>(Role caster, Role victim)</argsstring>
+        <name>SpellcasterAndTheCursed</name>
+        <qualifiedname>RPG.SpellcasterAndTheCursed</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>caster</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>victim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/SpellcasterAndTheCursed.cs" line="3" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/SpellcasterAndTheCursed.cs" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_r_p_g_1a2014f857687604e92791db02f638651a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class RPG.SummonerAndSummon</definition>
+        <argsstring>(Role summoner, Role summoned)</argsstring>
+        <name>SummonerAndSummon</name>
+        <qualifiedname>RPG.SummonerAndSummon</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>summoner</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>summoned</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/SummonerAndSummon.cs" line="3" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/SummonerAndSummon.cs" bodystart="3" bodyend="7"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

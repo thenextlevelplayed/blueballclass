@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_1b9ded9a3f43be362be8a3df38516e4d" kind="dir">
+    <compoundname>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer</compoundname>
+    <innerfile refid="_curse_buff_8cs">CurseBuff.cs</innerfile>
+    <innerfile refid="_i_observer_8cs">IObserver.cs</innerfile>
+    <innerfile refid="_summon_buff_8cs">SummonBuff.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer/"/>
+  </compounddef>
+</doxygen>

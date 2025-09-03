@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespace_r_p_g_1_1_command_handler" kind="namespace" language="C#">
+    <compoundname>RPG::CommandHandler</compoundname>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler" prot="public">RPG::CommandHandler::AbstractCommandHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler" prot="public">RPG::CommandHandler::CheerUpHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_curse_handler" prot="public">RPG::CommandHandler::CurseHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_fire_ball_handler" prot="public">RPG::CommandHandler::FireBallHandler</innerclass>
+    <innerclass refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" prot="public">RPG::CommandHandler::ICommandHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_one_punch_handler" prot="public">RPG::CommandHandler::OnePunchHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_petrochemical_handler" prot="public">RPG::CommandHandler::PetrochemicalHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_poison_handler" prot="public">RPG::CommandHandler::PoisonHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_self_explosion_handler" prot="public">RPG::CommandHandler::SelfExplosionHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_self_healing_handler" prot="public">RPG::CommandHandler::SelfHealingHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_summon_handler" prot="public">RPG::CommandHandler::SummonHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_unknown_skill_handler" prot="public">RPG::CommandHandler::UnknownSkillHandler</innerclass>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_water_ball_handler" prot="public">RPG::CommandHandler::WaterBallHandler</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/AbstractCommandHandler.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

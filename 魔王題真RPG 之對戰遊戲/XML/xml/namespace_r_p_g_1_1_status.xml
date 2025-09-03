@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespace_r_p_g_1_1_status" kind="namespace" language="C#">
+    <compoundname>RPG::Status</compoundname>
+    <innerclass refid="class_r_p_g_1_1_status_1_1_cheer_up" prot="public">RPG::Status::CheerUp</innerclass>
+    <innerclass refid="class_r_p_g_1_1_status_1_1_normal" prot="public">RPG::Status::Normal</innerclass>
+    <innerclass refid="class_r_p_g_1_1_status_1_1_petrochemical" prot="public">RPG::Status::Petrochemical</innerclass>
+    <innerclass refid="class_r_p_g_1_1_status_1_1_poisoned" prot="public">RPG::Status::Poisoned</innerclass>
+    <innerclass refid="class_r_p_g_1_1_status_1_1_state" prot="public">RPG::Status::State</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

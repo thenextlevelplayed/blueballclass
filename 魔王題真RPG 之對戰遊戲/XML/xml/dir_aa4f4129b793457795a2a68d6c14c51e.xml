@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_aa4f4129b793457795a2a68d6c14c51e" kind="dir">
+    <compoundname>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption</compoundname>
+    <innerfile refid="_basic_attack_8cs">BasicAttack.cs</innerfile>
+    <innerfile refid="_action_option_2_cheer_up_8cs">CheerUp.cs</innerfile>
+    <innerfile refid="_curse_8cs">Curse.cs</innerfile>
+    <innerfile refid="_fire_ball_8cs">FireBall.cs</innerfile>
+    <innerfile refid="_i_action_option_8cs">IActionOption.cs</innerfile>
+    <innerfile refid="_one_punch_8cs">OnePunch.cs</innerfile>
+    <innerfile refid="_action_option_2_petrochemical_8cs">Petrochemical.cs</innerfile>
+    <innerfile refid="_poison_8cs">Poison.cs</innerfile>
+    <innerfile refid="_self_explosion_8cs">SelfExplosion.cs</innerfile>
+    <innerfile refid="_self_healing_8cs">SelfHealing.cs</innerfile>
+    <innerfile refid="_skill_8cs">Skill.cs</innerfile>
+    <innerfile refid="_summon_8cs">Summon.cs</innerfile>
+    <innerfile refid="_water_ball_8cs">WaterBall.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/"/>
+  </compounddef>
+</doxygen>

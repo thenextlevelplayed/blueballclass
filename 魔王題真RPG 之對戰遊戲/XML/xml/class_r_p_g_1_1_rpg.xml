@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_rpg" kind="class" language="C#" prot="public">
+    <compoundname>RPG::Rpg</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_p_g_1_1_rpg_1a553e4a1c68e5f84c5e9febf878f51abf" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+        <definition>readonly Troop RPG.Rpg._t1</definition>
+        <argsstring></argsstring>
+        <name>_t1</name>
+        <qualifiedname>RPG.Rpg._t1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="7" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_p_g_1_1_rpg_1a85c7e5a93767f37a3626e7d4b42a309c" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+        <definition>readonly Troop RPG.Rpg._t2</definition>
+        <argsstring></argsstring>
+        <name>_t2</name>
+        <qualifiedname>RPG.Rpg._t2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="8" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_p_g_1_1_rpg_1a535e5dcaf66c46e51fa66953d8b041fc" prot="private" static="no" mutable="no">
+        <type>readonly Queue&lt; string &gt;</type>
+        <definition>readonly Queue&lt;string&gt; RPG.Rpg._inputQueue</definition>
+        <argsstring></argsstring>
+        <name>_inputQueue</name>
+        <qualifiedname>RPG.Rpg._inputQueue</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="9" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1a11805b594afaba707e5d70dd636c03ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.Rpg.Rpg</definition>
+        <argsstring>(Troop t1, Troop t2, IEnumerable&lt; string &gt; inputs)</argsstring>
+        <name>Rpg</name>
+        <qualifiedname>RPG.Rpg.Rpg</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+          <declname>t2</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; string &gt;</type>
+          <declname>inputs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="11" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="11" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1a9744850306bb38ca1302ddee659a7b77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.Rpg.Battle</definition>
+        <argsstring>()</argsstring>
+        <name>Battle</name>
+        <qualifiedname>RPG.Rpg.Battle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="51" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="51" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1acf7cecba6b7bb3a13cac2fe084749e46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.Rpg.UpdateTroop</definition>
+        <argsstring>(Troop troop)</argsstring>
+        <name>UpdateTroop</name>
+        <qualifiedname>RPG.Rpg.UpdateTroop</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+          <declname>troop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="91" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="91" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1a44113a0abb5161070af9942d40b44752" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string RPG.Rpg.ReadInput</definition>
+        <argsstring>()</argsstring>
+        <name>ReadInput</name>
+        <qualifiedname>RPG.Rpg.ReadInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="105" column="19" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="105" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1a642afc02f701038c3d0c572806d4d5da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RPG.Rpg.ProcessTurn</definition>
+        <argsstring>(Troop actingTroop, Troop opposingTroop)</argsstring>
+        <name>ProcessTurn</name>
+        <qualifiedname>RPG.Rpg.ProcessTurn</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+          <declname>actingTroop</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+          <declname>opposingTroop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="20" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="20" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1ad9cdbc107c80014fe52853b0c129054b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RPG.Rpg.Annihilate</definition>
+        <argsstring>(Troop troop)</argsstring>
+        <name>Annihilate</name>
+        <qualifiedname>RPG.Rpg.Annihilate</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+          <declname>troop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="71" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1a05803d24e00d0c10bd6c810e21b32c31" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_r_p_g_1_1_command_1_1_i_command" kindref="compound">ICommand</ref></type>
+        <definition>ICommand RPG.Rpg.TemplateS1</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>TemplateS1</name>
+        <qualifiedname>RPG.Rpg.TemplateS1</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="76" column="22" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1ab0290be938b707d0af24a0a91287a590" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+        <definition>List&lt; Role &gt; RPG.Rpg.TemplateS2</definition>
+        <argsstring>(Role role, ICommand s1)</argsstring>
+        <name>TemplateS2</name>
+        <qualifiedname>RPG.Rpg.TemplateS2</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_r_p_g_1_1_command_1_1_i_command" kindref="compound">ICommand</ref></type>
+          <declname>s1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="81" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_rpg_1ace2950bea93d06ba5f75f6e6b1885556" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.Rpg.S3</definition>
+        <argsstring>(Role role, ICommand command, List&lt; Role &gt; roles)</argsstring>
+        <name>S3</name>
+        <qualifiedname>RPG.Rpg.S3</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_r_p_g_1_1_command_1_1_i_command" kindref="compound">ICommand</ref></type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="86" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="86" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" line="5" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Rpg.cs" bodystart="6" bodyend="111"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_rpg_1a535e5dcaf66c46e51fa66953d8b041fc" prot="private" virt="non-virtual"><scope>RPG::Rpg</scope><name>_inputQueue</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1a553e4a1c68e5f84c5e9febf878f51abf" prot="private" virt="non-virtual"><scope>RPG::Rpg</scope><name>_t1</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1a85c7e5a93767f37a3626e7d4b42a309c" prot="private" virt="non-virtual"><scope>RPG::Rpg</scope><name>_t2</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1ad9cdbc107c80014fe52853b0c129054b" prot="private" virt="non-virtual"><scope>RPG::Rpg</scope><name>Annihilate</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1a9744850306bb38ca1302ddee659a7b77" prot="public" virt="non-virtual"><scope>RPG::Rpg</scope><name>Battle</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1a642afc02f701038c3d0c572806d4d5da" prot="private" virt="non-virtual"><scope>RPG::Rpg</scope><name>ProcessTurn</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1a44113a0abb5161070af9942d40b44752" prot="public" virt="non-virtual"><scope>RPG::Rpg</scope><name>ReadInput</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1a11805b594afaba707e5d70dd636c03ed" prot="public" virt="non-virtual"><scope>RPG::Rpg</scope><name>Rpg</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1ace2950bea93d06ba5f75f6e6b1885556" prot="private" virt="non-virtual"><scope>RPG::Rpg</scope><name>S3</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1a05803d24e00d0c10bd6c810e21b32c31" prot="private" virt="non-virtual"><scope>RPG::Rpg</scope><name>TemplateS1</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1ab0290be938b707d0af24a0a91287a590" prot="private" virt="non-virtual"><scope>RPG::Rpg</scope><name>TemplateS2</name></member>
+      <member refid="class_r_p_g_1_1_rpg_1acf7cecba6b7bb3a13cac2fe084749e46" prot="public" virt="non-virtual"><scope>RPG::Rpg</scope><name>UpdateTroop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

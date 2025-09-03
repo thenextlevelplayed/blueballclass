@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_i_command_handler_8cs" kind="file" language="C#">
+    <compoundname>ICommandHandler.cs</compoundname>
+    <innerclass refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" prot="public">RPG::CommandHandler::ICommandHandler</innerclass>
+    <innernamespace refid="namespace_r_p_g">RPG</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_command_handler">RPG::CommandHandler</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_command_handler" kindref="compound">RPG.CommandHandler</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aece9138a4a9c06c42bfd4303bc5b4b73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref><sp/><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aece9138a4a9c06c42bfd4303bc5b4b73" kindref="member">SetNext</ref>(<ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref><sp/>handler);</highlight></codeline>
+<codeline lineno="6" refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aa36b6f0b9cdaff2a5c43929ac16188fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aa36b6f0b9cdaff2a5c43929ac16188fc" kindref="member">Handle</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>skillName,<sp/><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref><sp/>role);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/ICommandHandler.cs"/>
+  </compounddef>
+</doxygen>

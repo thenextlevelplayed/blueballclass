@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_70dad567353b4c30c8a228c0d7525ee7" kind="dir">
+    <compoundname>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role</compoundname>
+    <innerfile refid="_a_i_8cs">AI.cs</innerfile>
+    <innerfile refid="_hero_8cs">Hero.cs</innerfile>
+    <innerfile refid="_role_8cs">Role.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/"/>
+  </compounddef>
+</doxygen>

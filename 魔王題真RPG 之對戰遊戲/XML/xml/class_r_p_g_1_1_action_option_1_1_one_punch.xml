@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_action_option_1_1_one_punch" kind="class" language="C#" prot="public">
+    <compoundname>RPG::ActionOption::OnePunch</compoundname>
+    <basecompoundref refid="class_r_p_g_1_1_action_option_1_1_skill" prot="public" virt="non-virtual">RPG.ActionOption.Skill</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_one_punch_1ae7254a01e156a5c8353017f056bc07a1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int RPG.ActionOption.OnePunch.Mp</definition>
+        <argsstring></argsstring>
+        <name>Mp</name>
+        <qualifiedname>RPG.ActionOption.OnePunch.Mp</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ad0b3112979ce41a4e61bf75443db3636">Mp</reimplements>
+        <initializer>= 180</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" line="12" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_one_punch_1a8e245e9d01133e61976024f5bec7bb8f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int RPG.ActionOption.OnePunch.Str</definition>
+        <argsstring></argsstring>
+        <name>Str</name>
+        <qualifiedname>RPG.ActionOption.OnePunch.Str</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a129d1f1c7b2ff5f052c4455fcd2a9400">Str</reimplements>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" line="13" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_one_punch_1a9cbb85db818b04770020a1aa4d857684" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override <ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref></type>
+        <definition>override TargetCondition RPG.ActionOption.OnePunch.TargetCondition</definition>
+        <argsstring></argsstring>
+        <name>TargetCondition</name>
+        <qualifiedname>RPG.ActionOption.OnePunch.TargetCondition</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a983e6056c7e2265932ec7dae55530724">TargetCondition</reimplements>
+        <initializer>= new <ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref>(TargetRelation.Enemy, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" line="20" column="37" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_one_punch_1a32da817ceee259a0272c0cb0edbf85c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.ActionOption.OnePunch.OnePunch</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>OnePunch</name>
+        <qualifiedname>RPG.ActionOption.OnePunch.OnePunch</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" line="8" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_one_punch_1a493736c333e6f685d49501ee48462ff1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string RPG.ActionOption.OnePunch.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>RPG.ActionOption.OnePunch.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" line="60" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" bodystart="60" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_one_punch_1a330e2c98d7f18979a522184ab0518f89" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override? <ref refid="class_r_p_g_1_1_status_1_1_state" kindref="compound">State</ref></type>
+        <definition>override? State RPG.ActionOption.OnePunch.GetState</definition>
+        <argsstring>(Role target)</argsstring>
+        <name>GetState</name>
+        <qualifiedname>RPG.ActionOption.OnePunch.GetState</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" line="15" column="30" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_one_punch_1af20f8236f9b298e9ca268c3623876b27" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RPG.ActionOption.OnePunch.ActionHook</definition>
+        <argsstring>(List&lt; Role &gt; roles)</argsstring>
+        <name>ActionHook</name>
+        <qualifiedname>RPG.ActionOption.OnePunch.ActionHook</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" line="22" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" bodystart="22" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.ActionOption.OnePunch</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_one_punch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.Skill</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_skill"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.ActionOption.OnePunch</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_one_punch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.Skill</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_skill"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" line="6" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/OnePunch.cs" bodystart="7" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1af20f8236f9b298e9ca268c3623876b27" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>ActionHook</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1af2ea2f635a52b3814d0f8bb47f1bfea5" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>Attack</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a18923154ab1b2d549ddffdab1ee36843" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>ChangeState</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1ac8a5df8514d38f338126365c93946203" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>DoAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a330e2c98d7f18979a522184ab0518f89" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>GetState</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a999e152e3ea87f9bc2d16efa741d409c" prot="protected" virt="virtual"><scope>RPG::ActionOption::OnePunch</scope><name>LogAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1ae7254a01e156a5c8353017f056bc07a1" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>Mp</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a32da817ceee259a0272c0cb0edbf85c5" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>OnePunch</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a52bcbe7b2a780fca61253e441c9ea67a" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>PassS2</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a12e5686d34e37cb56ca9ae25e309131c" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a8dae8c99eb91108d130b0a51436bab37" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>Skill</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a8e245e9d01133e61976024f5bec7bb8f" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>Str</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a9cbb85db818b04770020a1aa4d857684" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>TargetCondition</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a493736c333e6f685d49501ee48462ff1" prot="public" virt="non-virtual"><scope>RPG::ActionOption::OnePunch</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

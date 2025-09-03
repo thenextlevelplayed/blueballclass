@@ -1,0 +1,318 @@
+\doxysection{D\+:/新增資料夾/blueballclass/魔王題：真・\+RPG 之對戰遊戲/\+RPG/\+Program.cs File Reference}
+\hypertarget{_program_8cs}{}\label{_program_8cs}\index{D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs@{D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Program.cs}}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{_program_8cs_af34381d72a18d3094b1c0c79b95efc12}{string\+Writer}} = new String\+Writer()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_program_8cs_a40407f674a9a2083220a649e634cd693}{if}} (!File.\+Exists(\mbox{\hyperlink{_program_8cs_a587987c6126244cdb7d6fdaa538f85fc}{input\+Path}}))
+\item 
+\mbox{\hyperlink{_program_8cs_a67cc60453fdd62450608a4a68d69f533}{foreach}} (var line in \mbox{\hyperlink{_program_8cs_a45baea0008353ce1cf0e59a89e02dfec}{lines}})
+\item 
+Troop. \mbox{\hyperlink{_program_8cs_a6b50e10a377e2763d7210054bf328458}{Set\+Relation}} (\mbox{\hyperlink{_program_8cs_a39dc3eb42017896a8723ac778ff3f054}{troop1}}, \mbox{\hyperlink{_program_8cs_a91d04dc1bda79bc36acbebb48cac4d38}{troop2}})
+\item 
+Console. \mbox{\hyperlink{_program_8cs_af7587ed3e5462b7b4d0067bdf24949d7}{Write\+Line}} ("{}-\/-\/-\/ 準備進行輸出比對測試 -\/-\/-\/"{})
+\item 
+Console. \mbox{\hyperlink{_program_8cs_abe3c66b02b445f1d565a1d517138e013}{Set\+Out}} (\mbox{\hyperlink{_program_8cs_af34381d72a18d3094b1c0c79b95efc12}{string\+Writer}})
+\item 
+\mbox{\hyperlink{_program_8cs_ab43e01d035a27754dae62444a59b3cab}{catch}} (Exception ex)
+\item 
+\mbox{\hyperlink{_program_8cs_aec0eeb87df165117958b59b509c064b8}{if}} (!File.\+Exists(\mbox{\hyperlink{_program_8cs_a5a69c7f0910fff70fbc3e21af48dfef1}{expected\+Output\+Path}}))
+\item 
+Console. \mbox{\hyperlink{_program_8cs_a52fe587a1f7a9633c62389382f416843}{Write\+Line}} ("{}\textbackslash{}n-\/-\/-\/ 比對結果 -\/-\/-\/"{})
+\item 
+\mbox{\hyperlink{_program_8cs_acc2d86a271eaa79265d57926a2341d9f}{if}} (\mbox{\hyperlink{_program_8cs_a8a7d32d937c29440d6081a67c617b57d}{actual\+Output}}==\mbox{\hyperlink{_program_8cs_a36466f5e7c5f726704c8c06afc761d60}{expected\+Output}})
+\item 
+Console. \mbox{\hyperlink{_program_8cs_ab8c5bd1c812bf8e0c395e69b7f29cf7d}{Write\+Line}} ("{}測試失敗！ 您的程式輸出與 one-\/punch.\+out 不符。"{})
+\item 
+Console. \mbox{\hyperlink{_program_8cs_ac589af7a996f5fa11504db04470ef9c6}{Reset\+Color}} ()
+\item 
+File. \mbox{\hyperlink{_program_8cs_adc0790aa5e973daced543ff5d476de4e}{Write\+All\+Text}} ("{}my\+\_\+actual\+\_\+output.\+txt"{}, \mbox{\hyperlink{_program_8cs_a8a7d32d937c29440d6081a67c617b57d}{actual\+Output}})
+\item 
+File. \mbox{\hyperlink{_program_8cs_ade839134241b8ba1f86efc61c6a85a5b}{Write\+All\+Text}} ("{}expected\+\_\+output.\+txt"{}, \mbox{\hyperlink{_program_8cs_a36466f5e7c5f726704c8c06afc761d60}{expected\+Output}})
+\item 
+Console. \mbox{\hyperlink{_program_8cs_ad776d400429d948391e9684898183139}{Write\+Line}} ("{}\textbackslash{}n詳細的差異已寫入 my\+\_\+actual\+\_\+output.\+txt 和 expected\+\_\+output.\+txt 以便比對。"{})
+\item 
+Console. \mbox{\hyperlink{_program_8cs_a4b82010092585b4bbb91c02d8117ef77}{Write\+Line}} ("{}請使用 VS Code 的檔案比對功能來查看這兩個檔案的差異。"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Console. \mbox{\hyperlink{_program_8cs_a349d39ecb8cf69b92f64f23775abc311}{Output\+Encoding}} = System.\+Text.\+Encoding.\+UTF8
+\item 
+string \mbox{\hyperlink{_program_8cs_a587987c6126244cdb7d6fdaa538f85fc}{input\+Path}} = "{}one-\/punch.\+in"{}
+\item 
+var \mbox{\hyperlink{_program_8cs_a71fc41fe794af7bb443f905e7921750e}{army1\+Roles}} = new List$<$Role$>$()
+\item 
+var \mbox{\hyperlink{_program_8cs_a3b2331f0590e817e483129f1c36c890a}{army2\+Roles}} = new List$<$Role$>$()
+\item 
+int \mbox{\hyperlink{_program_8cs_a1aabd8cde0032e50e8530c1d763b6916}{current\+Army\+Flag}} = 0
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{_program_8cs_a45baea0008353ce1cf0e59a89e02dfec}{lines}} = File.\+Read\+All\+Lines(\mbox{\hyperlink{_program_8cs_a587987c6126244cdb7d6fdaa538f85fc}{input\+Path}})
+\item 
+var \mbox{\hyperlink{_program_8cs_a39dc3eb42017896a8723ac778ff3f054}{troop1}} = new \mbox{\hyperlink{class_r_p_g_1_1_troop}{Troop}}(\mbox{\hyperlink{_program_8cs_a71fc41fe794af7bb443f905e7921750e}{army1\+Roles}})
+\item 
+var \mbox{\hyperlink{_program_8cs_a91d04dc1bda79bc36acbebb48cac4d38}{troop2}} = new \mbox{\hyperlink{class_r_p_g_1_1_troop}{Troop}}(\mbox{\hyperlink{_program_8cs_a3b2331f0590e817e483129f1c36c890a}{army2\+Roles}})
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{_program_8cs_a5d481374df5d64bd49477079d8717462}{extra\+Inputs}}
+\item 
+var \mbox{\hyperlink{_program_8cs_a2fb8e8d0781d256e8e61c487f4307655}{rpg}} = new \mbox{\hyperlink{class_r_p_g_1_1_rpg}{RPG.\+Rpg}}(\mbox{\hyperlink{_program_8cs_a39dc3eb42017896a8723ac778ff3f054}{troop1}}, \mbox{\hyperlink{_program_8cs_a91d04dc1bda79bc36acbebb48cac4d38}{troop2}}, \mbox{\hyperlink{_program_8cs_a5d481374df5d64bd49477079d8717462}{extra\+Inputs}})
+\item 
+Text\+Writer \mbox{\hyperlink{_program_8cs_ab607fb643dcd345c185ea74f1c5d9e95}{original\+Console\+Out}} = Console.\+Out
+\item 
+\mbox{\hyperlink{_program_8cs_abe4cc9788f52e49485473dc699537388}{try}}
+\item 
+\mbox{\hyperlink{_program_8cs_add54dddec4f0266c6fab8d04bf7d9136}{finally}}
+\item 
+string \mbox{\hyperlink{_program_8cs_a8a7d32d937c29440d6081a67c617b57d}{actual\+Output}} = string\+Writer.\+To\+String().Trim()
+\item 
+string \mbox{\hyperlink{_program_8cs_a5a69c7f0910fff70fbc3e21af48dfef1}{expected\+Output\+Path}} = "{}one-\/punch.\+out"{}
+\item 
+string \mbox{\hyperlink{_program_8cs_a36466f5e7c5f726704c8c06afc761d60}{expected\+Output}} = File.\+Read\+All\+Text(\mbox{\hyperlink{_program_8cs_a5a69c7f0910fff70fbc3e21af48dfef1}{expected\+Output\+Path}}, Encoding.\+UTF8).Trim()
+\item 
+\mbox{\hyperlink{_program_8cs_a0544c3fe466e421738dae463968b70ba}{else}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-typedef-members}
+\Hypertarget{_program_8cs_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_program_8cs_af34381d72a18d3094b1c0c79b95efc12}\index{Program.cs@{Program.cs}!stringWriter@{stringWriter}}
+\index{stringWriter@{stringWriter}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{stringWriter}{stringWriter}}
+{\footnotesize\ttfamily \label{_program_8cs_af34381d72a18d3094b1c0c79b95efc12} 
+using \mbox{\hyperlink{_program_8cs_af34381d72a18d3094b1c0c79b95efc12}{string\+Writer}} = new String\+Writer()}
+
+
+
+\label{doc-func-members}
+\Hypertarget{_program_8cs_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_program_8cs_ab43e01d035a27754dae62444a59b3cab}\index{Program.cs@{Program.cs}!catch@{catch}}
+\index{catch@{catch}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{catch()}{catch()}}
+{\footnotesize\ttfamily \label{_program_8cs_ab43e01d035a27754dae62444a59b3cab} 
+catch (\begin{DoxyParamCaption}\item[{Exception}]{ex}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a67cc60453fdd62450608a4a68d69f533}\index{Program.cs@{Program.cs}!foreach@{foreach}}
+\index{foreach@{foreach}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{foreach()}{foreach()}}
+{\footnotesize\ttfamily \label{_program_8cs_a67cc60453fdd62450608a4a68d69f533} 
+foreach (\begin{DoxyParamCaption}\item[{var line in}]{lines}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aec0eeb87df165117958b59b509c064b8}\index{Program.cs@{Program.cs}!if@{if}}
+\index{if@{if}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{_program_8cs_aec0eeb87df165117958b59b509c064b8} 
+if (\begin{DoxyParamCaption}\item[{!}]{File\+::\+Exists}{expected\+Output\+Path}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a40407f674a9a2083220a649e634cd693}\index{Program.cs@{Program.cs}!if@{if}}
+\index{if@{if}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{_program_8cs_a40407f674a9a2083220a649e634cd693} 
+if (\begin{DoxyParamCaption}\item[{!}]{File\+::\+Exists}{input\+Path}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_acc2d86a271eaa79265d57926a2341d9f}\index{Program.cs@{Program.cs}!if@{if}}
+\index{if@{if}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{_program_8cs_acc2d86a271eaa79265d57926a2341d9f} 
+if (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_program_8cs_a8a7d32d937c29440d6081a67c617b57d}{actual\+Output}}}]{}{ = {\ttfamily =~\mbox{\hyperlink{_program_8cs_a36466f5e7c5f726704c8c06afc761d60}{expected\+Output}}}}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ac589af7a996f5fa11504db04470ef9c6}\index{Program.cs@{Program.cs}!ResetColor@{ResetColor}}
+\index{ResetColor@{ResetColor}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{ResetColor()}{ResetColor()}}
+{\footnotesize\ttfamily \label{_program_8cs_ac589af7a996f5fa11504db04470ef9c6} 
+Console. Reset\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_abe3c66b02b445f1d565a1d517138e013}\index{Program.cs@{Program.cs}!SetOut@{SetOut}}
+\index{SetOut@{SetOut}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{SetOut()}{SetOut()}}
+{\footnotesize\ttfamily \label{_program_8cs_abe3c66b02b445f1d565a1d517138e013} 
+Console. Set\+Out (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_program_8cs_af34381d72a18d3094b1c0c79b95efc12}{string\+Writer}}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a6b50e10a377e2763d7210054bf328458}\index{Program.cs@{Program.cs}!SetRelation@{SetRelation}}
+\index{SetRelation@{SetRelation}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{SetRelation()}{SetRelation()}}
+{\footnotesize\ttfamily \label{_program_8cs_a6b50e10a377e2763d7210054bf328458} 
+Troop. Set\+Relation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_program_8cs_a39dc3eb42017896a8723ac778ff3f054}{troop1}}}]{}{, }\item[{\mbox{\hyperlink{_program_8cs_a91d04dc1bda79bc36acbebb48cac4d38}{troop2}}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ade839134241b8ba1f86efc61c6a85a5b}\index{Program.cs@{Program.cs}!WriteAllText@{WriteAllText}}
+\index{WriteAllText@{WriteAllText}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{WriteAllText()}{WriteAllText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{_program_8cs_ade839134241b8ba1f86efc61c6a85a5b} 
+File. Write\+All\+Text (\begin{DoxyParamCaption}\item[{"{}expected\+\_\+output.\+txt"{}}]{}{, }\item[{\mbox{\hyperlink{_program_8cs_a36466f5e7c5f726704c8c06afc761d60}{expected\+Output}}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_adc0790aa5e973daced543ff5d476de4e}\index{Program.cs@{Program.cs}!WriteAllText@{WriteAllText}}
+\index{WriteAllText@{WriteAllText}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{WriteAllText()}{WriteAllText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{_program_8cs_adc0790aa5e973daced543ff5d476de4e} 
+File. Write\+All\+Text (\begin{DoxyParamCaption}\item[{"{}my\+\_\+actual\+\_\+output.\+txt"{}}]{}{, }\item[{\mbox{\hyperlink{_program_8cs_a8a7d32d937c29440d6081a67c617b57d}{actual\+Output}}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ab8c5bd1c812bf8e0c395e69b7f29cf7d}\index{Program.cs@{Program.cs}!WriteLine@{WriteLine}}
+\index{WriteLine@{WriteLine}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{WriteLine()}{WriteLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{_program_8cs_ab8c5bd1c812bf8e0c395e69b7f29cf7d} 
+Console. Write\+Line (\begin{DoxyParamCaption}\item[{"{}測試失敗！ 您的程式輸出與 one-\/punch.\+out 不符。"{}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a4b82010092585b4bbb91c02d8117ef77}\index{Program.cs@{Program.cs}!WriteLine@{WriteLine}}
+\index{WriteLine@{WriteLine}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{WriteLine()}{WriteLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{_program_8cs_a4b82010092585b4bbb91c02d8117ef77} 
+Console. Write\+Line (\begin{DoxyParamCaption}\item[{"{}請使用 VS Code 的檔案比對功能來查看這兩個檔案的差異。"{}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_af7587ed3e5462b7b4d0067bdf24949d7}\index{Program.cs@{Program.cs}!WriteLine@{WriteLine}}
+\index{WriteLine@{WriteLine}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{WriteLine()}{WriteLine()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{_program_8cs_af7587ed3e5462b7b4d0067bdf24949d7} 
+Console. Write\+Line (\begin{DoxyParamCaption}\item[{"{}-\/-\/-\/ 準備進行輸出比對測試 -\/-\/-\/"{}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ad776d400429d948391e9684898183139}\index{Program.cs@{Program.cs}!WriteLine@{WriteLine}}
+\index{WriteLine@{WriteLine}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{WriteLine()}{WriteLine()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{_program_8cs_ad776d400429d948391e9684898183139} 
+Console. Write\+Line (\begin{DoxyParamCaption}\item[{"{}\textbackslash{}n詳細的差異已寫入 my\+\_\+actual\+\_\+output.\+txt 和 expected\+\_\+output.\+txt 以便比對。"{}}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a52fe587a1f7a9633c62389382f416843}\index{Program.cs@{Program.cs}!WriteLine@{WriteLine}}
+\index{WriteLine@{WriteLine}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{WriteLine()}{WriteLine()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{_program_8cs_a52fe587a1f7a9633c62389382f416843} 
+Console. Write\+Line (\begin{DoxyParamCaption}\item[{"{}\textbackslash{}n-\/-\/-\/ 比對結果 -\/-\/-\/"{}}]{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{_program_8cs_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_program_8cs_a8a7d32d937c29440d6081a67c617b57d}\index{Program.cs@{Program.cs}!actualOutput@{actualOutput}}
+\index{actualOutput@{actualOutput}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{actualOutput}{actualOutput}}
+{\footnotesize\ttfamily \label{_program_8cs_a8a7d32d937c29440d6081a67c617b57d} 
+actual\+Output = string\+Writer.\+To\+String().Trim()}
+
+\Hypertarget{_program_8cs_a71fc41fe794af7bb443f905e7921750e}\index{Program.cs@{Program.cs}!army1Roles@{army1Roles}}
+\index{army1Roles@{army1Roles}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{army1Roles}{army1Roles}}
+{\footnotesize\ttfamily \label{_program_8cs_a71fc41fe794af7bb443f905e7921750e} 
+var army1\+Roles = new List$<$Role$>$()}
+
+\Hypertarget{_program_8cs_a3b2331f0590e817e483129f1c36c890a}\index{Program.cs@{Program.cs}!army2Roles@{army2Roles}}
+\index{army2Roles@{army2Roles}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{army2Roles}{army2Roles}}
+{\footnotesize\ttfamily \label{_program_8cs_a3b2331f0590e817e483129f1c36c890a} 
+var army2\+Roles = new List$<$Role$>$()}
+
+\Hypertarget{_program_8cs_a1aabd8cde0032e50e8530c1d763b6916}\index{Program.cs@{Program.cs}!currentArmyFlag@{currentArmyFlag}}
+\index{currentArmyFlag@{currentArmyFlag}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{currentArmyFlag}{currentArmyFlag}}
+{\footnotesize\ttfamily \label{_program_8cs_a1aabd8cde0032e50e8530c1d763b6916} 
+int current\+Army\+Flag = 0}
+
+\Hypertarget{_program_8cs_a0544c3fe466e421738dae463968b70ba}\index{Program.cs@{Program.cs}!else@{else}}
+\index{else@{else}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \label{_program_8cs_a0544c3fe466e421738dae463968b70ba} 
+else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ Console.ForegroundColor\ =\ ConsoleColor.Red}
+
+\end{DoxyCode}
+\Hypertarget{_program_8cs_a36466f5e7c5f726704c8c06afc761d60}\index{Program.cs@{Program.cs}!expectedOutput@{expectedOutput}}
+\index{expectedOutput@{expectedOutput}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{expectedOutput}{expectedOutput}}
+{\footnotesize\ttfamily \label{_program_8cs_a36466f5e7c5f726704c8c06afc761d60} 
+expected\+Output = File.\+Read\+All\+Text(\mbox{\hyperlink{_program_8cs_a5a69c7f0910fff70fbc3e21af48dfef1}{expected\+Output\+Path}}, Encoding.\+UTF8).Trim()}
+
+\Hypertarget{_program_8cs_a5a69c7f0910fff70fbc3e21af48dfef1}\index{Program.cs@{Program.cs}!expectedOutputPath@{expectedOutputPath}}
+\index{expectedOutputPath@{expectedOutputPath}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{expectedOutputPath}{expectedOutputPath}}
+{\footnotesize\ttfamily \label{_program_8cs_a5a69c7f0910fff70fbc3e21af48dfef1} 
+string expected\+Output\+Path = "{}one-\/punch.\+out"{}}
+
+\Hypertarget{_program_8cs_a5d481374df5d64bd49477079d8717462}\index{Program.cs@{Program.cs}!extraInputs@{extraInputs}}
+\index{extraInputs@{extraInputs}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{extraInputs}{extraInputs}}
+{\footnotesize\ttfamily \label{_program_8cs_a5d481374df5d64bd49477079d8717462} 
+string \mbox{[}$\,$\mbox{]} extra\+Inputs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{_program_8cs_a45baea0008353ce1cf0e59a89e02dfec}{lines}}}
+\DoxyCodeLine{\ \ \ \ .SkipWhile(l\ =>\ !l.Trim().Contains(\textcolor{stringliteral}{"{}\#軍隊-\/2-\/結束"{}}))}
+\DoxyCodeLine{\ \ \ \ .Skip(1)}
+\DoxyCodeLine{\ \ \ \ .TakeWhile(l\ =>\ l.Trim()\ !=\ \textcolor{stringliteral}{"{}\#\#\#"{}})}
+\DoxyCodeLine{\ \ \ \ .ToArray()}
+
+\end{DoxyCode}
+\Hypertarget{_program_8cs_add54dddec4f0266c6fab8d04bf7d9136}\index{Program.cs@{Program.cs}!finally@{finally}}
+\index{finally@{finally}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{finally}{finally}}
+{\footnotesize\ttfamily \label{_program_8cs_add54dddec4f0266c6fab8d04bf7d9136} 
+finally}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ Console.SetOut(\mbox{\hyperlink{_program_8cs_ab607fb643dcd345c185ea74f1c5d9e95}{originalConsoleOut}})}
+
+\end{DoxyCode}
+\Hypertarget{_program_8cs_a587987c6126244cdb7d6fdaa538f85fc}\index{Program.cs@{Program.cs}!inputPath@{inputPath}}
+\index{inputPath@{inputPath}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{inputPath}{inputPath}}
+{\footnotesize\ttfamily \label{_program_8cs_a587987c6126244cdb7d6fdaa538f85fc} 
+string input\+Path = "{}one-\/punch.\+in"{}}
+
+\Hypertarget{_program_8cs_a45baea0008353ce1cf0e59a89e02dfec}\index{Program.cs@{Program.cs}!lines@{lines}}
+\index{lines@{lines}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily \label{_program_8cs_a45baea0008353ce1cf0e59a89e02dfec} 
+string \mbox{[}$\,$\mbox{]} lines = File.\+Read\+All\+Lines(\mbox{\hyperlink{_program_8cs_a587987c6126244cdb7d6fdaa538f85fc}{input\+Path}})}
+
+\Hypertarget{_program_8cs_ab607fb643dcd345c185ea74f1c5d9e95}\index{Program.cs@{Program.cs}!originalConsoleOut@{originalConsoleOut}}
+\index{originalConsoleOut@{originalConsoleOut}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{originalConsoleOut}{originalConsoleOut}}
+{\footnotesize\ttfamily \label{_program_8cs_ab607fb643dcd345c185ea74f1c5d9e95} 
+Text\+Writer original\+Console\+Out = Console.\+Out}
+
+\Hypertarget{_program_8cs_a349d39ecb8cf69b92f64f23775abc311}\index{Program.cs@{Program.cs}!OutputEncoding@{OutputEncoding}}
+\index{OutputEncoding@{OutputEncoding}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{OutputEncoding}{OutputEncoding}}
+{\footnotesize\ttfamily \label{_program_8cs_a349d39ecb8cf69b92f64f23775abc311} 
+Console. Output\+Encoding = System.\+Text.\+Encoding.\+UTF8}
+
+\Hypertarget{_program_8cs_a2fb8e8d0781d256e8e61c487f4307655}\index{Program.cs@{Program.cs}!rpg@{rpg}}
+\index{rpg@{rpg}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{rpg}{rpg}}
+{\footnotesize\ttfamily \label{_program_8cs_a2fb8e8d0781d256e8e61c487f4307655} 
+var rpg = new \mbox{\hyperlink{class_r_p_g_1_1_rpg}{RPG.\+Rpg}}(\mbox{\hyperlink{_program_8cs_a39dc3eb42017896a8723ac778ff3f054}{troop1}}, \mbox{\hyperlink{_program_8cs_a91d04dc1bda79bc36acbebb48cac4d38}{troop2}}, \mbox{\hyperlink{_program_8cs_a5d481374df5d64bd49477079d8717462}{extra\+Inputs}})}
+
+\Hypertarget{_program_8cs_a39dc3eb42017896a8723ac778ff3f054}\index{Program.cs@{Program.cs}!troop1@{troop1}}
+\index{troop1@{troop1}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{troop1}{troop1}}
+{\footnotesize\ttfamily \label{_program_8cs_a39dc3eb42017896a8723ac778ff3f054} 
+var troop1 = new \mbox{\hyperlink{class_r_p_g_1_1_troop}{Troop}}(\mbox{\hyperlink{_program_8cs_a71fc41fe794af7bb443f905e7921750e}{army1\+Roles}})}
+
+\Hypertarget{_program_8cs_a91d04dc1bda79bc36acbebb48cac4d38}\index{Program.cs@{Program.cs}!troop2@{troop2}}
+\index{troop2@{troop2}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{troop2}{troop2}}
+{\footnotesize\ttfamily \label{_program_8cs_a91d04dc1bda79bc36acbebb48cac4d38} 
+var troop2 = new \mbox{\hyperlink{class_r_p_g_1_1_troop}{Troop}}(\mbox{\hyperlink{_program_8cs_a3b2331f0590e817e483129f1c36c890a}{army2\+Roles}})}
+
+\Hypertarget{_program_8cs_abe4cc9788f52e49485473dc699537388}\index{Program.cs@{Program.cs}!try@{try}}
+\index{try@{try}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily \label{_program_8cs_abe4cc9788f52e49485473dc699537388} 
+try}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_program_8cs_a2fb8e8d0781d256e8e61c487f4307655}{rpg}}.Battle()}
+
+\end{DoxyCode}

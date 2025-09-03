@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_summon_buff_8cs" kind="file" language="C#">
+    <compoundname>SummonBuff.cs</compoundname>
+    <innerclass refid="class_r_p_g_1_1_observer_1_1_summon_buff" prot="public">RPG::Observer::SummonBuff</innerclass>
+    <innernamespace refid="namespace_r_p_g">RPG</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_observer">RPG::Observer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_observer" kindref="compound">RPG.Observer</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_r_p_g_1_1_observer_1_1_summon_buff" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a26f782d88688e0ef92fa46e2f8b6332e" kindref="member">SummonBuff</ref><sp/>:<sp/><ref refid="interface_r_p_g_1_1_observer_1_1_i_observer" kindref="compound">IObserver</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a9e06a73276f6e697beaf7c2c39f19952" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a9e06a73276f6e697beaf7c2c39f19952" kindref="member">Role</ref><sp/><ref refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a9e06a73276f6e697beaf7c2c39f19952" kindref="member">Role</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a26f782d88688e0ef92fa46e2f8b6332e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a26f782d88688e0ef92fa46e2f8b6332e" kindref="member">SummonBuff</ref>(<ref refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a9e06a73276f6e697beaf7c2c39f19952" kindref="member">Role</ref><sp/>role)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a9e06a73276f6e697beaf7c2c39f19952" kindref="member">Role</ref><sp/>=<sp/>role;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_r_p_g_1_1_observer_1_1_summon_buff_1ae04be91dedfa7270f36c6802a4617e84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_observer_1_1_summon_buff_1ae04be91dedfa7270f36c6802a4617e84" kindref="member">Action</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>summonerAndSummons<sp/>=<sp/><ref refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a9e06a73276f6e697beaf7c2c39f19952" kindref="member">Role</ref>.Summoned;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summonerAndSummons.Summoner.Hp<sp/>+=<sp/>30;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summonerAndSummons.Summoner.Summoner.Remove(summonerAndSummons);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer/SummonBuff.cs"/>
+  </compounddef>
+</doxygen>

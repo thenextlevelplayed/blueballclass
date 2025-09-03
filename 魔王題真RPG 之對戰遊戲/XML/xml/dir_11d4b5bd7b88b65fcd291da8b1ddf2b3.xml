@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_11d4b5bd7b88b65fcd291da8b1ddf2b3" kind="dir">
+    <compoundname>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG</compoundname>
+    <innerdir refid="dir_aa4f4129b793457795a2a68d6c14c51e">D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption</innerdir>
+    <innerdir refid="dir_5029bbd66b6d3cad4cc7f5e47a492da8">D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command</innerdir>
+    <innerdir refid="dir_664e4ca1ea0a93f8f6d9e3a3f41f83e7">D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler</innerdir>
+    <innerdir refid="dir_d3eb6c8efd4cb3a80106e343a8f7abf1">D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Enum</innerdir>
+    <innerdir refid="dir_1b9ded9a3f43be362be8a3df38516e4d">D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer</innerdir>
+    <innerdir refid="dir_70dad567353b4c30c8a228c0d7525ee7">D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role</innerdir>
+    <innerdir refid="dir_39d865397219b4ec930a719c0176df4f">D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status</innerdir>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_rpg_8cs">Rpg.cs</innerfile>
+    <innerfile refid="_spellcaster_and_the_cursed_8cs">SpellcasterAndTheCursed.cs</innerfile>
+    <innerfile refid="_summoner_and_summon_8cs">SummonerAndSummon.cs</innerfile>
+    <innerfile refid="_target_condition_8cs">TargetCondition.cs</innerfile>
+    <innerfile refid="_troop_8cs">Troop.cs</innerfile>
+    <innerfile refid="_troop_relation_8cs">TroopRelation.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/"/>
+  </compounddef>
+</doxygen>

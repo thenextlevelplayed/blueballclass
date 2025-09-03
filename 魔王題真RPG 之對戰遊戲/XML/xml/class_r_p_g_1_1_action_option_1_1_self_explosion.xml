@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_action_option_1_1_self_explosion" kind="class" language="C#" prot="public">
+    <compoundname>RPG::ActionOption::SelfExplosion</compoundname>
+    <basecompoundref refid="class_r_p_g_1_1_action_option_1_1_skill" prot="public" virt="non-virtual">RPG.ActionOption.Skill</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_self_explosion_1a02367e0b874eb1ffcdf29038672d684c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int RPG.ActionOption.SelfExplosion.Mp</definition>
+        <argsstring></argsstring>
+        <name>Mp</name>
+        <qualifiedname>RPG.ActionOption.SelfExplosion.Mp</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ad0b3112979ce41a4e61bf75443db3636">Mp</reimplements>
+        <initializer>= 200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="12" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_self_explosion_1a64a6020d6e3afb557f6dc3e2a2fbf4ed" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int RPG.ActionOption.SelfExplosion.Str</definition>
+        <argsstring></argsstring>
+        <name>Str</name>
+        <qualifiedname>RPG.ActionOption.SelfExplosion.Str</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a129d1f1c7b2ff5f052c4455fcd2a9400">Str</reimplements>
+        <initializer>= 150</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="13" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_self_explosion_1a66e1d170aca9f6510d1b44b94da16c96" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override bool</type>
+        <definition>override bool RPG.ActionOption.SelfExplosion.PassS2</definition>
+        <argsstring></argsstring>
+        <name>PassS2</name>
+        <qualifiedname>RPG.ActionOption.SelfExplosion.PassS2</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1abc301d38c23902af5e8760d38ecdb52c">PassS2</reimplements>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="14" column="26" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_self_explosion_1a9147cda1b696a328d1fe2a2279853d19" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override <ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref></type>
+        <definition>override TargetCondition RPG.ActionOption.SelfExplosion.TargetCondition</definition>
+        <argsstring></argsstring>
+        <name>TargetCondition</name>
+        <qualifiedname>RPG.ActionOption.SelfExplosion.TargetCondition</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a983e6056c7e2265932ec7dae55530724">TargetCondition</reimplements>
+        <initializer>= new <ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref>(TargetRelation.All, -1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="21" column="37" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_self_explosion_1a8c2a5ca460b110998e66a2076db245d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.ActionOption.SelfExplosion.SelfExplosion</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>SelfExplosion</name>
+        <qualifiedname>RPG.ActionOption.SelfExplosion.SelfExplosion</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="8" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_self_explosion_1a6c1de817cb68b4fb5b5a61c77b5ec47a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string RPG.ActionOption.SelfExplosion.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>RPG.ActionOption.SelfExplosion.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="32" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_self_explosion_1ae1bc988d468d505c9abaadfdce9b443b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override? <ref refid="class_r_p_g_1_1_status_1_1_state" kindref="compound">State</ref></type>
+        <definition>override? State RPG.ActionOption.SelfExplosion.GetState</definition>
+        <argsstring>(Role target)</argsstring>
+        <name>GetState</name>
+        <qualifiedname>RPG.ActionOption.SelfExplosion.GetState</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="16" column="30" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_self_explosion_1a7c64953748476b1b7025f0803532e598" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RPG.ActionOption.SelfExplosion.ActionHook</definition>
+        <argsstring>(List&lt; Role &gt; roles)</argsstring>
+        <name>ActionHook</name>
+        <qualifiedname>RPG.ActionOption.SelfExplosion.ActionHook</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="23" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="23" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.ActionOption.SelfExplosion</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_self_explosion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.Skill</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_skill"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.ActionOption.SelfExplosion</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_self_explosion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.Skill</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_skill"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" line="6" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfExplosion.cs" bodystart="7" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a7c64953748476b1b7025f0803532e598" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>ActionHook</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1af2ea2f635a52b3814d0f8bb47f1bfea5" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>Attack</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a18923154ab1b2d549ddffdab1ee36843" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>ChangeState</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1ac8a5df8514d38f338126365c93946203" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>DoAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1ae1bc988d468d505c9abaadfdce9b443b" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>GetState</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a999e152e3ea87f9bc2d16efa741d409c" prot="protected" virt="virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>LogAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a02367e0b874eb1ffcdf29038672d684c" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>Mp</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a66e1d170aca9f6510d1b44b94da16c96" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>PassS2</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a12e5686d34e37cb56ca9ae25e309131c" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a8c2a5ca460b110998e66a2076db245d8" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>SelfExplosion</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a8dae8c99eb91108d130b0a51436bab37" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>Skill</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a64a6020d6e3afb557f6dc3e2a2fbf4ed" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>Str</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a9147cda1b696a328d1fe2a2279853d19" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>TargetCondition</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a6c1de817cb68b4fb5b5a61c77b5ec47a" prot="public" virt="non-virtual"><scope>RPG::ActionOption::SelfExplosion</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

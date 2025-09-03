@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_action_option_1_1_skill" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>RPG::ActionOption::Skill</compoundname>
+    <basecompoundref refid="interface_r_p_g_1_1_action_option_1_1_i_action_option" prot="public" virt="non-virtual">RPG.ActionOption.IActionOption</basecompoundref>
+    <derivedcompoundref refid="class_r_p_g_1_1_action_option_1_1_cheer_up" prot="public" virt="non-virtual">RPG.ActionOption.CheerUp</derivedcompoundref>
+    <derivedcompoundref refid="class_r_p_g_1_1_action_option_1_1_one_punch" prot="public" virt="non-virtual">RPG.ActionOption.OnePunch</derivedcompoundref>
+    <derivedcompoundref refid="class_r_p_g_1_1_action_option_1_1_self_explosion" prot="public" virt="non-virtual">RPG.ActionOption.SelfExplosion</derivedcompoundref>
+    <derivedcompoundref refid="class_r_p_g_1_1_action_option_1_1_summon" prot="public" virt="non-virtual">RPG.ActionOption.Summon</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_skill_1a76a2dc08192987d5eea0b138cdb45077" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RPG.ActionOption.Skill.Mp</definition>
+        <argsstring></argsstring>
+        <name>Mp</name>
+        <qualifiedname>RPG.ActionOption.Skill.Mp</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ad0b3112979ce41a4e61bf75443db3636">Mp</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="8" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_skill_1a03ec804c210ee0c8f850a7adb3f27925" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RPG.ActionOption.Skill.Str</definition>
+        <argsstring></argsstring>
+        <name>Str</name>
+        <qualifiedname>RPG.ActionOption.Skill.Str</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a129d1f1c7b2ff5f052c4455fcd2a9400">Str</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="9" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_skill_1a52bcbe7b2a780fca61253e441c9ea67a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>virtual bool RPG.ActionOption.Skill.PassS2</definition>
+        <argsstring></argsstring>
+        <name>PassS2</name>
+        <qualifiedname>RPG.ActionOption.Skill.PassS2</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1abc301d38c23902af5e8760d38ecdb52c">PassS2</reimplements>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="11" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_skill_1a20a399754d9f41c8d8282a9619e27941" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref></type>
+        <definition>TargetCondition RPG.ActionOption.Skill.TargetCondition</definition>
+        <argsstring></argsstring>
+        <name>TargetCondition</name>
+        <qualifiedname>RPG.ActionOption.Skill.TargetCondition</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a983e6056c7e2265932ec7dae55530724">TargetCondition</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="14" column="37" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_skill_1a12e5686d34e37cb56ca9ae25e309131c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+        <definition>Role RPG.ActionOption.Skill.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>RPG.ActionOption.Skill.Role</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a693b06d28773a0913b72962374fa90e5">Role</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="15" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_skill_1a97fdffa61e3de509957380942d61272d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_r_p_g_1_1_status_1_1_state" kindref="compound">State</ref>?</type>
+        <definition>State? RPG.ActionOption.Skill.GetState</definition>
+        <argsstring>(Role target)</argsstring>
+        <name>GetState</name>
+        <qualifiedname>RPG.ActionOption.Skill.GetState</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="12" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_skill_1a8dae8c99eb91108d130b0a51436bab37" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.ActionOption.Skill.Skill</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>Skill</name>
+        <qualifiedname>RPG.ActionOption.Skill.Skill</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="17" column="15" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_skill_1afc5286c15c754786707cbc74e2dc69f3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.ActionOption.Skill.ActionHook</definition>
+        <argsstring>(List&lt; Role &gt; roles)</argsstring>
+        <name>ActionHook</name>
+        <qualifiedname>RPG.ActionOption.Skill.ActionHook</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="36" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_skill_1a999e152e3ea87f9bc2d16efa741d409c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RPG.ActionOption.Skill.LogAction</definition>
+        <argsstring>(List&lt; Role &gt; roles)</argsstring>
+        <name>LogAction</name>
+        <qualifiedname>RPG.ActionOption.Skill.LogAction</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="38" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="38" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_skill_1ac8a5df8514d38f338126365c93946203" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.ActionOption.Skill.DoAction</definition>
+        <argsstring>(List&lt; Role &gt; roles)</argsstring>
+        <name>DoAction</name>
+        <qualifiedname>RPG.ActionOption.Skill.DoAction</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a5c93054a7e6d11238ef2c2283eb6a408">DoAction</reimplements>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="22" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_skill_1a18923154ab1b2d549ddffdab1ee36843" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.ActionOption.Skill.ChangeState</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>ChangeState</name>
+        <qualifiedname>RPG.ActionOption.Skill.ChangeState</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="31" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_skill_1af2ea2f635a52b3814d0f8bb47f1bfea5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.ActionOption.Skill.Attack</definition>
+        <argsstring>(Role role, int str)</argsstring>
+        <name>Attack</name>
+        <qualifiedname>RPG.ActionOption.Skill.Attack</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ac8e1a3e747d8a612972ad396f95d6fe4">Attack</reimplements>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="44" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="44" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.ActionOption.Skill</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_skill"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.ActionOption.CheerUp</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_cheer_up"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+      <node id="4">
+        <label>RPG.ActionOption.OnePunch</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_one_punch"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RPG.ActionOption.SelfExplosion</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_self_explosion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RPG.ActionOption.Summon</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_summon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.ActionOption.Skill</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_skill"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" line="5" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Skill.cs" bodystart="6" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1afc5286c15c754786707cbc74e2dc69f3" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>ActionHook</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1af2ea2f635a52b3814d0f8bb47f1bfea5" prot="public" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>Attack</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a18923154ab1b2d549ddffdab1ee36843" prot="public" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>ChangeState</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1ac8a5df8514d38f338126365c93946203" prot="public" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>DoAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a97fdffa61e3de509957380942d61272d" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>GetState</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a999e152e3ea87f9bc2d16efa741d409c" prot="protected" virt="virtual"><scope>RPG::ActionOption::Skill</scope><name>LogAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a76a2dc08192987d5eea0b138cdb45077" prot="public" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>Mp</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a52bcbe7b2a780fca61253e441c9ea67a" prot="public" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>PassS2</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a12e5686d34e37cb56ca9ae25e309131c" prot="public" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a8dae8c99eb91108d130b0a51436bab37" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>Skill</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a03ec804c210ee0c8f850a7adb3f27925" prot="public" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>Str</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a20a399754d9f41c8d8282a9619e27941" prot="public" virt="non-virtual"><scope>RPG::ActionOption::Skill</scope><name>TargetCondition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="en-US">
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler" kind="class"><name>RPG::CommandHandler::AbstractCommandHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1aa109d38e648df96682cbc8cb5fb4d014" kind="variable"><name>NextHandler</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a0d472dc89af16b1384964447d450348d" kind="function"><name>SetNext</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a889f16ae9d6eadc0f5ebaaaf751d214f" kind="function"><name>Handle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a911862539f5d162ece806199c75de6e2" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a09146d87cec6b6495c5f79e0a6027c9e" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_a_i" kind="class"><name>RPG::AI</name>
+    <member refid="class_r_p_g_1_1_a_i_1a3e4249c174dbf9fd6efc3784cbb85a19" kind="property"><name>Seed</name></member>
+    <member refid="class_r_p_g_1_1_a_i_1a341950d6f7c56a5bed5bb66a68d0bc8a" kind="function"><name>AI</name></member>
+    <member refid="class_r_p_g_1_1_a_i_1abbe9edf58083aa7daa1f5ba00c52df7e" kind="function"><name>SelectActionIndexHook</name></member>
+    <member refid="class_r_p_g_1_1_a_i_1ad7675eb30dcbff8d2451bf601a85a984" kind="function"><name>S2PostDecisionHook</name></member>
+    <member refid="class_r_p_g_1_1_a_i_1af35183acc57c23468a3226e7b7a4173e" kind="function"><name>SelectTargetsHook</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_action_option_1_1_basic_attack" kind="class"><name>RPG::ActionOption::BasicAttack</name>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a3a59bdbace8019b67f36d3f28f8107a2" kind="property"><name>Mp</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a1c522eaac6581fa86ea6f23afcf5fb04" kind="property"><name>Str</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a98b3e86312ba6bc52933c355d31f8701" kind="property"><name>PassS2</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a40a01c740502a3cf943c1c9a6421e2d6" kind="property"><name>TargetCondition</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1aa25e16050623b1a2904047045433bcfb" kind="property"><name>Role</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1ae283a7ec32957f0cf5c7b81c511e138c" kind="function"><name>BasicAttack</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a690929a72409b5aa71de9baed81dfcf2" kind="function"><name>Attack</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a0f94096c6bb44ee017832c7b2327a561" kind="function"><name>DoAction</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_basic_attack_1a41c021340346331be43461f9f814422e" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_action_option_1_1_cheer_up" kind="class"><name>RPG::ActionOption::CheerUp</name>
+    <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1a4ef31df9ad23307050640fa1c2177775" kind="property"><name>Mp</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1ae4a38875883d36ee00b6c8d7c7c9a818" kind="property"><name>Str</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1a9a1507a3ea89e973818b8eac017be58b" kind="property"><name>TargetCondition</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1a3a8ffee6b6832e8327e7d879a7ce2b07" kind="function"><name>CheerUp</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1ae3630ddbf6a2f5a25b58b7659297bd3d" kind="function"><name>ToString</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1a176732d8d8179e0605e1e9a949f3ef83" kind="function"><name>GetState</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1acf077f23023f67298dc073df0a888912" kind="function"><name>ActionHook</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_status_1_1_cheer_up" kind="class"><name>RPG::Status::CheerUp</name>
+    <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1aa4788b7d2eecffdb62a5b8c4b4839dd7" kind="property"><name>InitialDuration</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1afc9ec47ab361951c268a4da706b871e1" kind="function"><name>CheerUp</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1a3111069af5c5b395f967d4f95d1c3e6d" kind="function"><name>HandleStartOfTurn</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1a6ccd08979d6ca86bf9665b7113ad04a4" kind="function"><name>HandleEndOfTurn</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1a9a838a11a485792eef97a1c3bc770c6d" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler" kind="class"><name>RPG::CommandHandler::CheerUpHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler_1a3cecfb346b98d4c8c0cbb97301ca8f18" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler_1abdc960c1e32757d9718f28aa79bb7915" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_curse_handler" kind="class"><name>RPG::CommandHandler::CurseHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_curse_handler_1a7633cab563bd651348ed7771f0b1c7fe" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_curse_handler_1afae4f8d71261beeeeca40092800bb3d5" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_fire_ball_handler" kind="class"><name>RPG::CommandHandler::FireBallHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_fire_ball_handler_1aeee1876de515c9830592fdc4a094dabe" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_fire_ball_handler_1aa673b8d294c0eebfaf81611d0c443ea7" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_hero" kind="class"><name>RPG::Hero</name>
+    <member refid="class_r_p_g_1_1_hero_1a14b13f4b1c57ece0e58e1d0ddf6b7733" kind="function"><name>Hero</name></member>
+    <member refid="class_r_p_g_1_1_hero_1a36624768e4ebad9cc2b1c26f50f6892b" kind="function"><name>SelectActionIndexHook</name></member>
+    <member refid="class_r_p_g_1_1_hero_1a56cccfbf170c01979465bfee150fa578" kind="function"><name>S2PostDecisionHook</name></member>
+    <member refid="class_r_p_g_1_1_hero_1ab3dfaeab82e2c53438b48d7e1d092dd0" kind="function"><name>SelectTargetsHook</name></member>
+  </compound>
+  <compound refid="interface_r_p_g_1_1_action_option_1_1_i_action_option" kind="interface"><name>RPG::ActionOption::IActionOption</name>
+    <member refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ad0b3112979ce41a4e61bf75443db3636" kind="property"><name>Mp</name></member>
+    <member refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a129d1f1c7b2ff5f052c4455fcd2a9400" kind="property"><name>Str</name></member>
+    <member refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1abc301d38c23902af5e8760d38ecdb52c" kind="property"><name>PassS2</name></member>
+    <member refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a983e6056c7e2265932ec7dae55530724" kind="property"><name>TargetCondition</name></member>
+    <member refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a693b06d28773a0913b72962374fa90e5" kind="property"><name>Role</name></member>
+    <member refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a5c93054a7e6d11238ef2c2283eb6a408" kind="function"><name>DoAction</name></member>
+    <member refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ac8e1a3e747d8a612972ad396f95d6fe4" kind="function"><name>Attack</name></member>
+  </compound>
+  <compound refid="interface_r_p_g_1_1_command_1_1_i_command" kind="interface"><name>RPG::Command::ICommand</name>
+    <member refid="interface_r_p_g_1_1_command_1_1_i_command_1a88e83658b8353913e76de2164f198bd6" kind="property"><name>ActionOption</name></member>
+    <member refid="interface_r_p_g_1_1_command_1_1_i_command_1af4681030716128496df202c412be8a1a" kind="function"><name>Execute</name></member>
+  </compound>
+  <compound refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kind="interface"><name>RPG::CommandHandler::ICommandHandler</name>
+    <member refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aece9138a4a9c06c42bfd4303bc5b4b73" kind="function"><name>SetNext</name></member>
+    <member refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aa36b6f0b9cdaff2a5c43929ac16188fc" kind="function"><name>Handle</name></member>
+  </compound>
+  <compound refid="interface_r_p_g_1_1_observer_1_1_i_observer" kind="interface"><name>RPG::Observer::IObserver</name>
+    <member refid="interface_r_p_g_1_1_observer_1_1_i_observer_1a3cbc876b0f3b6e916eab9c115c9b3832" kind="property"><name>Role</name></member>
+    <member refid="interface_r_p_g_1_1_observer_1_1_i_observer_1ad3043e736c1310eaefe3c92491e52674" kind="function"><name>Action</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_status_1_1_normal" kind="class"><name>RPG::Status::Normal</name>
+    <member refid="class_r_p_g_1_1_status_1_1_normal_1a2be0a409983cd5a3be320598bc337d87" kind="property"><name>InitialDuration</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_normal_1a68ceb263c002ef8ed36f0bd890c13433" kind="function"><name>Normal</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_normal_1ad991ec110a02d77b12fb88002af88d49" kind="function"><name>HandleStartOfTurn</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_normal_1a80bf1dcea5a3c45d967fbdf66aaee644" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_action_option_1_1_one_punch" kind="class"><name>RPG::ActionOption::OnePunch</name>
+    <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1ae7254a01e156a5c8353017f056bc07a1" kind="property"><name>Mp</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a8e245e9d01133e61976024f5bec7bb8f" kind="property"><name>Str</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a9cbb85db818b04770020a1aa4d857684" kind="property"><name>TargetCondition</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a32da817ceee259a0272c0cb0edbf85c5" kind="function"><name>OnePunch</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a493736c333e6f685d49501ee48462ff1" kind="function"><name>ToString</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1a330e2c98d7f18979a522184ab0518f89" kind="function"><name>GetState</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_one_punch_1af20f8236f9b298e9ca268c3623876b27" kind="function"><name>ActionHook</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_one_punch_handler" kind="class"><name>RPG::CommandHandler::OnePunchHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_one_punch_handler_1a203cc368e5fa2c93214be45eb13581fe" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_one_punch_handler_1af0f1e83a18490e3a980e056ef1297a23" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_status_1_1_petrochemical" kind="class"><name>RPG::Status::Petrochemical</name>
+    <member refid="class_r_p_g_1_1_status_1_1_petrochemical_1aa9991bcc5b93702a7008c1bf0a4170dd" kind="property"><name>InitialDuration</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_petrochemical_1ab998e61055985441b28aeed1d7f730d9" kind="function"><name>Petrochemical</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_petrochemical_1af3e03fd65d418baa3cc512ec37d9465a" kind="function"><name>HandleStartOfTurn</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_petrochemical_1a0b11345572c6513a7280ac70b6511d93" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_petrochemical_handler" kind="class"><name>RPG::CommandHandler::PetrochemicalHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_petrochemical_handler_1ae4b0248972324f55025f4060ac460fe6" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_petrochemical_handler_1af6fbe258a341db614999643e1f0abdd6" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_status_1_1_poisoned" kind="class"><name>RPG::Status::Poisoned</name>
+    <member refid="class_r_p_g_1_1_status_1_1_poisoned_1a807b3cf5f01b9e81ebdcd6fff42465a0" kind="property"><name>InitialDuration</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_poisoned_1a4adfcb6ab21a1f0a749df36a5908f0a1" kind="function"><name>Poisoned</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_poisoned_1a2451962d59c466f46c52ff387a570778" kind="function"><name>HandleStartOfTurn</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_poisoned_1abd014dd56657913d5a8b0898be31caef" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_poison_handler" kind="class"><name>RPG::CommandHandler::PoisonHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_poison_handler_1a9c6f0c39aeaa390d749c64f073c627bc" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_poison_handler_1ad302c9a04f45005cb4b7b54f05a0c33f" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_role" kind="class"><name>RPG::Role</name>
+    <member refid="class_r_p_g_1_1_role_1a9bc6a8c5ba2ce56637b6e17dc4ba87e9" kind="property"><name>Spellcaster</name></member>
+    <member refid="class_r_p_g_1_1_role_1a8abdce8ba599106f26e4dfc17da06c8f" kind="property"><name>TheCursed</name></member>
+    <member refid="class_r_p_g_1_1_role_1ad63a6e422d42bc0185caf8db27b99fa9" kind="property"><name>Summoned</name></member>
+    <member refid="class_r_p_g_1_1_role_1a91ff2b4cf3615dbdd26558d3a7d88b91" kind="property"><name>Summoner</name></member>
+    <member refid="class_r_p_g_1_1_role_1a2acbd3755e36c3b18c9c5d7c928e2d57" kind="property"><name>Hp</name></member>
+    <member refid="class_r_p_g_1_1_role_1a29a642e392572d9463ae8916954c19bb" kind="property"><name>Mp</name></member>
+    <member refid="class_r_p_g_1_1_role_1a786252647338c95d577cf87d6e2416e3" kind="property"><name>Str</name></member>
+    <member refid="class_r_p_g_1_1_role_1ae562e2e9e362b5477bb57b001db403ad" kind="property"><name>State</name></member>
+    <member refid="class_r_p_g_1_1_role_1a36a35318c0ca2b908b280c72d273fff4" kind="property"><name>Name</name></member>
+    <member refid="class_r_p_g_1_1_role_1aa241f4592bbebad9125028398cfd0406" kind="property"><name>Duration</name></member>
+    <member refid="class_r_p_g_1_1_role_1a490d4ced44fb5c1178497fc5ceeadab3" kind="property"><name>Commands</name></member>
+    <member refid="class_r_p_g_1_1_role_1a4cd36f531428aac88a42fedf5ebda1d7" kind="property"><name>Observers</name></member>
+    <member refid="class_r_p_g_1_1_role_1a012aa4e4dac41e7785d50e1150400738" kind="property"><name>Troop</name></member>
+    <member refid="class_r_p_g_1_1_role_1a0fbc4aca0338a0ae8b7eaf7f34108c35" kind="function"><name>Role</name></member>
+    <member refid="class_r_p_g_1_1_role_1a363964d2e34092a34ad53f654dffc727" kind="function"><name>CanAction</name></member>
+    <member refid="class_r_p_g_1_1_role_1ad059a010654dbf5cad02e58e2b4d55be" kind="function"><name>EnterState</name></member>
+    <member refid="class_r_p_g_1_1_role_1a2143dd2f093e54918ec39e99c5d2ab47" kind="function"><name>S3</name></member>
+    <member refid="class_r_p_g_1_1_role_1a3f7949dbc8793d277cfa620c0d81ad2c" kind="function"><name>HandleStartOfTurn</name></member>
+    <member refid="class_r_p_g_1_1_role_1adb03f5e9b48634d69e754bc089188941" kind="function"><name>HandleEndOfTurn</name></member>
+    <member refid="class_r_p_g_1_1_role_1a459db2bd4b4459c48192bf18dde05d5e" kind="function"><name>RegisterObserver</name></member>
+    <member refid="class_r_p_g_1_1_role_1ae346051e686170e061593ec483c54234" kind="function"><name>UnregisterObserver</name></member>
+    <member refid="class_r_p_g_1_1_role_1a78b0803b864f6647946f46e1b1b3a5da" kind="function"><name>NotifyObservers</name></member>
+    <member refid="class_r_p_g_1_1_role_1a9456ca95a3d51bbe8f3d6a2906bc5b46" kind="function"><name>TemplateS1</name></member>
+    <member refid="class_r_p_g_1_1_role_1a1b9d46825d9c4efa79faea9f32f966cc" kind="function"><name>TemplateS2</name></member>
+    <member refid="class_r_p_g_1_1_role_1a1e5e2c45269abe5afbbc65db8c054d9b" kind="function"><name>GetAvailableAllyTargets</name></member>
+    <member refid="class_r_p_g_1_1_role_1a5feaac04e1867c208d34dec19cc37615" kind="function"><name>GetAvailableEnemyTargets</name></member>
+    <member refid="class_r_p_g_1_1_role_1a703806f3bd662ed07967668ac418da40" kind="function"><name>SelectActionIndexHook</name></member>
+    <member refid="class_r_p_g_1_1_role_1aac2d5dcb83070b9dac763e84af027fb5" kind="function"><name>S2PostDecisionHook</name></member>
+    <member refid="class_r_p_g_1_1_role_1aabe53302589d68412b24360ef2004128" kind="function"><name>SelectTargetsHook</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_rpg" kind="class"><name>RPG::Rpg</name>
+    <member refid="class_r_p_g_1_1_rpg_1a553e4a1c68e5f84c5e9febf878f51abf" kind="variable"><name>_t1</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1a85c7e5a93767f37a3626e7d4b42a309c" kind="variable"><name>_t2</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1a535e5dcaf66c46e51fa66953d8b041fc" kind="variable"><name>_inputQueue</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1a11805b594afaba707e5d70dd636c03ed" kind="function"><name>Rpg</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1a9744850306bb38ca1302ddee659a7b77" kind="function"><name>Battle</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1acf7cecba6b7bb3a13cac2fe084749e46" kind="function"><name>UpdateTroop</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1a44113a0abb5161070af9942d40b44752" kind="function"><name>ReadInput</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1a642afc02f701038c3d0c572806d4d5da" kind="function"><name>ProcessTurn</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1ad9cdbc107c80014fe52853b0c129054b" kind="function"><name>Annihilate</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1a05803d24e00d0c10bd6c810e21b32c31" kind="function"><name>TemplateS1</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1ab0290be938b707d0af24a0a91287a590" kind="function"><name>TemplateS2</name></member>
+    <member refid="class_r_p_g_1_1_rpg_1ace2950bea93d06ba5f75f6e6b1885556" kind="function"><name>S3</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_action_option_1_1_self_explosion" kind="class"><name>RPG::ActionOption::SelfExplosion</name>
+    <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a02367e0b874eb1ffcdf29038672d684c" kind="property"><name>Mp</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a64a6020d6e3afb557f6dc3e2a2fbf4ed" kind="property"><name>Str</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a66e1d170aca9f6510d1b44b94da16c96" kind="property"><name>PassS2</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a9147cda1b696a328d1fe2a2279853d19" kind="property"><name>TargetCondition</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a8c2a5ca460b110998e66a2076db245d8" kind="function"><name>SelfExplosion</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a6c1de817cb68b4fb5b5a61c77b5ec47a" kind="function"><name>ToString</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1ae1bc988d468d505c9abaadfdce9b443b" kind="function"><name>GetState</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_self_explosion_1a7c64953748476b1b7025f0803532e598" kind="function"><name>ActionHook</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_self_explosion_handler" kind="class"><name>RPG::CommandHandler::SelfExplosionHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_self_explosion_handler_1a4a4a0e9d5c2563849013a4c85d27281c" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_self_explosion_handler_1ab604ed31968ffb47cedb5056fa8b9979" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_self_healing_handler" kind="class"><name>RPG::CommandHandler::SelfHealingHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_self_healing_handler_1a654b057cb9c3b0e99103ea5accb10795" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_self_healing_handler_1acd2553b0ac52f74d2b35593c8652ad70" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_action_option_1_1_skill" kind="class"><name>RPG::ActionOption::Skill</name>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a76a2dc08192987d5eea0b138cdb45077" kind="property"><name>Mp</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a03ec804c210ee0c8f850a7adb3f27925" kind="property"><name>Str</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a52bcbe7b2a780fca61253e441c9ea67a" kind="property"><name>PassS2</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a20a399754d9f41c8d8282a9619e27941" kind="property"><name>TargetCondition</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a12e5686d34e37cb56ca9ae25e309131c" kind="property"><name>Role</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a97fdffa61e3de509957380942d61272d" kind="function"><name>GetState</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a8dae8c99eb91108d130b0a51436bab37" kind="function"><name>Skill</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1afc5286c15c754786707cbc74e2dc69f3" kind="function"><name>ActionHook</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a999e152e3ea87f9bc2d16efa741d409c" kind="function"><name>LogAction</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1ac8a5df8514d38f338126365c93946203" kind="function"><name>DoAction</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a18923154ab1b2d549ddffdab1ee36843" kind="function"><name>ChangeState</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_skill_1af2ea2f635a52b3814d0f8bb47f1bfea5" kind="function"><name>Attack</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_status_1_1_state" kind="class"><name>RPG::Status::State</name>
+    <member refid="class_r_p_g_1_1_status_1_1_state_1a3bdee8fa8ffa1c3a8cd6d3ddef93482b" kind="property"><name>InitialDuration</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_state_1a26db75a01aec667b473f842873f37873" kind="property"><name>CanAction</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" kind="property"><name>Role</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" kind="function"><name>State</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_state_1a82f01c226be58116bd7697ac5eee9389" kind="function"><name>EntryState</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_state_1a1e4aaaaf2d200dd42205a6708a99358b" kind="function"><name>ExitState</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_state_1a592955e39709ecd37c338fb57fb3dd93" kind="function"><name>HandleStartOfTurn</name></member>
+    <member refid="class_r_p_g_1_1_status_1_1_state_1aa9d188cdcea392beabb6ca6a73bbc3ff" kind="function"><name>HandleEndOfTurn</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_action_option_1_1_summon" kind="class"><name>RPG::ActionOption::Summon</name>
+    <member refid="class_r_p_g_1_1_action_option_1_1_summon_1a5b4b3e82252c7b8d1bccf13b018007ad" kind="property"><name>Mp</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_summon_1a61237830cc0e167770f3145cb7c2d928" kind="property"><name>Str</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_summon_1a6560cec5092f9467ddab7ae3f19466c9" kind="property"><name>PassS2</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_summon_1a0f26928c2bdf34f241fab1faf17fe360" kind="property"><name>TargetCondition</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_summon_1a0176c4bf2fdc941ba59fb762b570468a" kind="function"><name>Summon</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_summon_1ac6e91ba0fd79a8a37743015cba0171de" kind="function"><name>ToString</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_summon_1a53bc1333a233bcb4897ba34441f74140" kind="function"><name>GetState</name></member>
+    <member refid="class_r_p_g_1_1_action_option_1_1_summon_1a2a863f1c438a23657898f30316a9c435" kind="function"><name>ActionHook</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_observer_1_1_summon_buff" kind="class"><name>RPG::Observer::SummonBuff</name>
+    <member refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a9e06a73276f6e697beaf7c2c39f19952" kind="property"><name>Role</name></member>
+    <member refid="class_r_p_g_1_1_observer_1_1_summon_buff_1a26f782d88688e0ef92fa46e2f8b6332e" kind="function"><name>SummonBuff</name></member>
+    <member refid="class_r_p_g_1_1_observer_1_1_summon_buff_1ae04be91dedfa7270f36c6802a4617e84" kind="function"><name>Action</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_summon_handler" kind="class"><name>RPG::CommandHandler::SummonHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_summon_handler_1ab4877a5851f0b6cc10f2b7a5909bad7d" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_summon_handler_1afc22d673c967a19171bb2b8738ae7be5" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_target_condition" kind="class"><name>RPG::TargetCondition</name>
+    <member refid="class_r_p_g_1_1_target_condition_1a8fd6f8c42f7f903d8ec0b58d00d613f4" kind="property"><name>TargetRelation</name></member>
+    <member refid="class_r_p_g_1_1_target_condition_1a768b8ed54ed57abd9973152fb4a99250" kind="property"><name>MaxTargets</name></member>
+    <member refid="class_r_p_g_1_1_target_condition_1acb8cfcfb131979f4d9e5c426c4475cad" kind="function"><name>TargetCondition</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_troop" kind="class"><name>RPG::Troop</name>
+    <member refid="class_r_p_g_1_1_troop_1ae98ad7de2c13b29bd58ae390edc1db4e" kind="property"><name>Rpg</name></member>
+    <member refid="class_r_p_g_1_1_troop_1aa20c0f4e8ab3d944f366831fb8dbfa62" kind="property"><name>TroopRelation</name></member>
+    <member refid="class_r_p_g_1_1_troop_1a1f0f6634beeccde075ea5632880082a2" kind="property"><name>EnemyTroop</name></member>
+    <member refid="class_r_p_g_1_1_troop_1a03e182fe82fbb9db928e3a124996b3d2" kind="property"><name>Roles</name></member>
+    <member refid="class_r_p_g_1_1_troop_1ade806b2d5cbfe2b2f7b1cbb46da112ef" kind="function"><name>Troop</name></member>
+    <member refid="class_r_p_g_1_1_troop_1aa32ff326ee392fdd4fc794f2135bd157" kind="function"><name>ToString</name></member>
+    <member refid="class_r_p_g_1_1_troop_1afcc9a85041b29e7be014c6e52cc62ecb" kind="function"><name>SetRelation</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_troop_relation" kind="class"><name>RPG::TroopRelation</name>
+    <member refid="class_r_p_g_1_1_troop_relation_1aa9762f3a056db8d7db049a72dee37665" kind="property"><name>EnemyTroop</name></member>
+    <member refid="class_r_p_g_1_1_troop_relation_1aeafdfb5d2b3d3b9903f4e23b38a685e6" kind="property"><name>AllyTroop</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_unknown_skill_handler" kind="class"><name>RPG::CommandHandler::UnknownSkillHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_unknown_skill_handler_1a046ebb93e7845b63dd7ec433e8ea1422" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_unknown_skill_handler_1aca23f8839718667edd91039056b8c3a7" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_r_p_g_1_1_command_handler_1_1_water_ball_handler" kind="class"><name>RPG::CommandHandler::WaterBallHandler</name>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_water_ball_handler_1a1e4de8cb077939703c8c6b806c20f7fa" kind="function"><name>CanHandle</name></member>
+    <member refid="class_r_p_g_1_1_command_handler_1_1_water_ball_handler_1aea2da4fd11a04821c19a1765d97fa9d1" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="namespace_r_p_g" kind="namespace"><name>RPG</name>
+    <member refid="namespace_r_p_g_1acb812e08296199a6217dc85070f3c9d1" kind="function"><name>SpellcasterAndTheCursed</name></member>
+    <member refid="namespace_r_p_g_1a2014f857687604e92791db02f638651a" kind="function"><name>SummonerAndSummon</name></member>
+  </compound>
+  <compound refid="namespace_r_p_g_1_1_action_option" kind="namespace"><name>RPG::ActionOption</name>
+    <member refid="namespace_r_p_g_1_1_action_option_1abe7b1d3ffd580f33fb2212094051b2bd" kind="function"><name>Curse</name></member>
+    <member refid="namespace_r_p_g_1_1_action_option_1a0492a4c900e54b6bba92c9ffd45a5ab2" kind="function"><name>FireBall</name></member>
+    <member refid="namespace_r_p_g_1_1_action_option_1a5552b7d2adcfe59343c601eee8cb846d" kind="function"><name>Petrochemical</name></member>
+    <member refid="namespace_r_p_g_1_1_action_option_1aa821c870cea59b0cb918210397a8fcfd" kind="function"><name>Poison</name></member>
+    <member refid="namespace_r_p_g_1_1_action_option_1af3171e8e0f10bfdcb80ead028d0cd044" kind="function"><name>SelfHealing</name></member>
+    <member refid="namespace_r_p_g_1_1_action_option_1a3ad7222c547f9e938c223adf88fbf1f5" kind="function"><name>WaterBall</name></member>
+  </compound>
+  <compound refid="namespace_r_p_g_1_1_command" kind="namespace"><name>RPG::Command</name>
+  </compound>
+  <compound refid="namespace_r_p_g_1_1_command_handler" kind="namespace"><name>RPG::CommandHandler</name>
+  </compound>
+  <compound refid="namespace_r_p_g_1_1_enum" kind="namespace"><name>RPG::Enum</name>
+    <member refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccf" kind="enum"><name>TargetRelation</name></member>
+    <member refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfaad6e7652b1bdfb38783486c2c3d5e806" kind="enumvalue"><name>Self</name></member>
+    <member refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa0dd87782600574e2f791bcfe639d4fcc" kind="enumvalue"><name>Ally</name></member>
+    <member refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa8c6d21187fb58b7a079d70030686b33e" kind="enumvalue"><name>Enemy</name></member>
+    <member refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa2fdacff69f844ddd9917be464304b4a7" kind="enumvalue"><name>AllEnemy</name></member>
+    <member refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfab1c94ca2fbc3e78fc30069c8d0f01680" kind="enumvalue"><name>All</name></member>
+    <member refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
+  </compound>
+  <compound refid="namespace_r_p_g_1_1_observer" kind="namespace"><name>RPG::Observer</name>
+  </compound>
+  <compound refid="namespace_r_p_g_1_1_status" kind="namespace"><name>RPG::Status</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_cryptography" kind="namespace"><name>System::Security::Cryptography</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespacevar" kind="namespace"><name>var</name>
+  </compound>
+  <compound refid="_basic_attack_8cs" kind="file"><name>BasicAttack.cs</name>
+  </compound>
+  <compound refid="_action_option_2_cheer_up_8cs" kind="file"><name>CheerUp.cs</name>
+  </compound>
+  <compound refid="_status_2_cheer_up_8cs" kind="file"><name>CheerUp.cs</name>
+  </compound>
+  <compound refid="_curse_8cs" kind="file"><name>Curse.cs</name>
+  </compound>
+  <compound refid="_fire_ball_8cs" kind="file"><name>FireBall.cs</name>
+  </compound>
+  <compound refid="_i_action_option_8cs" kind="file"><name>IActionOption.cs</name>
+  </compound>
+  <compound refid="_one_punch_8cs" kind="file"><name>OnePunch.cs</name>
+  </compound>
+  <compound refid="_action_option_2_petrochemical_8cs" kind="file"><name>Petrochemical.cs</name>
+  </compound>
+  <compound refid="_status_2_petrochemical_8cs" kind="file"><name>Petrochemical.cs</name>
+  </compound>
+  <compound refid="_poison_8cs" kind="file"><name>Poison.cs</name>
+  </compound>
+  <compound refid="_self_explosion_8cs" kind="file"><name>SelfExplosion.cs</name>
+  </compound>
+  <compound refid="_self_healing_8cs" kind="file"><name>SelfHealing.cs</name>
+  </compound>
+  <compound refid="_skill_8cs" kind="file"><name>Skill.cs</name>
+  </compound>
+  <compound refid="_summon_8cs" kind="file"><name>Summon.cs</name>
+  </compound>
+  <compound refid="_water_ball_8cs" kind="file"><name>WaterBall.cs</name>
+  </compound>
+  <compound refid="_basic_attack_command_8cs" kind="file"><name>BasicAttackCommand.cs</name>
+  </compound>
+  <compound refid="_cheer_up_command_8cs" kind="file"><name>CheerUpCommand.cs</name>
+  </compound>
+  <compound refid="_curse_command_8cs" kind="file"><name>CurseCommand.cs</name>
+  </compound>
+  <compound refid="_fire_ball_command_8cs" kind="file"><name>FireBallCommand.cs</name>
+  </compound>
+  <compound refid="_i_command_8cs" kind="file"><name>ICommand.cs</name>
+  </compound>
+  <compound refid="_one_punch_command_8cs" kind="file"><name>OnePunchCommand.cs</name>
+  </compound>
+  <compound refid="_petrochemical_command_8cs" kind="file"><name>PetrochemicalCommand.cs</name>
+  </compound>
+  <compound refid="_poison_command_8cs" kind="file"><name>PoisonCommand.cs</name>
+  </compound>
+  <compound refid="_self_explosion_command_8cs" kind="file"><name>SelfExplosionCommand.cs</name>
+  </compound>
+  <compound refid="_self_healing_command_8cs" kind="file"><name>SelfHealingCommand.cs</name>
+  </compound>
+  <compound refid="_summon_command_8cs" kind="file"><name>SummonCommand.cs</name>
+  </compound>
+  <compound refid="_water_ball_command_8cs" kind="file"><name>WaterBallCommand.cs</name>
+  </compound>
+  <compound refid="_abstract_command_handler_8cs" kind="file"><name>AbstractCommandHandler.cs</name>
+  </compound>
+  <compound refid="_cheer_up_handler_8cs" kind="file"><name>CheerUpHandler.cs</name>
+  </compound>
+  <compound refid="_curse_handler_8cs" kind="file"><name>CurseHandler.cs</name>
+  </compound>
+  <compound refid="_fire_ball_handler_8cs" kind="file"><name>FireBallHandler.cs</name>
+  </compound>
+  <compound refid="_i_command_handler_8cs" kind="file"><name>ICommandHandler.cs</name>
+  </compound>
+  <compound refid="_one_punch_handler_8cs" kind="file"><name>OnePunchHandler.cs</name>
+  </compound>
+  <compound refid="_petrochemical_handler_8cs" kind="file"><name>PetrochemicalHandler.cs</name>
+  </compound>
+  <compound refid="_poison_handler_8cs" kind="file"><name>PoisonHandler.cs</name>
+  </compound>
+  <compound refid="_self_explosion_handler_8cs" kind="file"><name>SelfExplosionHandler.cs</name>
+  </compound>
+  <compound refid="_self_healing_handler_8cs" kind="file"><name>SelfHealingHandler.cs</name>
+  </compound>
+  <compound refid="_summon_handler_8cs" kind="file"><name>SummonHandler.cs</name>
+  </compound>
+  <compound refid="_unknown_skill_handler_8cs" kind="file"><name>UnknownSkillHandler.cs</name>
+  </compound>
+  <compound refid="_water_ball_handler_8cs" kind="file"><name>WaterBallHandler.cs</name>
+  </compound>
+  <compound refid="_target_relation_8cs" kind="file"><name>TargetRelation.cs</name>
+  </compound>
+  <compound refid="_curse_buff_8cs" kind="file"><name>CurseBuff.cs</name>
+  </compound>
+  <compound refid="_i_observer_8cs" kind="file"><name>IObserver.cs</name>
+  </compound>
+  <compound refid="_summon_buff_8cs" kind="file"><name>SummonBuff.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_program_8cs_1af34381d72a18d3094b1c0c79b95efc12" kind="typedef"><name>stringWriter</name></member>
+    <member refid="_program_8cs_1a349d39ecb8cf69b92f64f23775abc311" kind="variable"><name>OutputEncoding</name></member>
+    <member refid="_program_8cs_1a587987c6126244cdb7d6fdaa538f85fc" kind="variable"><name>inputPath</name></member>
+    <member refid="_program_8cs_1a71fc41fe794af7bb443f905e7921750e" kind="variable"><name>army1Roles</name></member>
+    <member refid="_program_8cs_1a3b2331f0590e817e483129f1c36c890a" kind="variable"><name>army2Roles</name></member>
+    <member refid="_program_8cs_1a1aabd8cde0032e50e8530c1d763b6916" kind="variable"><name>currentArmyFlag</name></member>
+    <member refid="_program_8cs_1a45baea0008353ce1cf0e59a89e02dfec" kind="variable"><name>lines</name></member>
+    <member refid="_program_8cs_1a39dc3eb42017896a8723ac778ff3f054" kind="variable"><name>troop1</name></member>
+    <member refid="_program_8cs_1a91d04dc1bda79bc36acbebb48cac4d38" kind="variable"><name>troop2</name></member>
+    <member refid="_program_8cs_1a5d481374df5d64bd49477079d8717462" kind="variable"><name>extraInputs</name></member>
+    <member refid="_program_8cs_1a2fb8e8d0781d256e8e61c487f4307655" kind="variable"><name>rpg</name></member>
+    <member refid="_program_8cs_1ab607fb643dcd345c185ea74f1c5d9e95" kind="variable"><name>originalConsoleOut</name></member>
+    <member refid="_program_8cs_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="_program_8cs_1add54dddec4f0266c6fab8d04bf7d9136" kind="variable"><name>finally</name></member>
+    <member refid="_program_8cs_1a8a7d32d937c29440d6081a67c617b57d" kind="variable"><name>actualOutput</name></member>
+    <member refid="_program_8cs_1a5a69c7f0910fff70fbc3e21af48dfef1" kind="variable"><name>expectedOutputPath</name></member>
+    <member refid="_program_8cs_1a36466f5e7c5f726704c8c06afc761d60" kind="variable"><name>expectedOutput</name></member>
+    <member refid="_program_8cs_1a0544c3fe466e421738dae463968b70ba" kind="variable"><name>else</name></member>
+    <member refid="_program_8cs_1a40407f674a9a2083220a649e634cd693" kind="function"><name>if</name></member>
+    <member refid="_program_8cs_1a67cc60453fdd62450608a4a68d69f533" kind="function"><name>foreach</name></member>
+    <member refid="_program_8cs_1a6b50e10a377e2763d7210054bf328458" kind="function"><name>SetRelation</name></member>
+    <member refid="_program_8cs_1af7587ed3e5462b7b4d0067bdf24949d7" kind="function"><name>WriteLine</name></member>
+    <member refid="_program_8cs_1abe3c66b02b445f1d565a1d517138e013" kind="function"><name>SetOut</name></member>
+    <member refid="_program_8cs_1ab43e01d035a27754dae62444a59b3cab" kind="function"><name>catch</name></member>
+    <member refid="_program_8cs_1aec0eeb87df165117958b59b509c064b8" kind="function"><name>if</name></member>
+    <member refid="_program_8cs_1a52fe587a1f7a9633c62389382f416843" kind="function"><name>WriteLine</name></member>
+    <member refid="_program_8cs_1acc2d86a271eaa79265d57926a2341d9f" kind="function"><name>if</name></member>
+    <member refid="_program_8cs_1ab8c5bd1c812bf8e0c395e69b7f29cf7d" kind="function"><name>WriteLine</name></member>
+    <member refid="_program_8cs_1ac589af7a996f5fa11504db04470ef9c6" kind="function"><name>ResetColor</name></member>
+    <member refid="_program_8cs_1adc0790aa5e973daced543ff5d476de4e" kind="function"><name>WriteAllText</name></member>
+    <member refid="_program_8cs_1ade839134241b8ba1f86efc61c6a85a5b" kind="function"><name>WriteAllText</name></member>
+    <member refid="_program_8cs_1ad776d400429d948391e9684898183139" kind="function"><name>WriteLine</name></member>
+    <member refid="_program_8cs_1a4b82010092585b4bbb91c02d8117ef77" kind="function"><name>WriteLine</name></member>
+  </compound>
+  <compound refid="_a_i_8cs" kind="file"><name>AI.cs</name>
+  </compound>
+  <compound refid="_hero_8cs" kind="file"><name>Hero.cs</name>
+  </compound>
+  <compound refid="_role_8cs" kind="file"><name>Role.cs</name>
+  </compound>
+  <compound refid="_rpg_8cs" kind="file"><name>Rpg.cs</name>
+  </compound>
+  <compound refid="_spellcaster_and_the_cursed_8cs" kind="file"><name>SpellcasterAndTheCursed.cs</name>
+  </compound>
+  <compound refid="_normal_8cs" kind="file"><name>Normal.cs</name>
+  </compound>
+  <compound refid="_poisoned_8cs" kind="file"><name>Poisoned.cs</name>
+  </compound>
+  <compound refid="_state_8cs" kind="file"><name>State.cs</name>
+  </compound>
+  <compound refid="_summoner_and_summon_8cs" kind="file"><name>SummonerAndSummon.cs</name>
+  </compound>
+  <compound refid="_target_condition_8cs" kind="file"><name>TargetCondition.cs</name>
+  </compound>
+  <compound refid="_troop_8cs" kind="file"><name>Troop.cs</name>
+  </compound>
+  <compound refid="_troop_relation_8cs" kind="file"><name>TroopRelation.cs</name>
+  </compound>
+  <compound refid="dir_3a7adac3460378cdb149000cf652b8e4" kind="dir"><name>D:/新增資料夾</name>
+  </compound>
+  <compound refid="dir_d4e817cce6c2f86718b5d38c0d5cd508" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲</name>
+  </compound>
+  <compound refid="dir_aa4f4129b793457795a2a68d6c14c51e" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption</name>
+  </compound>
+  <compound refid="dir_e010cfb24333f9045eb87c55a519b03a" kind="dir"><name>D:/新增資料夾/blueballclass</name>
+  </compound>
+  <compound refid="dir_5029bbd66b6d3cad4cc7f5e47a492da8" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command</name>
+  </compound>
+  <compound refid="dir_664e4ca1ea0a93f8f6d9e3a3f41f83e7" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler</name>
+  </compound>
+  <compound refid="dir_275089585c7fc1b5fd5d7d42c69cb1da" kind="dir"><name>D:</name>
+  </compound>
+  <compound refid="dir_d3eb6c8efd4cb3a80106e343a8f7abf1" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Enum</name>
+  </compound>
+  <compound refid="dir_1b9ded9a3f43be362be8a3df38516e4d" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer</name>
+  </compound>
+  <compound refid="dir_70dad567353b4c30c8a228c0d7525ee7" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role</name>
+  </compound>
+  <compound refid="dir_11d4b5bd7b88b65fcd291da8b1ddf2b3" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG</name>
+  </compound>
+  <compound refid="dir_39d865397219b4ec930a719c0176df4f" kind="dir"><name>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_troop_relation" kind="class" language="C#" prot="public">
+    <compoundname>RPG::TroopRelation</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_troop_relation_1aa9762f3a056db8d7db049a72dee37665" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+        <definition>Troop RPG.TroopRelation.EnemyTroop</definition>
+        <argsstring></argsstring>
+        <name>EnemyTroop</name>
+        <qualifiedname>RPG.TroopRelation.EnemyTroop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TroopRelation.cs" line="5" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TroopRelation.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_troop_relation_1aeafdfb5d2b3d3b9903f4e23b38a685e6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+        <definition>Troop RPG.TroopRelation.AllyTroop</definition>
+        <argsstring></argsstring>
+        <name>AllyTroop</name>
+        <qualifiedname>RPG.TroopRelation.AllyTroop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TroopRelation.cs" line="6" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TroopRelation.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TroopRelation.cs" line="3" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TroopRelation.cs" bodystart="4" bodyend="7"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_troop_relation_1aeafdfb5d2b3d3b9903f4e23b38a685e6" prot="public" virt="non-virtual"><scope>RPG::TroopRelation</scope><name>AllyTroop</name></member>
+      <member refid="class_r_p_g_1_1_troop_relation_1aa9762f3a056db8d7db049a72dee37665" prot="public" virt="non-virtual"><scope>RPG::TroopRelation</scope><name>EnemyTroop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

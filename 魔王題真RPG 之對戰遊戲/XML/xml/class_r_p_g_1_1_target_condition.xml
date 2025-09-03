@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_target_condition" kind="class" language="C#" prot="public">
+    <compoundname>RPG::TargetCondition</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_target_condition_1a8fd6f8c42f7f903d8ec0b58d00d613f4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccf" kindref="member">TargetRelation</ref></type>
+        <definition>TargetRelation RPG.TargetCondition.TargetRelation</definition>
+        <argsstring></argsstring>
+        <name>TargetRelation</name>
+        <qualifiedname>RPG.TargetCondition.TargetRelation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TargetCondition.cs" line="7" column="27" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TargetCondition.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_target_condition_1a768b8ed54ed57abd9973152fb4a99250" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RPG.TargetCondition.MaxTargets</definition>
+        <argsstring></argsstring>
+        <name>MaxTargets</name>
+        <qualifiedname>RPG.TargetCondition.MaxTargets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TargetCondition.cs" line="8" column="16" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TargetCondition.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_target_condition_1acb8cfcfb131979f4d9e5c426c4475cad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.TargetCondition.TargetCondition</definition>
+        <argsstring>(TargetRelation targetRelation, int maxTargets)</argsstring>
+        <name>TargetCondition</name>
+        <qualifiedname>RPG.TargetCondition.TargetCondition</qualifiedname>
+        <param>
+          <type><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccf" kindref="member">TargetRelation</ref></type>
+          <declname>targetRelation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxTargets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TargetCondition.cs" line="10" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TargetCondition.cs" bodystart="10" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TargetCondition.cs" line="5" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/TargetCondition.cs" bodystart="6" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_target_condition_1a768b8ed54ed57abd9973152fb4a99250" prot="public" virt="non-virtual"><scope>RPG::TargetCondition</scope><name>MaxTargets</name></member>
+      <member refid="class_r_p_g_1_1_target_condition_1acb8cfcfb131979f4d9e5c426c4475cad" prot="public" virt="non-virtual"><scope>RPG::TargetCondition</scope><name>TargetCondition</name></member>
+      <member refid="class_r_p_g_1_1_target_condition_1a8fd6f8c42f7f903d8ec0b58d00d613f4" prot="public" virt="non-virtual"><scope>RPG::TargetCondition</scope><name>TargetRelation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_a_i" kind="class" language="C#" prot="public">
+    <compoundname>RPG::AI</compoundname>
+    <basecompoundref refid="class_r_p_g_1_1_role" prot="public" virt="non-virtual">RPG.Role</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_a_i_1a3e4249c174dbf9fd6efc3784cbb85a19" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RPG.AI.Seed</definition>
+        <argsstring></argsstring>
+        <name>Seed</name>
+        <qualifiedname>RPG.AI.Seed</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" line="5" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_a_i_1a341950d6f7c56a5bed5bb66a68d0bc8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.AI.AI</definition>
+        <argsstring>(string name, int hp, int mp, int str)</argsstring>
+        <name>AI</name>
+        <qualifiedname>RPG.AI.AI</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" line="7" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" bodystart="7" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_a_i_1abbe9edf58083aa7daa1f5ba00c52df7e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int RPG.AI.SelectActionIndexHook</definition>
+        <argsstring>()</argsstring>
+        <name>SelectActionIndexHook</name>
+        <qualifiedname>RPG.AI.SelectActionIndexHook</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" line="11" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" bodystart="11" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_a_i_1ad7675eb30dcbff8d2451bf601a85a984" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RPG.AI.S2PostDecisionHook</definition>
+        <argsstring>()</argsstring>
+        <name>S2PostDecisionHook</name>
+        <qualifiedname>RPG.AI.S2PostDecisionHook</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" line="23" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_a_i_1af35183acc57c23468a3226e7b7a4173e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+        <definition>override List&lt; Role &gt; RPG.AI.SelectTargetsHook</definition>
+        <argsstring>(List&lt; Role &gt; availableTargets, int targetConditionMaxTargets)</argsstring>
+        <name>SelectTargetsHook</name>
+        <qualifiedname>RPG.AI.SelectTargetsHook</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>availableTargets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>targetConditionMaxTargets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" line="28" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" bodystart="28" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.AI</label>
+        <link refid="class_r_p_g_1_1_a_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.Role</label>
+        <link refid="class_r_p_g_1_1_role"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.AI</label>
+        <link refid="class_r_p_g_1_1_a_i"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.Role</label>
+        <link refid="class_r_p_g_1_1_role"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" line="3" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/AI.cs" bodystart="4" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_a_i_1a341950d6f7c56a5bed5bb66a68d0bc8a" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>AI</name></member>
+      <member refid="class_r_p_g_1_1_role_1a363964d2e34092a34ad53f654dffc727" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>CanAction</name></member>
+      <member refid="class_r_p_g_1_1_role_1a490d4ced44fb5c1178497fc5ceeadab3" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Commands</name></member>
+      <member refid="class_r_p_g_1_1_role_1aa241f4592bbebad9125028398cfd0406" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Duration</name></member>
+      <member refid="class_r_p_g_1_1_role_1ad059a010654dbf5cad02e58e2b4d55be" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>EnterState</name></member>
+      <member refid="class_r_p_g_1_1_role_1a1e5e2c45269abe5afbbc65db8c054d9b" prot="protected" virt="non-virtual"><scope>RPG::AI</scope><name>GetAvailableAllyTargets</name></member>
+      <member refid="class_r_p_g_1_1_role_1a5feaac04e1867c208d34dec19cc37615" prot="protected" virt="non-virtual"><scope>RPG::AI</scope><name>GetAvailableEnemyTargets</name></member>
+      <member refid="class_r_p_g_1_1_role_1adb03f5e9b48634d69e754bc089188941" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>HandleEndOfTurn</name></member>
+      <member refid="class_r_p_g_1_1_role_1a3f7949dbc8793d277cfa620c0d81ad2c" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>HandleStartOfTurn</name></member>
+      <member refid="class_r_p_g_1_1_role_1a2acbd3755e36c3b18c9c5d7c928e2d57" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Hp</name></member>
+      <member refid="class_r_p_g_1_1_role_1a29a642e392572d9463ae8916954c19bb" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Mp</name></member>
+      <member refid="class_r_p_g_1_1_role_1a36a35318c0ca2b908b280c72d273fff4" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Name</name></member>
+      <member refid="class_r_p_g_1_1_role_1a78b0803b864f6647946f46e1b1b3a5da" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>NotifyObservers</name></member>
+      <member refid="class_r_p_g_1_1_role_1a4cd36f531428aac88a42fedf5ebda1d7" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Observers</name></member>
+      <member refid="class_r_p_g_1_1_role_1a459db2bd4b4459c48192bf18dde05d5e" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>RegisterObserver</name></member>
+      <member refid="class_r_p_g_1_1_role_1a0fbc4aca0338a0ae8b7eaf7f34108c35" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_a_i_1ad7675eb30dcbff8d2451bf601a85a984" prot="protected" virt="non-virtual"><scope>RPG::AI</scope><name>S2PostDecisionHook</name></member>
+      <member refid="class_r_p_g_1_1_role_1a2143dd2f093e54918ec39e99c5d2ab47" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>S3</name></member>
+      <member refid="class_r_p_g_1_1_a_i_1a3e4249c174dbf9fd6efc3784cbb85a19" prot="private" virt="non-virtual"><scope>RPG::AI</scope><name>Seed</name></member>
+      <member refid="class_r_p_g_1_1_a_i_1abbe9edf58083aa7daa1f5ba00c52df7e" prot="protected" virt="non-virtual"><scope>RPG::AI</scope><name>SelectActionIndexHook</name></member>
+      <member refid="class_r_p_g_1_1_a_i_1af35183acc57c23468a3226e7b7a4173e" prot="protected" virt="non-virtual"><scope>RPG::AI</scope><name>SelectTargetsHook</name></member>
+      <member refid="class_r_p_g_1_1_role_1a9bc6a8c5ba2ce56637b6e17dc4ba87e9" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Spellcaster</name></member>
+      <member refid="class_r_p_g_1_1_role_1ae562e2e9e362b5477bb57b001db403ad" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>State</name></member>
+      <member refid="class_r_p_g_1_1_role_1a786252647338c95d577cf87d6e2416e3" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Str</name></member>
+      <member refid="class_r_p_g_1_1_role_1ad63a6e422d42bc0185caf8db27b99fa9" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Summoned</name></member>
+      <member refid="class_r_p_g_1_1_role_1a91ff2b4cf3615dbdd26558d3a7d88b91" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Summoner</name></member>
+      <member refid="class_r_p_g_1_1_role_1a9456ca95a3d51bbe8f3d6a2906bc5b46" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>TemplateS1</name></member>
+      <member refid="class_r_p_g_1_1_role_1a1b9d46825d9c4efa79faea9f32f966cc" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>TemplateS2</name></member>
+      <member refid="class_r_p_g_1_1_role_1a8abdce8ba599106f26e4dfc17da06c8f" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>TheCursed</name></member>
+      <member refid="class_r_p_g_1_1_role_1a012aa4e4dac41e7785d50e1150400738" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>Troop</name></member>
+      <member refid="class_r_p_g_1_1_role_1ae346051e686170e061593ec483c54234" prot="public" virt="non-virtual"><scope>RPG::AI</scope><name>UnregisterObserver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

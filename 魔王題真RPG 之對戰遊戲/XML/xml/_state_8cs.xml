@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_state_8cs" kind="file" language="C#">
+    <compoundname>State.cs</compoundname>
+    <innerclass refid="class_r_p_g_1_1_status_1_1_state" prot="public">RPG::Status::State</innerclass>
+    <innernamespace refid="namespace_r_p_g">RPG</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_status">RPG::Status</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_status" kindref="compound">RPG.Status</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_r_p_g_1_1_status_1_1_state" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" kindref="member">State</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_r_p_g_1_1_status_1_1_state_1a3bdee8fa8ffa1c3a8cd6d3ddef93482b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a3bdee8fa8ffa1c3a8cd6d3ddef93482b" kindref="member">InitialDuration</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_r_p_g_1_1_status_1_1_state_1a26db75a01aec667b473f842873f37873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a26db75a01aec667b473f842873f37873" kindref="member">CanAction</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8" refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" kindref="member">Role</ref><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" kindref="member">Role</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" kindref="member">State</ref>(<ref refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" kindref="member">Role</ref><sp/>role)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.Role<sp/>=<sp/>role;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_r_p_g_1_1_status_1_1_state_1a82f01c226be58116bd7697ac5eee9389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a82f01c226be58116bd7697ac5eee9389" kindref="member">EntryState</ref>(<ref refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" kindref="member">State</ref><sp/>state)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_role_1ae562e2e9e362b5477bb57b001db403ad" kindref="member">Role.State</ref><sp/>=<sp/>state;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_role_1aa241f4592bbebad9125028398cfd0406" kindref="member">Role.Duration</ref><sp/>=<sp/>state.<ref refid="class_r_p_g_1_1_status_1_1_state_1a3bdee8fa8ffa1c3a8cd6d3ddef93482b" kindref="member">InitialDuration</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_r_p_g_1_1_status_1_1_state_1a1e4aaaaf2d200dd42205a6708a99358b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a1e4aaaaf2d200dd42205a6708a99358b" kindref="member">ExitState</ref>(<ref refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" kindref="member">State</ref><sp/>state)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_role_1ae562e2e9e362b5477bb57b001db403ad" kindref="member">Role.State</ref><sp/>=<sp/>state;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_role_1aa241f4592bbebad9125028398cfd0406" kindref="member">Role.Duration</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_r_p_g_1_1_status_1_1_state_1a592955e39709ecd37c338fb57fb3dd93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a592955e39709ecd37c338fb57fb3dd93" kindref="member">HandleStartOfTurn</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_r_p_g_1_1_status_1_1_state_1aa9d188cdcea392beabb6ca6a73bbc3ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1aa9d188cdcea392beabb6ca6a73bbc3ff" kindref="member">HandleEndOfTurn</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>is<sp/><ref refid="class_r_p_g_1_1_status_1_1_normal" kindref="compound">Normal</ref>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" kindref="member">Role</ref>.Duration--;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" kindref="member">Role</ref>.Duration<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a1e4aaaaf2d200dd42205a6708a99358b" kindref="member">ExitState</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_normal" kindref="compound">Normal</ref>(<ref refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" kindref="member">Role</ref>));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs"/>
+  </compounddef>
+</doxygen>
