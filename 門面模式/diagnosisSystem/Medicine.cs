@@ -8,7 +8,7 @@ public class Medicine
 
     public Medicine(string name)
     {
-        Name = Regex.IsMatch(name, @".{3,30}&")
+        Name = Regex.IsMatch(name, @".{3,30}$")
             ? name
             : throw new ArgumentException("Invalid medicine name, only 3-30 characters allowed");
     }

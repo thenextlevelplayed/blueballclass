@@ -3,18 +3,18 @@
 public class Prescriber
 {
     private PatientDb PatientDb { get; }
-    private Case CurrentCase { get; set; }
-    private Prescription CurrentPrescription { get; set; }
+    // private Case CurrentCase { get; set; }
+    // private Prescription CurrentPrescription { get; set; }
     public DiseaseDiagnosis DiseaseDiagnosis { get; set; }
-    
-    public List<IDiagnosisStrategy> DiagnosisStrategy { get; set; }
-    
 
-    public Prescriber(PatientDb patientDb, Case newCase, Prescription prescription)
+    public List<IDiagnosisStrategy> DiagnosisStrategy { get; set; } = new List<IDiagnosisStrategy>();
+
+
+    public Prescriber(PatientDb patientDb)
     {
         PatientDb = patientDb;
-        CurrentCase = newCase;
-        CurrentPrescription = prescription;
+        // CurrentCase = newCase;
+        // CurrentPrescription = prescription;
     }
 
     public void Demand(string id, List<Symptom> symptoms)
@@ -50,18 +50,31 @@ public class Prescriber
         // {
         //     // CurrentPrescription = new Prescription("無法診斷", "無法診斷", new List<Medicine>(), "無法診斷");
         // }
-        foreach (var strategy in DiagnosisStrategy)
-        {
-            if (symptoms.Contains(Symptom.Headache) && symptoms.Contains(Symptom.Cough))
-            {
-                CurrentPrescription = strategy.CurrentPrescription;
-            }
-            strategy.CurrentPrescription = CurrentPrescription;
-        }
+        // foreach (var strategy in DiagnosisStrategy)
+        // {
+        //     if (symptoms.Contains(Symptom.Headache) && symptoms.Contains(Symptom.Cough))
+        //     {
+        //         if (typeof(CovidStrategy) == strategy.GetType())
+        //             CurrentPrescription = strategy.CurrentPrescription;
+        //     }
+        //
+        //     if (symptoms.Contains(Symptom.Sneeze) && patient.Age == 18)
+        //     {
+        //         if (typeof(AttractiveStrategy) == strategy.GetType())
+        //             CurrentPrescription = strategy.CurrentPrescription;
+        //     }
+        //
+        //     if (symptoms.Contains(Symptom.Snore) && patient.Weight / (patient.Height * patient.Height) > 26)
+        //     {
+        //         if (typeof(SleepApneaStrategy) == strategy.GetType())
+        //             CurrentPrescription = strategy.CurrentPrescription;
+        //     }
+        // }
+
         new CovidHandler(
             new AttractiveHandler(
                 new SleepApneaHandler(null)
             )
-        ).TemplateDiagnose(patient, symptoms, PatientDb);
+        ).TemplateDiagnose(patient, symptoms, PatientDb, DiagnosisStrategy);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 
 namespace diagnosisSystem;
 
@@ -10,9 +11,10 @@ public class Patient
     public int Age { get; set; }
     public float Height { get; set; }
     public float Weight { get; set; }
-    public List<Case> PatientCases { get; set; }
+    public List<Case?> PatientCases { get; set; }
 
-    private Patient(string id, string name, string gender, int age, float height, float weight, List<Case> patientCases)
+    [JsonConstructor]
+    public Patient(string id, string name, string gender, int age, float height, float weight, List<Case> patientCases)
     {
         Id = Regex.IsMatch(id, @"^[A-Z]{1}[1-2]{1}[0-9]{8}$") ? id : throw new ArgumentException("Invalid id");
         Name = Regex.IsMatch(name, @"[A-Za-z]{1,30}$")
@@ -28,6 +30,6 @@ public class Patient
         Weight = weight is >= 1 and <= 500
             ? weight
             : throw new ArgumentException("Invalid weight, only 1-500 allowed");
-        PatientCases = patientCases;
+        PatientCases = patientCases.Count() !=0 ? patientCases : new List<Case>(null);
     }
 }

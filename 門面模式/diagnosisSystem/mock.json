@@ -1,0 +1,84 @@
+﻿[
+  {
+    "Id": "A123456789",
+    "Name": "ChenWeiLin",
+    "Gender": "male",
+    "Age": 45,
+    "Height": 175.0,
+    "Weight": 78.5,
+    "PatientCases": [
+      {
+        "CaseTime": "2025-09-08T10:30:00",
+        "Symptoms": [       
+          "Headache",
+          "Cough"
+        ],
+        "Prescription": {
+          "Name": "清冠一號",
+          "PotentialDisease": "新冠肺炎 (專業學名：COVID-19)",
+          "Medicines": [
+            {
+              "Name": "清冠一號"
+            }
+          ],
+          "Usage": "將相關藥材裝入茶包裡，使用500 mL 溫、熱水沖泡悶煮1~3 分鐘後即可飲用。"
+        }
+      }
+    ]
+  },
+  {
+    "Id": "B234567890",
+    "Name": "LinMeiHua",
+    "Gender": "female",
+    "Age": 18,
+    "Height": 162.5,
+    "Weight": 50.0,
+    "PatientCases": [
+      {
+        "CaseTime": "2025-09-07T14:00:00",
+        "Symptoms": [
+          "Sneeze"
+        ],
+        "Prescription": {
+          "Name": "青春抑制劑",
+          "PotentialDisease": "有人想你了 (專業學名：Attractive)",
+          "Medicines": [
+            {
+              "Name": "假鬢角"
+            },
+            {
+              "Name": "臭味道"
+            }
+          ],
+          "Usage": "把假鬢角黏在臉的兩側，讓自己異性緣差一點，自然就不會有人想妳了。"
+        }
+      }
+    ]
+  },
+  {
+    "Id": "C145678901",
+    "Name": "HuangZhiMing",
+    "Gender": "male",
+    "Age": 55,
+    "Height": 168.0,
+    "Weight": 95.3,
+    "PatientCases": [
+      {
+        "CaseTime": "2025-09-06T09:15:00",
+        "Symptoms": [
+          "Snore"
+        ],
+        "Prescription": {
+          "Name": "打呼抑制劑",
+          "PotentialDisease": "睡眠呼吸中止症 (專業學名：SleepApneaSyndrome)",
+          "Medicines": [
+            {
+              "Name": "一捲膠帶"
+            }
+          ],
+          "Usage": "睡覺時，撕下兩塊膠帶，將兩塊膠帶交錯黏在關閉的嘴巴上，就不會打呼了。"
+        }
+      }
+    ]
+  }
+]

@@ -1,12 +1,15 @@
-﻿namespace diagnosisSystem;
+﻿using System.Text.Json.Serialization;
+
+namespace diagnosisSystem;
 
 public class Case
 {
     public List<Symptom> Symptoms { get; set; }
     public Prescription Prescription { get; set; }
-    public int CaseTime { get; set; }
+    public DateTime CaseTime { get; set; }
 
-    public Case(List<Symptom> symptoms, Prescription prescription, int caseTime)
+    [JsonConstructor]
+    public Case(List<Symptom> symptoms, Prescription prescription, DateTime caseTime)
     {
         Symptoms = symptoms;
         Prescription = prescription;
