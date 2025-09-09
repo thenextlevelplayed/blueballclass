@@ -2,27 +2,18 @@
 
 public class PrescriptionSystemFacade
 {
-    public void RunCompleteDiagnosis(string file, string diseaseTxt, string patientId, List<Symptom> symptoms,
+    public async Task RunCompleteDiagnosis(string file, string diseaseTxt, string patientId, List<Symptom> symptoms,
         string outputPath, string outputFormat)
     {
-        var patientDb = new PatientDb();
-        var prescriber = new Prescriber(patientDb);
-        var diseaseDiagnosis = new DiseaseDiagnosis(prescriber);
-        diseaseDiagnosis.TxtParser(diseaseTxt);
-        diseaseDiagnosis.LoadDiseasesInfo();
-        prescriber.Demand(patientId, symptoms);
-        var patientDbFacade = new PatientDbFacade(file);
-        patientDbFacade.RequestDiagnosis(patientId, symptoms);
-        var 
+        var patientDbFacade = new PatientDbFacade(file,diseaseTxt);
+        Case? finishedCase = await patientDbFacade.RequestDiagnosisAsync(patientId, symptoms);
         if (outputFormat == "json")
         {
-            var jsonExporter = patientDbFacade.JsonExporter(outputPath);
-            jsonExporter.Export(patientDb, patientId);
+            await patientDbFacade.JsonExporter(finishedCase,outputPath);
         }
         else if (outputFormat == "csv")
         {
-            var csvExporter = patientDbFacade.CsvExporter(outputPath);
-            csvExporter.Export(patientDb, patientId);
+            await patientDbFacade.CsvExporter(finishedCase,outputPath);
         }
     }
 }

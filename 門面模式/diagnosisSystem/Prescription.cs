@@ -1,5 +1,4 @@
-﻿using System.Text.Json.Serialization;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace diagnosisSystem;
 
@@ -9,8 +8,7 @@ public class Prescription
     public string PotentialDisease { get; set; }
     public List<Medicine> Medicines { get; set; }
     public string Usage { get; set; }
-
-    [JsonConstructor]
+    
     public Prescription(string name, string potentialDisease, List<Medicine> medicines, string usage)
     {
         Name = Regex.IsMatch(name, @".{4,30}$")

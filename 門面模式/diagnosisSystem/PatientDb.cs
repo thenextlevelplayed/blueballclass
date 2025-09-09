@@ -8,7 +8,7 @@ public class PatientDb
     {
     }
 
-    public Patient QueryPatientById(string id)
+    public Patient? QueryPatientById(string id)
     {
         return Patients.FirstOrDefault(p => p.Id == id);
     }

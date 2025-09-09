@@ -5,7 +5,7 @@
     "Gender": "male",
     "Age": 45,
     "Height": 175.0,
-    "Weight": 78.5,
+    "Weight": 100,
     "PatientCases": [
       {
         "CaseTime": "2025-09-08T10:30:00",

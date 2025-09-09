@@ -1,0 +1,16 @@
+{
+  "Symptoms": [
+    "Snore"
+  ],
+  "Prescription": {
+    "Name": "清冠一號",
+    "PotentialDisease": "新冠肺炎（專業學名：COVID-19）",
+    "Medicines": [
+      {
+        "Name": "清冠一號"
+      }
+    ],
+    "Usage": "將相關藥材裝入茶包裡，使用500 mL 溫、熱水沖泡悶煮1~3 分鐘後即可飲用。"
+  },
+  "CaseTime": "2025-09-09T13:43:18.5257428+08:00"
+}

@@ -48,24 +48,27 @@ public class DiagnosisRequestProcessor : IDisposable
 
             try
             {
-                // 等待取得唯一的一個處理名額
-                await _semaphore.WaitAsync(token);
+                
 
                 if (_requestQueue.TryDequeue(out var request))
                 {
                     try
                     {
+                        // 等待取得唯一的一個處理名額
+                        await _semaphore.WaitAsync(token);
+                        
                         Console.WriteLine($"--> [處理器] 開始診斷病人: {request.PatientId}。(佇列剩餘: {_requestQueue.Count})");
                         
                         // *** 執行真正的診斷工作 ***
                         // 這裡不再是 await，因為 Prescriber.Demand 是同步方法
                         // 但它是在一個非同步的 Task 中被執行的，所以不會阻塞主執行緒
-                        _prescriber.Demand(request.PatientId, request.Symptoms);
+                        var newCase = _prescriber.Demand(request.PatientId, request.Symptoms);
 
                         // 模擬診斷需要一些時間
                         await Task.Delay(1500, token); 
 
                         Console.WriteLine($"<-- [處理器] 完成診斷病人: {request.PatientId}。");
+                        request.Tcs.SetResult(newCase);
                     }
                     catch (Exception ex)
                     {
@@ -101,7 +104,7 @@ public class DiagnosisRequestProcessor : IDisposable
     public async Task StopAsync()
     {
         Console.WriteLine("[處理器] 正在停止...");
-        _cts.Cancel();
+        await _cts.CancelAsync();
         await _consumerTask; // 等待背景任務完全結束
     }
 
