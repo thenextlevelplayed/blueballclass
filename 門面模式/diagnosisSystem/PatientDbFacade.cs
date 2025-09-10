@@ -152,15 +152,6 @@ public class PatientDbFacade
     }
 
     /// <summary>
-    /// 公開的 API，用來提交一個新的診斷請求
-    /// </summary>
-    public void RequestDiagnosis(string patientId, List<Symptom> symptoms)
-    {
-        var request = new DiagnosisRequest(patientId, symptoms);
-        _processor.EnqueueRequest(request);
-    }
-
-    /// <summary>
     /// 提供一個方法來優雅地關閉背景處理
     /// </summary>
     public async Task ShutdownAsync()

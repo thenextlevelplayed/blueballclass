@@ -65,8 +65,9 @@ public class DiagnosisRequestProcessor : IDisposable
                         var newCase = _prescriber.Demand(request.PatientId, request.Symptoms);
 
                         // 模擬診斷需要一些時間
-                        await Task.Delay(1500, token); 
-
+                        await Task.Delay(3000, token); 
+//Transitions the underlying Task<TResult> into the Ran To Completion state.
+//Represents the producer side of a Task<TResult> unbound to a delegate, providing access to the consumer side through the Task property.
                         Console.WriteLine($"<-- [處理器] 完成診斷病人: {request.PatientId}。");
                         request.Tcs.SetResult(newCase);
                     }
