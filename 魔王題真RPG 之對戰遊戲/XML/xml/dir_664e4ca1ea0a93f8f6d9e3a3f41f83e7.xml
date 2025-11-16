@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_664e4ca1ea0a93f8f6d9e3a3f41f83e7" kind="dir">
+    <compoundname>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler</compoundname>
+    <innerfile refid="_abstract_command_handler_8cs">AbstractCommandHandler.cs</innerfile>
+    <innerfile refid="_cheer_up_handler_8cs">CheerUpHandler.cs</innerfile>
+    <innerfile refid="_curse_handler_8cs">CurseHandler.cs</innerfile>
+    <innerfile refid="_fire_ball_handler_8cs">FireBallHandler.cs</innerfile>
+    <innerfile refid="_i_command_handler_8cs">ICommandHandler.cs</innerfile>
+    <innerfile refid="_one_punch_handler_8cs">OnePunchHandler.cs</innerfile>
+    <innerfile refid="_petrochemical_handler_8cs">PetrochemicalHandler.cs</innerfile>
+    <innerfile refid="_poison_handler_8cs">PoisonHandler.cs</innerfile>
+    <innerfile refid="_self_explosion_handler_8cs">SelfExplosionHandler.cs</innerfile>
+    <innerfile refid="_self_healing_handler_8cs">SelfHealingHandler.cs</innerfile>
+    <innerfile refid="_summon_handler_8cs">SummonHandler.cs</innerfile>
+    <innerfile refid="_unknown_skill_handler_8cs">UnknownSkillHandler.cs</innerfile>
+    <innerfile refid="_water_ball_handler_8cs">WaterBallHandler.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/"/>
+  </compounddef>
+</doxygen>

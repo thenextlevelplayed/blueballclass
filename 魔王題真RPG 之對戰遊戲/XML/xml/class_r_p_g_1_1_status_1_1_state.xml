@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_status_1_1_state" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>RPG::Status::State</compoundname>
+    <derivedcompoundref refid="class_r_p_g_1_1_status_1_1_cheer_up" prot="public" virt="non-virtual">RPG.Status.CheerUp</derivedcompoundref>
+    <derivedcompoundref refid="class_r_p_g_1_1_status_1_1_normal" prot="public" virt="non-virtual">RPG.Status.Normal</derivedcompoundref>
+    <derivedcompoundref refid="class_r_p_g_1_1_status_1_1_petrochemical" prot="public" virt="non-virtual">RPG.Status.Petrochemical</derivedcompoundref>
+    <derivedcompoundref refid="class_r_p_g_1_1_status_1_1_poisoned" prot="public" virt="non-virtual">RPG.Status.Poisoned</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_status_1_1_state_1a3bdee8fa8ffa1c3a8cd6d3ddef93482b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RPG.Status.State.InitialDuration</definition>
+        <argsstring></argsstring>
+        <name>InitialDuration</name>
+        <qualifiedname>RPG.Status.State.InitialDuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="5" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_status_1_1_state_1a26db75a01aec667b473f842873f37873" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>bool</type>
+        <definition>virtual bool RPG.Status.State.CanAction</definition>
+        <argsstring></argsstring>
+        <name>CanAction</name>
+        <qualifiedname>RPG.Status.State.CanAction</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="7" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" prot="protected" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+        <definition>Role RPG.Status.State.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>RPG.Status.State.Role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="8" column="20" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.Status.State.State</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>State</name>
+        <qualifiedname>RPG.Status.State.State</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="10" column="15" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_state_1a82f01c226be58116bd7697ac5eee9389" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.Status.State.EntryState</definition>
+        <argsstring>(State state)</argsstring>
+        <name>EntryState</name>
+        <qualifiedname>RPG.Status.State.EntryState</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_status_1_1_state" kindref="compound">State</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="15" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_state_1a1e4aaaaf2d200dd42205a6708a99358b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.Status.State.ExitState</definition>
+        <argsstring>(State state)</argsstring>
+        <name>ExitState</name>
+        <qualifiedname>RPG.Status.State.ExitState</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_status_1_1_state" kindref="compound">State</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="21" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_state_1a592955e39709ecd37c338fb57fb3dd93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.Status.State.HandleStartOfTurn</definition>
+        <argsstring>()</argsstring>
+        <name>HandleStartOfTurn</name>
+        <qualifiedname>RPG.Status.State.HandleStartOfTurn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="27" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_state_1aa9d188cdcea392beabb6ca6a73bbc3ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RPG.Status.State.HandleEndOfTurn</definition>
+        <argsstring>()</argsstring>
+        <name>HandleEndOfTurn</name>
+        <qualifiedname>RPG.Status.State.HandleEndOfTurn</qualifiedname>
+        <reimplementedby refid="class_r_p_g_1_1_status_1_1_cheer_up_1a6ccd08979d6ca86bf9665b7113ad04a4">HandleEndOfTurn</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="29" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" bodystart="29" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.Status.State</label>
+        <link refid="class_r_p_g_1_1_status_1_1_state"/>
+      </node>
+      <node id="2">
+        <label>RPG.Status.CheerUp</label>
+        <link refid="class_r_p_g_1_1_status_1_1_cheer_up"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.Status.Normal</label>
+        <link refid="class_r_p_g_1_1_status_1_1_normal"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RPG.Status.Petrochemical</label>
+        <link refid="class_r_p_g_1_1_status_1_1_petrochemical"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RPG.Status.Poisoned</label>
+        <link refid="class_r_p_g_1_1_status_1_1_poisoned"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" line="3" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/State.cs" bodystart="4" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a26db75a01aec667b473f842873f37873" prot="public" virt="non-virtual"><scope>RPG::Status::State</scope><name>CanAction</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a82f01c226be58116bd7697ac5eee9389" prot="public" virt="non-virtual"><scope>RPG::Status::State</scope><name>EntryState</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a1e4aaaaf2d200dd42205a6708a99358b" prot="public" virt="non-virtual"><scope>RPG::Status::State</scope><name>ExitState</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1aa9d188cdcea392beabb6ca6a73bbc3ff" prot="public" virt="virtual"><scope>RPG::Status::State</scope><name>HandleEndOfTurn</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a592955e39709ecd37c338fb57fb3dd93" prot="public" virt="non-virtual"><scope>RPG::Status::State</scope><name>HandleStartOfTurn</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a3bdee8fa8ffa1c3a8cd6d3ddef93482b" prot="public" virt="non-virtual"><scope>RPG::Status::State</scope><name>InitialDuration</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" prot="protected" virt="non-virtual"><scope>RPG::Status::State</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" prot="protected" virt="non-virtual"><scope>RPG::Status::State</scope><name>State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

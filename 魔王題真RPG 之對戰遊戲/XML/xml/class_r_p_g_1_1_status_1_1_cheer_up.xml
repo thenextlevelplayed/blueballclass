@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_status_1_1_cheer_up" kind="class" language="C#" prot="public">
+    <compoundname>RPG::Status::CheerUp</compoundname>
+    <basecompoundref refid="class_r_p_g_1_1_status_1_1_state" prot="public" virt="non-virtual">RPG.Status.State</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_status_1_1_cheer_up_1aa4788b7d2eecffdb62a5b8c4b4839dd7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int RPG.Status.CheerUp.InitialDuration</definition>
+        <argsstring></argsstring>
+        <name>InitialDuration</name>
+        <qualifiedname>RPG.Status.CheerUp.InitialDuration</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" line="9" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_cheer_up_1afc9ec47ab361951c268a4da706b871e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.Status.CheerUp.CheerUp</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>CheerUp</name>
+        <qualifiedname>RPG.Status.CheerUp.CheerUp</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" line="5" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_cheer_up_1a3111069af5c5b395f967d4f95d1c3e6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RPG.Status.CheerUp.HandleStartOfTurn</definition>
+        <argsstring>()</argsstring>
+        <name>HandleStartOfTurn</name>
+        <qualifiedname>RPG.Status.CheerUp.HandleStartOfTurn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" line="11" column="26" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" bodystart="11" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_cheer_up_1a6ccd08979d6ca86bf9665b7113ad04a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void RPG.Status.CheerUp.HandleEndOfTurn</definition>
+        <argsstring>()</argsstring>
+        <name>HandleEndOfTurn</name>
+        <qualifiedname>RPG.Status.CheerUp.HandleEndOfTurn</qualifiedname>
+        <reimplements refid="class_r_p_g_1_1_status_1_1_state_1aa9d188cdcea392beabb6ca6a73bbc3ff">HandleEndOfTurn</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" line="19" column="26" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" bodystart="19" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_status_1_1_cheer_up_1a9a838a11a485792eef97a1c3bc770c6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string RPG.Status.CheerUp.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>RPG.Status.CheerUp.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" line="36" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" bodystart="36" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.Status.CheerUp</label>
+        <link refid="class_r_p_g_1_1_status_1_1_cheer_up"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.Status.State</label>
+        <link refid="class_r_p_g_1_1_status_1_1_state"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.Status.CheerUp</label>
+        <link refid="class_r_p_g_1_1_status_1_1_cheer_up"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.Status.State</label>
+        <link refid="class_r_p_g_1_1_status_1_1_state"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" line="3" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/CheerUp.cs" bodystart="4" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a26db75a01aec667b473f842873f37873" prot="public" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>CanAction</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1afc9ec47ab361951c268a4da706b871e1" prot="public" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>CheerUp</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a82f01c226be58116bd7697ac5eee9389" prot="public" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>EntryState</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a1e4aaaaf2d200dd42205a6708a99358b" prot="public" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>ExitState</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1a6ccd08979d6ca86bf9665b7113ad04a4" prot="public" virt="virtual"><scope>RPG::Status::CheerUp</scope><name>HandleEndOfTurn</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1a3111069af5c5b395f967d4f95d1c3e6d" prot="public" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>HandleStartOfTurn</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1aa4788b7d2eecffdb62a5b8c4b4839dd7" prot="public" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>InitialDuration</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" prot="protected" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" prot="protected" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>State</name></member>
+      <member refid="class_r_p_g_1_1_status_1_1_cheer_up_1a9a838a11a485792eef97a1c3bc770c6d" prot="public" virt="non-virtual"><scope>RPG::Status::CheerUp</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

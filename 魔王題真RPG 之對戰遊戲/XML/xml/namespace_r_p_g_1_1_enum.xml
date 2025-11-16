@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespace_r_p_g_1_1_enum" kind="namespace" language="C#">
+    <compoundname>RPG::Enum</compoundname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccf" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>TargetRelation</name>
+        <qualifiedname>RPG.Enum.TargetRelation</qualifiedname>
+        <enumvalue id="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfaad6e7652b1bdfb38783486c2c3d5e806" prot="public">
+          <name>Self</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa0dd87782600574e2f791bcfe639d4fcc" prot="public">
+          <name>Ally</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa8c6d21187fb58b7a079d70030686b33e" prot="public">
+          <name>Enemy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa2fdacff69f844ddd9917be464304b4a7" prot="public">
+          <name>AllEnemy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfab1c94ca2fbc3e78fc30069c8d0f01680" prot="public">
+          <name>All</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Enum/TargetRelation.cs" line="3" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Enum/TargetRelation.cs" bodystart="4" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Enum/TargetRelation.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

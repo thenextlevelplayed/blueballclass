@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_action_option_1_1_cheer_up" kind="class" language="C#" prot="public">
+    <compoundname>RPG::ActionOption::CheerUp</compoundname>
+    <basecompoundref refid="class_r_p_g_1_1_action_option_1_1_skill" prot="public" virt="non-virtual">RPG.ActionOption.Skill</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_cheer_up_1a4ef31df9ad23307050640fa1c2177775" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int RPG.ActionOption.CheerUp.Mp</definition>
+        <argsstring></argsstring>
+        <name>Mp</name>
+        <qualifiedname>RPG.ActionOption.CheerUp.Mp</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1ad0b3112979ce41a4e61bf75443db3636">Mp</reimplements>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" line="12" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_cheer_up_1ae4a38875883d36ee00b6c8d7c7c9a818" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int RPG.ActionOption.CheerUp.Str</definition>
+        <argsstring></argsstring>
+        <name>Str</name>
+        <qualifiedname>RPG.ActionOption.CheerUp.Str</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a129d1f1c7b2ff5f052c4455fcd2a9400">Str</reimplements>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" line="13" column="25" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_action_option_1_1_cheer_up_1a9a1507a3ea89e973818b8eac017be58b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override <ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref></type>
+        <definition>override TargetCondition RPG.ActionOption.CheerUp.TargetCondition</definition>
+        <argsstring></argsstring>
+        <name>TargetCondition</name>
+        <qualifiedname>RPG.ActionOption.CheerUp.TargetCondition</qualifiedname>
+        <reimplements refid="interface_r_p_g_1_1_action_option_1_1_i_action_option_1a983e6056c7e2265932ec7dae55530724">TargetCondition</reimplements>
+        <initializer>= new <ref refid="class_r_p_g_1_1_target_condition" kindref="compound">TargetCondition</ref>(TargetRelation.Ally, 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" line="20" column="37" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_cheer_up_1a3a8ffee6b6832e8327e7d879a7ce2b07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.ActionOption.CheerUp.CheerUp</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>CheerUp</name>
+        <qualifiedname>RPG.ActionOption.CheerUp.CheerUp</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" line="8" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_cheer_up_1ae3630ddbf6a2f5a25b58b7659297bd3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string RPG.ActionOption.CheerUp.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>RPG.ActionOption.CheerUp.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" line="29" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_cheer_up_1a176732d8d8179e0605e1e9a949f3ef83" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override? <ref refid="class_r_p_g_1_1_status_1_1_state" kindref="compound">State</ref></type>
+        <definition>override? State RPG.ActionOption.CheerUp.GetState</definition>
+        <argsstring>(Role target)</argsstring>
+        <name>GetState</name>
+        <qualifiedname>RPG.ActionOption.CheerUp.GetState</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" line="15" column="30" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_action_option_1_1_cheer_up_1acf077f23023f67298dc073df0a888912" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RPG.ActionOption.CheerUp.ActionHook</definition>
+        <argsstring>(List&lt; Role &gt; roles)</argsstring>
+        <name>ActionHook</name>
+        <qualifiedname>RPG.ActionOption.CheerUp.ActionHook</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" line="22" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" bodystart="22" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.ActionOption.CheerUp</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_cheer_up"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.Skill</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_skill"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.ActionOption.CheerUp</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_cheer_up"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.ActionOption.IActionOption</label>
+        <link refid="interface_r_p_g_1_1_action_option_1_1_i_action_option"/>
+      </node>
+      <node id="2">
+        <label>RPG.ActionOption.Skill</label>
+        <link refid="class_r_p_g_1_1_action_option_1_1_skill"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" line="6" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/CheerUp.cs" bodystart="7" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1acf077f23023f67298dc073df0a888912" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>ActionHook</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1af2ea2f635a52b3814d0f8bb47f1bfea5" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>Attack</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a18923154ab1b2d549ddffdab1ee36843" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>ChangeState</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1a3a8ffee6b6832e8327e7d879a7ce2b07" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>CheerUp</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1ac8a5df8514d38f338126365c93946203" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>DoAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1a176732d8d8179e0605e1e9a949f3ef83" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>GetState</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a999e152e3ea87f9bc2d16efa741d409c" prot="protected" virt="virtual"><scope>RPG::ActionOption::CheerUp</scope><name>LogAction</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1a4ef31df9ad23307050640fa1c2177775" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>Mp</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a52bcbe7b2a780fca61253e441c9ea67a" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>PassS2</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a12e5686d34e37cb56ca9ae25e309131c" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_skill_1a8dae8c99eb91108d130b0a51436bab37" prot="protected" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>Skill</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1ae4a38875883d36ee00b6c8d7c7c9a818" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>Str</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1a9a1507a3ea89e973818b8eac017be58b" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>TargetCondition</name></member>
+      <member refid="class_r_p_g_1_1_action_option_1_1_cheer_up_1ae3630ddbf6a2f5a25b58b7659297bd3d" prot="public" virt="non-virtual"><scope>RPG::ActionOption::CheerUp</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

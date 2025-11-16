@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_poison_handler_8cs" kind="file" language="C#">
+    <compoundname>PoisonHandler.cs</compoundname>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_poison_handler" prot="public">RPG::CommandHandler::PoisonHandler</innerclass>
+    <innernamespace refid="namespace_r_p_g">RPG</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_command_handler">RPG::CommandHandler</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_action_option" kindref="compound">RPG.ActionOption</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_command" kindref="compound">RPG.Command</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_command_handler" kindref="compound">RPG.CommandHandler</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_r_p_g_1_1_command_handler_1_1_poison_handler" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_p_g_1_1_command_handler_1_1_poison_handler" kindref="compound">PoisonHandler</ref><sp/>:<sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler" kindref="compound">AbstractCommandHandler</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_r_p_g_1_1_command_handler_1_1_poison_handler_1a9c6f0c39aeaa390d749c64f073c627bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_poison_handler_1a9c6f0c39aeaa390d749c64f073c627bc" kindref="member">CanHandle</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>skillName)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>skillName<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;下毒&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_r_p_g_1_1_command_handler_1_1_poison_handler_1ad302c9a04f45005cb4b7b54f05a0c33f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_poison_handler_1ad302c9a04f45005cb4b7b54f05a0c33f" kindref="member">Process</ref>(<ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref><sp/>role)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>poison<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="namespace_r_p_g_1_1_action_option_1aa821c870cea59b0cb918210397a8fcfd" kindref="member">Poison</ref>(role);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>role.<ref refid="class_r_p_g_1_1_role_1a490d4ced44fb5c1178497fc5ceeadab3" kindref="member">Commands</ref>.Add(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PoisonCommand(poison));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/PoisonHandler.cs"/>
+  </compounddef>
+</doxygen>

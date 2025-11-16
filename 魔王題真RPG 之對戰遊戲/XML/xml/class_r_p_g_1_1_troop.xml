@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_troop" kind="class" language="C#" prot="public">
+    <compoundname>RPG::Troop</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_r_p_g_1_1_troop_1ae98ad7de2c13b29bd58ae390edc1db4e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_rpg" kindref="compound">Rpg</ref></type>
+        <definition>Rpg RPG.Troop.Rpg</definition>
+        <argsstring></argsstring>
+        <name>Rpg</name>
+        <qualifiedname>RPG.Troop.Rpg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" line="5" column="16" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_troop_1aa20c0f4e8ab3d944f366831fb8dbfa62" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_troop_relation" kindref="compound">TroopRelation</ref></type>
+        <definition>TroopRelation RPG.Troop.TroopRelation</definition>
+        <argsstring></argsstring>
+        <name>TroopRelation</name>
+        <qualifiedname>RPG.Troop.TroopRelation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" line="6" column="27" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_troop_1a1f0f6634beeccde075ea5632880082a2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+        <definition>Troop RPG.Troop.EnemyTroop</definition>
+        <argsstring></argsstring>
+        <name>EnemyTroop</name>
+        <qualifiedname>RPG.Troop.EnemyTroop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" line="7" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_r_p_g_1_1_troop_1a03e182fe82fbb9db928e3a124996b3d2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+        <definition>List&lt;Role&gt; RPG.Troop.Roles</definition>
+        <argsstring></argsstring>
+        <name>Roles</name>
+        <qualifiedname>RPG.Troop.Roles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" line="8" column="17" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_troop_1ade806b2d5cbfe2b2f7b1cbb46da112ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.Troop.Troop</definition>
+        <argsstring>(List&lt; Role &gt; roles)</argsstring>
+        <name>Troop</name>
+        <qualifiedname>RPG.Troop.Troop</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>roles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" line="10" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" bodystart="10" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_troop_1aa32ff326ee392fdd4fc794f2135bd157" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string RPG.Troop.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>RPG.Troop.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" line="32" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" bodystart="32" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_troop_1afcc9a85041b29e7be014c6e52cc62ecb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPG.Troop.SetRelation</definition>
+        <argsstring>(Troop allyTroop, Troop enemyTroop)</argsstring>
+        <name>SetRelation</name>
+        <qualifiedname>RPG.Troop.SetRelation</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+          <declname>allyTroop</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_troop" kindref="compound">Troop</ref></type>
+          <declname>enemyTroop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" line="20" column="24" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" bodystart="20" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" line="3" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Troop.cs" bodystart="4" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_troop_1a1f0f6634beeccde075ea5632880082a2" prot="public" virt="non-virtual"><scope>RPG::Troop</scope><name>EnemyTroop</name></member>
+      <member refid="class_r_p_g_1_1_troop_1a03e182fe82fbb9db928e3a124996b3d2" prot="public" virt="non-virtual"><scope>RPG::Troop</scope><name>Roles</name></member>
+      <member refid="class_r_p_g_1_1_troop_1ae98ad7de2c13b29bd58ae390edc1db4e" prot="public" virt="non-virtual"><scope>RPG::Troop</scope><name>Rpg</name></member>
+      <member refid="class_r_p_g_1_1_troop_1afcc9a85041b29e7be014c6e52cc62ecb" prot="public" virt="non-virtual"><scope>RPG::Troop</scope><name>SetRelation</name></member>
+      <member refid="class_r_p_g_1_1_troop_1aa32ff326ee392fdd4fc794f2135bd157" prot="public" virt="non-virtual"><scope>RPG::Troop</scope><name>ToString</name></member>
+      <member refid="class_r_p_g_1_1_troop_1ade806b2d5cbfe2b2f7b1cbb46da112ef" prot="public" virt="non-virtual"><scope>RPG::Troop</scope><name>Troop</name></member>
+      <member refid="class_r_p_g_1_1_troop_1aa20c0f4e8ab3d944f366831fb8dbfa62" prot="private" virt="non-virtual"><scope>RPG::Troop</scope><name>TroopRelation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

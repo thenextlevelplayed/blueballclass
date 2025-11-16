@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_normal_8cs" kind="file" language="C#">
+    <compoundname>Normal.cs</compoundname>
+    <innerclass refid="class_r_p_g_1_1_status_1_1_normal" prot="public">RPG::Status::Normal</innerclass>
+    <innernamespace refid="namespace_r_p_g">RPG</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_status">RPG::Status</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_status" kindref="compound">RPG.Status</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_r_p_g_1_1_status_1_1_normal" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_p_g_1_1_status_1_1_normal_1a68ceb263c002ef8ed36f0bd890c13433" kindref="member">Normal</ref><sp/>:<sp/><ref refid="class_r_p_g_1_1_status_1_1_state_1a726c6b7814956e18cb90cae4d0b0c6ef" kindref="member">State</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_r_p_g_1_1_status_1_1_normal_1a68ceb263c002ef8ed36f0bd890c13433" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_normal_1a68ceb263c002ef8ed36f0bd890c13433" kindref="member">Normal</ref>(<ref refid="class_r_p_g_1_1_status_1_1_state_1a76d83de70c91438a9c963d1c5a32738e" kindref="member">Role</ref><sp/>role)<sp/>:<sp/>base(role)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_r_p_g_1_1_status_1_1_normal_1a2be0a409983cd5a3be320598bc337d87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_normal_1a2be0a409983cd5a3be320598bc337d87" kindref="member">InitialDuration</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_r_p_g_1_1_status_1_1_normal_1ad991ec110a02d77b12fb88002af88d49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_normal_1ad991ec110a02d77b12fb88002af88d49" kindref="member">HandleStartOfTurn</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.CanAction<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_r_p_g_1_1_status_1_1_normal_1a80bf1dcea5a3c45d967fbdf66aaee644" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_status_1_1_normal_1a80bf1dcea5a3c45d967fbdf66aaee644" kindref="member">ToString</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;正常&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Status/Normal.cs"/>
+  </compounddef>
+</doxygen>

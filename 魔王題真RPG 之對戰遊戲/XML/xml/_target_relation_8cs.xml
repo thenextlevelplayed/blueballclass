@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_target_relation_8cs" kind="file" language="C#">
+    <compoundname>TargetRelation.cs</compoundname>
+    <innernamespace refid="namespace_r_p_g">RPG</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_enum">RPG::Enum</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_r_p_g_1_1_enum" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_enum" kindref="compound">RPG.Enum</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccf" kindref="member">TargetRelation</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfaad6e7652b1bdfb38783486c2c3d5e806" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfaad6e7652b1bdfb38783486c2c3d5e806" kindref="member">Self</ref>,</highlight></codeline>
+<codeline lineno="6" refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa0dd87782600574e2f791bcfe639d4fcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa0dd87782600574e2f791bcfe639d4fcc" kindref="member">Ally</ref>,</highlight></codeline>
+<codeline lineno="7" refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa8c6d21187fb58b7a079d70030686b33e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa8c6d21187fb58b7a079d70030686b33e" kindref="member">Enemy</ref>,</highlight></codeline>
+<codeline lineno="8" refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa2fdacff69f844ddd9917be464304b4a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa2fdacff69f844ddd9917be464304b4a7" kindref="member">AllEnemy</ref>,</highlight></codeline>
+<codeline lineno="9" refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfab1c94ca2fbc3e78fc30069c8d0f01680" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfab1c94ca2fbc3e78fc30069c8d0f01680" kindref="member">All</ref>,</highlight></codeline>
+<codeline lineno="10" refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa6adf97f83acf6453d4a6a4b1070f3754" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_r_p_g_1_1_enum_1a840e693b8433c438edbaba1007b2bccfa6adf97f83acf6453d4a6a4b1070f3754" kindref="member">None</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Enum/TargetRelation.cs"/>
+  </compounddef>
+</doxygen>

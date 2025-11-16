@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_abstract_command_handler_8cs" kind="file" language="C#">
+    <compoundname>AbstractCommandHandler.cs</compoundname>
+    <innerclass refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler" prot="public">RPG::CommandHandler::AbstractCommandHandler</innerclass>
+    <innernamespace refid="namespace_r_p_g">RPG</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_command_handler">RPG::CommandHandler</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_r_p_g_1_1_command_handler" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_command_handler" kindref="compound">RPG.CommandHandler</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler" kindref="compound">AbstractCommandHandler</ref><sp/>:<sp/><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref>?<sp/>NextHandler;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a0d472dc89af16b1384964447d450348d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a0d472dc89af16b1384964447d450348d" kindref="member">SetNext</ref>(<ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref><sp/>handler)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.NextHandler<sp/>=<sp/>handler;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>handler;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a889f16ae9d6eadc0f5ebaaaf751d214f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a889f16ae9d6eadc0f5ebaaaf751d214f" kindref="member">Handle</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>skillName,<sp/><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref><sp/>role)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a911862539f5d162ece806199c75de6e2" kindref="member">CanHandle</ref>(skillName))</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a09146d87cec6b6495c5f79e0a6027c9e" kindref="member">Process</ref>(role);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this.NextHandler<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.NextHandler.<ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aa36b6f0b9cdaff2a5c43929ac16188fc" kindref="member">Handle</ref>(skillName,<sp/>role);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a911862539f5d162ece806199c75de6e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a911862539f5d162ece806199c75de6e2" kindref="member">CanHandle</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>skillName);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a09146d87cec6b6495c5f79e0a6027c9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a09146d87cec6b6495c5f79e0a6027c9e" kindref="member">Process</ref>(<ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref><sp/>role);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/AbstractCommandHandler.cs"/>
+  </compounddef>
+</doxygen>

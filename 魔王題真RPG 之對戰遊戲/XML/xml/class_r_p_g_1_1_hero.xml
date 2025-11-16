@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_hero" kind="class" language="C#" prot="public">
+    <compoundname>RPG::Hero</compoundname>
+    <basecompoundref refid="class_r_p_g_1_1_role" prot="public" virt="non-virtual">RPG.Role</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_hero_1a14b13f4b1c57ece0e58e1d0ddf6b7733" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RPG.Hero.Hero</definition>
+        <argsstring>(string name, int hp, int mp, int str)</argsstring>
+        <name>Hero</name>
+        <qualifiedname>RPG.Hero.Hero</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" line="5" column="12" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" bodystart="5" bodyend="7"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_hero_1a36624768e4ebad9cc2b1c26f50f6892b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int RPG.Hero.SelectActionIndexHook</definition>
+        <argsstring>()</argsstring>
+        <name>SelectActionIndexHook</name>
+        <qualifiedname>RPG.Hero.SelectActionIndexHook</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" line="8" column="28" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" bodystart="8" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_hero_1a56cccfbf170c01979465bfee150fa578" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RPG.Hero.S2PostDecisionHook</definition>
+        <argsstring>()</argsstring>
+        <name>S2PostDecisionHook</name>
+        <qualifiedname>RPG.Hero.S2PostDecisionHook</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" line="22" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_hero_1ab3dfaeab82e2c53438b48d7e1d092dd0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+        <definition>override List&lt; Role &gt; RPG.Hero.SelectTargetsHook</definition>
+        <argsstring>(List&lt; Role &gt; availableTargets, int targetConditionMaxTargets)</argsstring>
+        <name>SelectTargetsHook</name>
+        <qualifiedname>RPG.Hero.SelectTargetsHook</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref> &gt;</type>
+          <declname>availableTargets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>targetConditionMaxTargets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" line="26" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" bodystart="26" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.Hero</label>
+        <link refid="class_r_p_g_1_1_hero"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.Role</label>
+        <link refid="class_r_p_g_1_1_role"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.Hero</label>
+        <link refid="class_r_p_g_1_1_hero"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.Role</label>
+        <link refid="class_r_p_g_1_1_role"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" line="3" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Role/Hero.cs" bodystart="4" bodyend="74"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_role_1a363964d2e34092a34ad53f654dffc727" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>CanAction</name></member>
+      <member refid="class_r_p_g_1_1_role_1a490d4ced44fb5c1178497fc5ceeadab3" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Commands</name></member>
+      <member refid="class_r_p_g_1_1_role_1aa241f4592bbebad9125028398cfd0406" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Duration</name></member>
+      <member refid="class_r_p_g_1_1_role_1ad059a010654dbf5cad02e58e2b4d55be" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>EnterState</name></member>
+      <member refid="class_r_p_g_1_1_role_1a1e5e2c45269abe5afbbc65db8c054d9b" prot="protected" virt="non-virtual"><scope>RPG::Hero</scope><name>GetAvailableAllyTargets</name></member>
+      <member refid="class_r_p_g_1_1_role_1a5feaac04e1867c208d34dec19cc37615" prot="protected" virt="non-virtual"><scope>RPG::Hero</scope><name>GetAvailableEnemyTargets</name></member>
+      <member refid="class_r_p_g_1_1_role_1adb03f5e9b48634d69e754bc089188941" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>HandleEndOfTurn</name></member>
+      <member refid="class_r_p_g_1_1_role_1a3f7949dbc8793d277cfa620c0d81ad2c" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>HandleStartOfTurn</name></member>
+      <member refid="class_r_p_g_1_1_hero_1a14b13f4b1c57ece0e58e1d0ddf6b7733" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Hero</name></member>
+      <member refid="class_r_p_g_1_1_role_1a2acbd3755e36c3b18c9c5d7c928e2d57" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Hp</name></member>
+      <member refid="class_r_p_g_1_1_role_1a29a642e392572d9463ae8916954c19bb" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Mp</name></member>
+      <member refid="class_r_p_g_1_1_role_1a36a35318c0ca2b908b280c72d273fff4" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Name</name></member>
+      <member refid="class_r_p_g_1_1_role_1a78b0803b864f6647946f46e1b1b3a5da" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>NotifyObservers</name></member>
+      <member refid="class_r_p_g_1_1_role_1a4cd36f531428aac88a42fedf5ebda1d7" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Observers</name></member>
+      <member refid="class_r_p_g_1_1_role_1a459db2bd4b4459c48192bf18dde05d5e" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>RegisterObserver</name></member>
+      <member refid="class_r_p_g_1_1_role_1a0fbc4aca0338a0ae8b7eaf7f34108c35" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Role</name></member>
+      <member refid="class_r_p_g_1_1_hero_1a56cccfbf170c01979465bfee150fa578" prot="protected" virt="non-virtual"><scope>RPG::Hero</scope><name>S2PostDecisionHook</name></member>
+      <member refid="class_r_p_g_1_1_role_1a2143dd2f093e54918ec39e99c5d2ab47" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>S3</name></member>
+      <member refid="class_r_p_g_1_1_hero_1a36624768e4ebad9cc2b1c26f50f6892b" prot="protected" virt="non-virtual"><scope>RPG::Hero</scope><name>SelectActionIndexHook</name></member>
+      <member refid="class_r_p_g_1_1_hero_1ab3dfaeab82e2c53438b48d7e1d092dd0" prot="protected" virt="non-virtual"><scope>RPG::Hero</scope><name>SelectTargetsHook</name></member>
+      <member refid="class_r_p_g_1_1_role_1a9bc6a8c5ba2ce56637b6e17dc4ba87e9" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Spellcaster</name></member>
+      <member refid="class_r_p_g_1_1_role_1ae562e2e9e362b5477bb57b001db403ad" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>State</name></member>
+      <member refid="class_r_p_g_1_1_role_1a786252647338c95d577cf87d6e2416e3" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Str</name></member>
+      <member refid="class_r_p_g_1_1_role_1ad63a6e422d42bc0185caf8db27b99fa9" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Summoned</name></member>
+      <member refid="class_r_p_g_1_1_role_1a91ff2b4cf3615dbdd26558d3a7d88b91" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Summoner</name></member>
+      <member refid="class_r_p_g_1_1_role_1a9456ca95a3d51bbe8f3d6a2906bc5b46" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>TemplateS1</name></member>
+      <member refid="class_r_p_g_1_1_role_1a1b9d46825d9c4efa79faea9f32f966cc" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>TemplateS2</name></member>
+      <member refid="class_r_p_g_1_1_role_1a8abdce8ba599106f26e4dfc17da06c8f" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>TheCursed</name></member>
+      <member refid="class_r_p_g_1_1_role_1a012aa4e4dac41e7785d50e1150400738" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>Troop</name></member>
+      <member refid="class_r_p_g_1_1_role_1ae346051e686170e061593ec483c54234" prot="public" virt="non-virtual"><scope>RPG::Hero</scope><name>UnregisterObserver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

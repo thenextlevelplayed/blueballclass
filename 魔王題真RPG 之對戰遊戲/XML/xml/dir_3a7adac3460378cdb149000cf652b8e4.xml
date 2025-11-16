@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_3a7adac3460378cdb149000cf652b8e4" kind="dir">
+    <compoundname>D:/新增資料夾</compoundname>
+    <innerdir refid="dir_e010cfb24333f9045eb87c55a519b03a">D:/新增資料夾/blueballclass</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/"/>
+  </compounddef>
+</doxygen>

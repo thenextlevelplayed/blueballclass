@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespace_r_p_g_1_1_action_option" kind="namespace" language="C#">
+    <compoundname>RPG::ActionOption</compoundname>
+    <innerclass refid="class_r_p_g_1_1_action_option_1_1_basic_attack" prot="public">RPG::ActionOption::BasicAttack</innerclass>
+    <innerclass refid="class_r_p_g_1_1_action_option_1_1_cheer_up" prot="public">RPG::ActionOption::CheerUp</innerclass>
+    <innerclass refid="interface_r_p_g_1_1_action_option_1_1_i_action_option" prot="public">RPG::ActionOption::IActionOption</innerclass>
+    <innerclass refid="class_r_p_g_1_1_action_option_1_1_one_punch" prot="public">RPG::ActionOption::OnePunch</innerclass>
+    <innerclass refid="class_r_p_g_1_1_action_option_1_1_self_explosion" prot="public">RPG::ActionOption::SelfExplosion</innerclass>
+    <innerclass refid="class_r_p_g_1_1_action_option_1_1_skill" prot="public">RPG::ActionOption::Skill</innerclass>
+    <innerclass refid="class_r_p_g_1_1_action_option_1_1_summon" prot="public">RPG::ActionOption::Summon</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_r_p_g_1_1_action_option_1abe7b1d3ffd580f33fb2212094051b2bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class RPG.ActionOption.Curse</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>Curse</name>
+        <qualifiedname>RPG.ActionOption.Curse</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Curse.cs" line="7" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Curse.cs" bodystart="7" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_r_p_g_1_1_action_option_1a0492a4c900e54b6bba92c9ffd45a5ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class RPG.ActionOption.FireBall</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>FireBall</name>
+        <qualifiedname>RPG.ActionOption.FireBall</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/FireBall.cs" line="6" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/FireBall.cs" bodystart="6" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_r_p_g_1_1_action_option_1a5552b7d2adcfe59343c601eee8cb846d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class RPG.ActionOption.Petrochemical</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>Petrochemical</name>
+        <qualifiedname>RPG.ActionOption.Petrochemical</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Petrochemical.cs" line="6" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Petrochemical.cs" bodystart="6" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_r_p_g_1_1_action_option_1aa821c870cea59b0cb918210397a8fcfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class RPG.ActionOption.Poison</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>Poison</name>
+        <qualifiedname>RPG.ActionOption.Poison</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Poison.cs" line="6" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/Poison.cs" bodystart="6" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_r_p_g_1_1_action_option_1af3171e8e0f10bfdcb80ead028d0cd044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class RPG.ActionOption.SelfHealing</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>SelfHealing</name>
+        <qualifiedname>RPG.ActionOption.SelfHealing</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfHealing.cs" line="6" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/SelfHealing.cs" bodystart="6" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_r_p_g_1_1_action_option_1a3ad7222c547f9e938c223adf88fbf1f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>class RPG.ActionOption.WaterBall</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>WaterBall</name>
+        <qualifiedname>RPG.ActionOption.WaterBall</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/WaterBall.cs" line="6" column="1" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/WaterBall.cs" bodystart="6" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/ActionOption/BasicAttack.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['writealltext_0',['WriteAllText',['../_program_8cs.html#adc0790aa5e973daced543ff5d476de4e',1,'WriteAllText(&quot;my_actual_output.txt&quot;, actualOutput):&#160;Program.cs'],['../_program_8cs.html#ade839134241b8ba1f86efc61c6a85a5b',1,'WriteAllText(&quot;expected_output.txt&quot;, expectedOutput):&#160;Program.cs']]],
+  ['writeline_1',['WriteLine',['../_program_8cs.html#af7587ed3e5462b7b4d0067bdf24949d7',1,'WriteLine(&quot;--- 準備進行輸出比對測試 ---&quot;):&#160;Program.cs'],['../_program_8cs.html#a52fe587a1f7a9633c62389382f416843',1,'WriteLine(&quot;\n--- 比對結果 ---&quot;):&#160;Program.cs'],['../_program_8cs.html#ab8c5bd1c812bf8e0c395e69b7f29cf7d',1,'WriteLine(&quot;測試失敗！ 您的程式輸出與 one-punch.out 不符。&quot;):&#160;Program.cs'],['../_program_8cs.html#ad776d400429d948391e9684898183139',1,'WriteLine(&quot;\n詳細的差異已寫入 my_actual_output.txt 和 expected_output.txt 以便比對。&quot;):&#160;Program.cs'],['../_program_8cs.html#a4b82010092585b4bbb91c02d8117ef77',1,'WriteLine(&quot;請使用 VS Code 的檔案比對功能來查看這兩個檔案的差異。&quot;):&#160;Program.cs']]]
+];

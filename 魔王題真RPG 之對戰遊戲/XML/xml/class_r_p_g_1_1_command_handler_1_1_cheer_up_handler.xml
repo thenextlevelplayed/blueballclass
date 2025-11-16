@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler" kind="class" language="C#" prot="public">
+    <compoundname>RPG::CommandHandler::CheerUpHandler</compoundname>
+    <basecompoundref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler" prot="public" virt="non-virtual">RPG.CommandHandler.AbstractCommandHandler</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler_1a3cecfb346b98d4c8c0cbb97301ca8f18" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool RPG.CommandHandler.CheerUpHandler.CanHandle</definition>
+        <argsstring>(string skillName)</argsstring>
+        <name>CanHandle</name>
+        <qualifiedname>RPG.CommandHandler.CheerUpHandler.CanHandle</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>skillName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/CheerUpHandler.cs" line="8" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/CheerUpHandler.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler_1abdc960c1e32757d9718f28aa79bb7915" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RPG.CommandHandler.CheerUpHandler.Process</definition>
+        <argsstring>(Role role)</argsstring>
+        <name>Process</name>
+        <qualifiedname>RPG.CommandHandler.CheerUpHandler.Process</qualifiedname>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/CheerUpHandler.cs" line="13" column="29" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/CheerUpHandler.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.CommandHandler.CheerUpHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.CommandHandler.AbstractCommandHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.CommandHandler.ICommandHandler</label>
+        <link refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>RPG.CommandHandler.CheerUpHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RPG.CommandHandler.AbstractCommandHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.CommandHandler.ICommandHandler</label>
+        <link refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/CheerUpHandler.cs" line="6" column="7" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/CheerUpHandler.cs" bodystart="7" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler_1a3cecfb346b98d4c8c0cbb97301ca8f18" prot="protected" virt="non-virtual"><scope>RPG::CommandHandler::CheerUpHandler</scope><name>CanHandle</name></member>
+      <member refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a889f16ae9d6eadc0f5ebaaaf751d214f" prot="public" virt="non-virtual"><scope>RPG::CommandHandler::CheerUpHandler</scope><name>Handle</name></member>
+      <member refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler_1abdc960c1e32757d9718f28aa79bb7915" prot="protected" virt="non-virtual"><scope>RPG::CommandHandler::CheerUpHandler</scope><name>Process</name></member>
+      <member refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a0d472dc89af16b1384964447d450348d" prot="public" virt="non-virtual"><scope>RPG::CommandHandler::CheerUpHandler</scope><name>SetNext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

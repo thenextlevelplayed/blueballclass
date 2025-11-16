@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_5029bbd66b6d3cad4cc7f5e47a492da8" kind="dir">
+    <compoundname>D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command</compoundname>
+    <innerfile refid="_basic_attack_command_8cs">BasicAttackCommand.cs</innerfile>
+    <innerfile refid="_cheer_up_command_8cs">CheerUpCommand.cs</innerfile>
+    <innerfile refid="_curse_command_8cs">CurseCommand.cs</innerfile>
+    <innerfile refid="_fire_ball_command_8cs">FireBallCommand.cs</innerfile>
+    <innerfile refid="_i_command_8cs">ICommand.cs</innerfile>
+    <innerfile refid="_one_punch_command_8cs">OnePunchCommand.cs</innerfile>
+    <innerfile refid="_petrochemical_command_8cs">PetrochemicalCommand.cs</innerfile>
+    <innerfile refid="_poison_command_8cs">PoisonCommand.cs</innerfile>
+    <innerfile refid="_self_explosion_command_8cs">SelfExplosionCommand.cs</innerfile>
+    <innerfile refid="_self_healing_command_8cs">SelfHealingCommand.cs</innerfile>
+    <innerfile refid="_summon_command_8cs">SummonCommand.cs</innerfile>
+    <innerfile refid="_water_ball_command_8cs">WaterBallCommand.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Command/"/>
+  </compounddef>
+</doxygen>

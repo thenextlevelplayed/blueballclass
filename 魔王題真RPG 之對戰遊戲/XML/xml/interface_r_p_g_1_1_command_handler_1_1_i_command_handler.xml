@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kind="interface" language="C#" prot="public">
+    <compoundname>RPG::CommandHandler::ICommandHandler</compoundname>
+    <derivedcompoundref refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler" prot="public" virt="non-virtual">RPG.CommandHandler.AbstractCommandHandler</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aece9138a4a9c06c42bfd4303bc5b4b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref></type>
+        <definition>ICommandHandler RPG.CommandHandler.ICommandHandler.SetNext</definition>
+        <argsstring>(ICommandHandler handler)</argsstring>
+        <name>SetNext</name>
+        <qualifiedname>RPG.CommandHandler.ICommandHandler.SetNext</qualifiedname>
+        <reimplementedby refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a0d472dc89af16b1384964447d450348d">SetNext</reimplementedby>
+        <param>
+          <type><ref refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler" kindref="compound">ICommandHandler</ref></type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/ICommandHandler.cs" line="5" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aa36b6f0b9cdaff2a5c43929ac16188fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RPG.CommandHandler.ICommandHandler.Handle</definition>
+        <argsstring>(string skillName, Role role)</argsstring>
+        <name>Handle</name>
+        <qualifiedname>RPG.CommandHandler.ICommandHandler.Handle</qualifiedname>
+        <reimplementedby refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler_1a889f16ae9d6eadc0f5ebaaaf751d214f">Handle</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>skillName</declname>
+        </param>
+        <param>
+          <type><ref refid="class_r_p_g_1_1_role" kindref="compound">Role</ref></type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/ICommandHandler.cs" line="6" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>RPG.CommandHandler.ICommandHandler</label>
+        <link refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler"/>
+      </node>
+      <node id="2">
+        <label>RPG.CommandHandler.AbstractCommandHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_abstract_command_handler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RPG.CommandHandler.CheerUpHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_cheer_up_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RPG.CommandHandler.CurseHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_curse_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RPG.CommandHandler.FireBallHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_fire_ball_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RPG.CommandHandler.OnePunchHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_one_punch_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>RPG.CommandHandler.PetrochemicalHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_petrochemical_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>RPG.CommandHandler.PoisonHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_poison_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>RPG.CommandHandler.SelfExplosionHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_self_explosion_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>RPG.CommandHandler.SelfHealingHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_self_healing_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>RPG.CommandHandler.SummonHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_summon_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>RPG.CommandHandler.UnknownSkillHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_unknown_skill_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>RPG.CommandHandler.WaterBallHandler</label>
+        <link refid="class_r_p_g_1_1_command_handler_1_1_water_ball_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/ICommandHandler.cs" line="3" column="18" bodyfile="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/CommandHandler/ICommandHandler.cs" bodystart="4" bodyend="7"/>
+    <listofallmembers>
+      <member refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aa36b6f0b9cdaff2a5c43929ac16188fc" prot="public" virt="non-virtual"><scope>RPG::CommandHandler::ICommandHandler</scope><name>Handle</name></member>
+      <member refid="interface_r_p_g_1_1_command_handler_1_1_i_command_handler_1aece9138a4a9c06c42bfd4303bc5b4b73" prot="public" virt="non-virtual"><scope>RPG::CommandHandler::ICommandHandler</scope><name>SetNext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

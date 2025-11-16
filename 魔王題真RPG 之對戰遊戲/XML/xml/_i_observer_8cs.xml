@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="_i_observer_8cs" kind="file" language="C#">
+    <compoundname>IObserver.cs</compoundname>
+    <innerclass refid="interface_r_p_g_1_1_observer_1_1_i_observer" prot="public">RPG::Observer::IObserver</innerclass>
+    <innernamespace refid="namespace_r_p_g">RPG</innernamespace>
+    <innernamespace refid="namespace_r_p_g_1_1_observer">RPG::Observer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_r_p_g_1_1_observer" kindref="compound">RPG.Observer</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="interface_r_p_g_1_1_observer_1_1_i_observer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_r_p_g_1_1_observer_1_1_i_observer" kindref="compound">IObserver</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="interface_r_p_g_1_1_observer_1_1_i_observer_1a3cbc876b0f3b6e916eab9c115c9b3832" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_r_p_g_1_1_observer_1_1_i_observer_1a3cbc876b0f3b6e916eab9c115c9b3832" kindref="member">Role</ref><sp/><ref refid="interface_r_p_g_1_1_observer_1_1_i_observer_1a3cbc876b0f3b6e916eab9c115c9b3832" kindref="member">Role</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="6" refid="interface_r_p_g_1_1_observer_1_1_i_observer_1ad3043e736c1310eaefe3c92491e52674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_r_p_g_1_1_observer_1_1_i_observer_1ad3043e736c1310eaefe3c92491e52674" kindref="member">Action</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/新增資料夾/blueballclass/魔王題：真・RPG 之對戰遊戲/RPG/Observer/IObserver.cs"/>
+  </compounddef>
+</doxygen>
