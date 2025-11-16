@@ -1,0 +1,15 @@
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.exe
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.deps.json
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.runtimeconfig.json
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.dll
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.pdb
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.AssemblyInfoInputs.cache
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.AssemblyInfo.cs
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.csproj.CoreCompileInputs.cache
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.sourcelink.json
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.dll
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\refint\FriendshipAnalyzer.dll
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.pdb
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.genruntimeconfig.cache
+D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\ref\FriendshipAnalyzer.dll
