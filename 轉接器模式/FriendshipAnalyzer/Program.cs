@@ -6,7 +6,7 @@ using System.IO;
 using FriendshipAnalyzer.基礎;
 
 string scriptContent = "";
-string filePath = "D:\\code stuff\\blueballclass\\轉接器模式\\FriendshipAnalyzer\\script.txt"; // 檔案路徑
+string filePath = "D:\\新增資料夾\\blueballclass\\轉接器模式\\FriendshipAnalyzer\\script.txt"; // 檔案路徑
 
 try
 {
@@ -25,6 +25,7 @@ catch (Exception ex)
 }
 
 var analyzer = new AnalyzerAdapter();
-analyzer.Parse(scriptContent);
+var relationshipGraph = analyzer.Parse(scriptContent);
+relationshipGraph.HasConnection("A", "B");
 var mutalFriends = analyzer.GetMutualFriends("A", "B");
 Console.WriteLine(mutalFriends);

@@ -1,8 +1,11 @@
-﻿namespace FriendshipAnalyzer.基礎;
+﻿using QuikGraph;
+using QuikGraph.Algorithms.ConnectedComponents;
+
+namespace FriendshipAnalyzer.基礎;
 
 public interface RelationshipAnalyzer
 {
-    void Parse(string script);
+    RelationshipGraph Parse(string script);
     List<string> GetMutualFriends(string name1, string name2);
 }
 
@@ -11,9 +14,10 @@ public class AnalyzerAdapter : RelationshipAnalyzer
     private SuperRelationshipAnalyzer _superRelationshipAnalyzer { get; set; } = new SuperRelationshipAnalyzer();
     private HashSet<string> _allPeople = new HashSet<string>();
 
-    public void Parse(string script)
+    public RelationshipGraph Parse(string script)
     {
         var superRelationshipAnalyzerString = "";
+        var graph = new UndirectedGraph<string, Edge<string>>();
         var lines = script.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
         Console.WriteLine(lines);
         foreach (var line in lines)
@@ -22,6 +26,7 @@ public class AnalyzerAdapter : RelationshipAnalyzer
             if (parts.Length != 2) continue;
             var key = parts[0].Trim();
             _allPeople.Add(key);
+            graph.AddVertex(key); //魔王題目
             var manyName = parts[1].ToString().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (var value in manyName)
             {
@@ -29,12 +34,15 @@ public class AnalyzerAdapter : RelationshipAnalyzer
                 if (string.IsNullOrEmpty(friendName)) continue;
                 _allPeople.Add(friendName);
                 superRelationshipAnalyzerString += key + " -- " + friendName + "\r\n";
-                ;
+                //魔王題目
+                graph.AddVertex(friendName);
+                graph.AddEdge(new Edge<string>(key, friendName));
             }
         }
-
-        Console.WriteLine(superRelationshipAnalyzerString);
-        _superRelationshipAnalyzer.Init(superRelationshipAnalyzerString);
+        var connection = new ConnectedComponentsAlgorithm<string, Edge<string>>(graph);
+        connection.Compute();
+        var dict = connection.Components;
+        return new QuickGraphRelationshipGraph(dict);
     }
 
     public List<string> GetMutualFriends(string name1, string name2)
