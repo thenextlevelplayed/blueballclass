@@ -1,0 +1,15 @@
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\bin\Debug\net10.0\LazyLoading.exe
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\bin\Debug\net10.0\LazyLoading.deps.json
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\bin\Debug\net10.0\LazyLoading.runtimeconfig.json
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\bin\Debug\net10.0\LazyLoading.dll
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\bin\Debug\net10.0\LazyLoading.pdb
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\LazyLoading.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\LazyLoading.AssemblyInfoInputs.cache
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\LazyLoading.AssemblyInfo.cs
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\LazyLoading.csproj.CoreCompileInputs.cache
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\LazyLoading.sourcelink.json
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\LazyLoading.dll
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\refint\LazyLoading.dll
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\LazyLoading.pdb
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\LazyLoading.genruntimeconfig.cache
+D:\新增資料夾\blueballclass\代理人模式\LazyLoading\obj\Debug\net10.0\ref\LazyLoading.dll
