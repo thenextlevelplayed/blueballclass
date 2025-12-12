@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pM/Uea33cyc=",
+  "dgSpecHash": "Va1PMkYmiiM=",
   "success": true,
-  "projectFilePath": "D:\\code stuff\\blueballclass\\轉接器模式\\FriendshipAnalyzer\\FriendshipAnalyzer.csproj",
+  "projectFilePath": "D:\\新增資料夾\\blueballclass\\轉接器模式\\FriendshipAnalyzer\\FriendshipAnalyzer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kitty\\.nuget\\packages\\quikgraph\\2.5.0\\quikgraph.2.5.0.nupkg.sha512"
+    "C:\\Users\\100120115\\.nuget\\packages\\quikgraph\\2.5.0\\quikgraph.2.5.0.nupkg.sha512"
   ],
   "logs": []
 }

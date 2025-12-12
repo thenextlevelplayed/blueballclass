@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FriendshipAnalyzer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b538f8c26c5fc13389b769a7af0f736131ff389f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e5526b4e9080bfd6765794b05531a3a750a3c20")]
 [assembly: System.Reflection.AssemblyProductAttribute("FriendshipAnalyzer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FriendshipAnalyzer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

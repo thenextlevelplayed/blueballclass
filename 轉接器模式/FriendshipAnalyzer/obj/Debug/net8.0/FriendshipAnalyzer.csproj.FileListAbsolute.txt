@@ -13,3 +13,21 @@ D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\
 D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.pdb
 D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.genruntimeconfig.cache
 D:\code stuff\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\ref\FriendshipAnalyzer.dll
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.exe
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.deps.json
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.runtimeconfig.json
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.dll
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\FriendshipAnalyzer.pdb
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\bin\Debug\net8.0\QuikGraph.dll
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.csproj.AssemblyReference.cache
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.AssemblyInfoInputs.cache
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.AssemblyInfo.cs
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.csproj.CoreCompileInputs.cache
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.sourcelink.json
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\Friendsh.7DFC0B6C.Up2Date
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.dll
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\refint\FriendshipAnalyzer.dll
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.pdb
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\FriendshipAnalyzer.genruntimeconfig.cache
+D:\新增資料夾\blueballclass\轉接器模式\FriendshipAnalyzer\obj\Debug\net8.0\ref\FriendshipAnalyzer.dll
