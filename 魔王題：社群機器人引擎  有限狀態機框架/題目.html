@@ -1,0 +1,935 @@
+﻿<main class="mx-auto px-4 pt-2 pb-8 max-w-4xl">
+    <div class="">
+        <div class="mb-8"><h1 class="mb-4 text-4xl font-bold dark:text-gray-200">社群機器人引擎 | 有限狀態機框架 ★★★★</h1><div class="mt-4 flex items-center gap-6"></div></div><div class="mt-8">
+            <section class="mx-auto pb-12 leading-8 tracking-wider text-[20px] [font-family:-apple-system,_BlinkMacSystemFont,_source-serif-pro,_Georgia,_Cambria,_'Times_New_Roman',_Times,_serif] [&amp;_p]:my-8 [&amp;_section]:mb-16 [&amp;_h1]:text-4xl [&amp;_h1]:font-bold [&amp;_h1]:border-b [&amp;_h1]:border-neutral-500 [&amp;_h1]:text-neutral-800 dark:[&amp;_h1]:text-neutral-300 [&amp;_h1]:pb-4 [&amp;_h1]:tracking-tight [&amp;_h1]:mb-8 [&amp;_h1]:mt-12 [&amp;_h2]:text-2xl [&amp;_h2]:font-bold [&amp;_h2]:mt-10 [&amp;_h2]:mb-6 [&amp;_h3]:text-xl [&amp;_h3]:font-semibold [&amp;_h3]:mt-8 [&amp;_h3]:mb-4 [&amp;_h4]:text-lg [&amp;_h4]:font-medium [&amp;_h4]:mt-6 [&amp;_h4]:mb-3 [&amp;_ol]:list-decimal [&amp;_ol_ol]:list-[lower-alpha] [&amp;_ol_ol_ol]:list-[lower-roman] [&amp;_ul]:list-disc [&amp;_ul_ul]:list-[circle] [&amp;_ul_ul_ul]:list-[square] [&amp;_ol_ol]:my-0 [&amp;_ol_ul]:my-0 [&amp;_ul_ol]:my-0 [&amp;_ul_ul]:my-0 [&amp;_ol]:my-6 [&amp;_ul]:my-6 [&amp;_ol]:pl-[70px] [&amp;_ul]:pl-[70px] [&amp;_li]:my-2 [&amp;_li]:leading-relaxed [&amp;_ol]:leading-relaxed [&amp;_ul]:leading-relaxed [&amp;_a]:bg-[linear-gradient(transparent_0_50%,rgb(250,204,21)_50%_100%)] dark:[&amp;_a]:bg-[linear-gradient(transparent_0_50%,rgb(30,58,138)_50%_100%)] [&amp;_a]:bg-no-repeat [&amp;_a]:bg-[length:100%_200%] [&amp;_a]:bg-[position:0%_40%] [&amp;_a:hover]:bg-[position:0%_60%] [&amp;_a]:transition-all font-normal dark:font-lighter dark:text-gray-200 [&amp;_:is(h1,h2,h3,h4,h5,h6)]:scroll-mt-28 [&amp;_:is(h1,h2,h3,h4,h5,h6)]:font-display lg:[&amp;_:is(h1,h2,h3,h4,h5,h6)]:scroll-mt-[8.5rem] [&amp;_pre]:block [&amp;_pre]:p-3 [&amp;_pre]:mb-[10px] [&amp;_pre]:leading-tight [&amp;_pre]:break-all [&amp;_pre]:break-words [&amp;_pre]:bg-neutral-400/20 [&amp;_pre]:border [&amp;_pre]:border-solid [&amp;_pre]:border-neutral-400/80 [&amp;_pre]:rounded-md [&amp;_pre]:text-base [&amp;_pre]:overflow-x-auto [&amp;_code]:text-[14px] [&amp;_code]:rounded [&amp;_code]:before:content-[''] [&amp;_code]:after:content-[''] [&amp;_code:not(pre&gt;code)]:bg-[hsla(44,_6%,_50%,_.15)] [&amp;_code:not(pre&gt;code)]:leading-normal [&amp;_code:not(pre&gt;code)]:text-[#eb5757] [&amp;_code:not(pre&gt;code)]:font-mono [&amp;_code:not(pre&gt;code)]:rounded [&amp;_code:not(pre&gt;code)]:py-1 [&amp;_code:not(pre&gt;code)]:px-1.5 [&amp;_blockquote]:pl-4 [&amp;_blockquote]:border-l-4 [&amp;_blockquote]:italic [&amp;_blockquote]:my-8 [&amp;_blockquote]:border-neutral-300 [&amp;_blockquote]:text-neutral-600 dark:[&amp;_blockquote]:border-neutral-700 dark:[&amp;_blockquote]:text-neutral-400 [&amp;_img]:max-w-full [&amp;_table_th]:whitespace-nowrap [&amp;_table_th]:text-left [&amp;_table_th]:font-semibold [&amp;_table_:is(th,td)]:p-2 [&amp;_table_:is(th,td)]:border [&amp;_table_:is(th,td)]:border-solid [&amp;_table_:is(th,td)]:border-neutral-300 [&amp;_table_:is(th,td):first-child]:whitespace-nowrap [&amp;_p]:my-[1em] [&amp;_p]:leading-relaxed">
+                <div>
+                    <h1 id="魔王題社群機器人引擎--有限狀態機框架">魔王題：社群機器人引擎 | 有限狀態機框架</h1>
+                    <p>難度：★★★★☆</p>
+                    <h2 id="魔王對冒險者們的喊話">魔王對冒險者們的喊話</h2>
+                    <p>各位冒險者們好，我是副本四的魔王。</p>
+                    <p>相信各位在副本三時，已經體驗過魔王題的複雜度。這個複雜度可能會使「新手」受挫，但你已經不再是新手了，能走到這裡就說明：「你開始懂得如何在旅程高頻率回饋的學習環境下，期待每一次受挫之後隨之而來的大幅度認知成長」。</p>
+                    <p>而對老手而言，你應該早已發現自己思路上的變化，開始看見軟體實作中，不只存在邏輯，還存在著各種無形的約束勁力 (Forces)，這些勁力來自於兩個源頭，一是需求中涉及的業務邏輯，二是身為工程師，我們對軟體維護性上的要求。</p>
+                    <p>只要能夠看清楚這兩種勁力，就能分析出該將軟體打造成何等特定的形狀 (Form)，來化解這些勁 (Resolving forces)。</p>
+                    <p>這是一套武功，武功中的每一個環節都是快速、細緻且連貫，使你行雲流水。從需求中快速做好物件導向分析 (OOA)，來對概念、結構有八成的掌握，接著再關注模型之上是否有形成 Conflicting Forces。隨著你熟悉更多的 Forces，你看待設計問題 (Problem) 的方式就會改變、變得更加細膩。你不再需要使用過度簡化的句子來描述 Problem，而是列出造成 Problem 困難的衝突 Forces。而只要知道特定的一組 Forces，你就能加以分析來得到對應的模式 (Pattern)。</p>
+                    <p>這一套武功我們不斷反覆內化，所以漸漸地，一星和二星題對你來說已不再構成威脅，就連三星題對你來說也僅是有挑戰性的專案。</p>
+                    <p>現在呀，冒險者，你終於來到了副本四的魔王題。</p>
+                    <p>副本四的魔王題會要求不同面向上的深度能力。雖說設計模式能在設計上提供良好的指導，幫助我們理解分析和逐個擊破問題，不過有一項能力是必須上高強度鍛鍊後才能練就的，那就是「萃取能力」。</p>
+                    <p>什麼叫「萃取能力」，其實各位多少都明白了，那就是能從一群事務中「留同存異」，並能設計一套能「適用於各種情境」—— 制定框架的能力。副本四魔王題會開始要求你在「萃取」能力上更深一步的造詣，請各位冒險者在撰寫的過程中，依然保持良好的 OOAD 習慣，別輕敵、也別輕視需求，一步一腳印地做好武功中的每一個動作。</p>
+                    <p>所有的難題都將在你最意想不到的時候發生，加油！冒險者！</p>
+                    <h2 id="A-初版實作需求簡易社群機器人">A. 初版實作需求：簡易社群機器人</h2>
+                    <p>由於最近你正在經營 Waterball 社群，而隨著 Waterball 社群的成員越來越多，你希望能夠研發出一款「社群機器人」，讓這社群機器人能自主和成員們互動，或是允許成員們能下達指令給機器人。</p>
+                    <ol>
+                        <li>社群成員要再登入 (Login) 之後，才能開始在聊天室、論壇和廣播等頻道活動，若成員決定離線，則會登出 (Logout)。</li>
+                        <li>社群成員有兩種權限：管理員 (Admin)，或是一般的成員 (Member)。</li>
+                    </ol>
+                    <h3 id="1-Waterball-社群">1. Waterball 社群</h3>
+                    <p>首先介紹一下 Waterball 社群的功能，你現在正在經營著一個「Waterball 社群」，社群中有著以下基礎建設：</p>
+                    <ol>
+                        <li>
+                            社群中主要由「聊天室」、「論壇」和「廣播」頻道構成，且社群只會有<strong>一個</strong>聊天室、論壇和廣播頻道。：
+                            <ol>
+                                <li>
+                                    <strong>聊天室 (Chat Room)</strong>：聊天室是社群成員們聊天的地方。成員可以在聊天室中發送訊息 (Message)，訊息中包含文字內容 (Content) 和零到多個標記 (Tag)。
+                                    <ol>
+                                        <li>每個標記涵蓋某一位成員的 ID （代表其身份）。標記的目的是通知對方該則訊息是在回應對方。</li>
+                                        <li>每位成員的 ID 為一字串（不超過 20 個字元），且唯一（不同成員必定擁有不同 ID）。</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>論壇 (Forum)</strong>：論壇是社群成員用來發布貼文 (Post) 的地方。
+                                    <ol>
+                                        <li>成員在論壇發布貼文 (Post)，貼文中包含標題 (Title)、內文 (Content)，以及標記 (Tag)（等同聊天室中訊息的標記）。</li>
+                                        <li>貼文發布之後，成員可以在該貼文底下留言 (Comment)。留言包含內文 (Content) 和標記 (Tag)（等同聊天室中訊息的標記）。</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>廣播 (Broadcast)：</strong> 成員們可以透過「開始廣播 (Go broadcasting)」，來打開麥克風與透過語音傳輸訊息。
+                                    <ol>
+                                        <li>同一時間只能有零到一位成員正在廣播。</li>
+                                        <li>只有「廣播」之後，才有權限傳遞語音訊息 (Speak)。</li>
+                                        <li>廣播之後，成員可以決定何時停止廣播 (Stop broadcasting)。</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>社群成員要再登入 (Login) 之後，才能開始在聊天室、論壇和廣播等頻道活動，若成員決定離線，則會登出 (Logout)。</li>
+                        <li>社群成員有兩種權限：管理員 (Admin)，或是一般的成員 (Member)。</li>
+                    </ol>
+                    <h3 id="2-社群機器人需求">2. 社群機器人需求</h3>
+                    <ol>
+                        <li>社群機器人的行為主要用「狀態」區分。主要的狀態有「正常 (Normal)、錄音（Record）、知識王（KnowledgeKing）」三種，機器人同一時間下只會處於某一種狀態中。</li>
+                        <li>社群機器人在每個狀態中，皆提供了一些指令供成員/管理員使用。成員可以在聊天室中透過「<strong>傳遞標記機器人的訊息</strong>」來下達指令。</li>
+                        <li>當社群成員傳送訊息並標記機器人時，若該訊息符合狀態下的合法指令格式與權限條件，機器人仍會<strong>先依據當前狀態處理該訊息</strong>，<strong>之後再執行指令，</strong>如：切換狀態。好比說：若機器人目前處於「預設對話狀態」，一位管理員傳送訊息 <code>king @bot</code>，則機器人會<strong>先回覆預設輪播訊息</strong> <code>good to hear @&lt;發送者&gt;</code>，然後再<strong>進入知識王狀態並出題</strong>。</li>
+                        <li>指令有使用額度 (Quota) 的上限，額度為「全社群成員共用」，無論下達指令的使用者為何，額度都是共用的。如果額度不足則機器人不予受理。</li>
+                        <li>
+                            每當 Waterball 社群中有事件發生時，機器人會根據自己當下的「狀態」來決定對應的「行為」，也有可能決定要改變狀態：
+                            <ol>
+                                <li>
+                                    <p><strong>正常狀態 (Normal)：</strong></p>
+                                    <ol>
+                                        <li>正常狀態又存在兩個子狀態：<strong>預設對話狀態（Default Conversation）</strong> 和 互動<strong>狀態（Interacting）。</strong></li>
+                                        <li>如果線上人數 &lt; 10，則初始狀態為<strong>預設對話</strong>狀態，否則初始狀態為<strong>互動</strong>狀態。</li>
+                                        <li>
+                                            <strong>指令</strong>：
+                                            <ol>
+                                                <li>
+                                                    <code>king</code> ：
+                                                    <ol>
+                                                        <li><strong>額度</strong>：5</li>
+                                                        <li><strong>權限</strong>：只有<strong>管理員</strong>方可使用</li>
+                                                        <li><strong>效果</strong>：機器人會進入「知識王」狀態，開始主持一場知識王遊戲。</li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <code>record</code>：
+                                                    <ol>
+                                                        <li>額度：3</li>
+                                                        <li><strong>權限</strong>：<strong>任何成員</strong>皆可使用（使用此指令的人被稱之為<strong>錄音者</strong> (recorder))</li>
+                                                        <li>效果：**機器人會進入「錄音」狀態。</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <strong>預設對話狀態（Default Conversation）：</strong>
+                                            <ol>
+                                                <li>
+                                                    <p>當有成員在聊天室中傳遞訊息時，機器人會依序回覆該成員以下三則訊息之一（三則輪完之後就回到第一則訊息），訊息中會標記該成員：</p>
+                                                    <ol>
+                                                        <li><p><code>good to hear</code></p></li>
+                                                        <li><p><code>thank you</code></p></li>
+                                                        <li><p><code>How are you</code></p></li>
+                                                        <li>
+                                                            <p><strong>範例</strong>（<code>💬 &lt;成員 ID&gt;: &lt;成員訊息&gt; @&lt;標記&gt;</code>、<code>🤖: &lt;機器人訊息&gt; @&lt;標記&gt;</code>）</p>
+<pre class="relative group"><code>💬 <span class="hljs-attribute">1</span>: 大家早安，今天我第一天上班呢
+🤖: good to hear <span class="hljs-variable">@1</span>
+💬 <span class="hljs-number">4</span>: 祝大家今天事事順利 <span class="hljs-variable">@1</span>
+🤖: thank you <span class="hljs-variable">@4</span>
+💬 <span class="hljs-number">5</span>: 嗯嗯嗯！
+🤖: How are you <span class="hljs-variable">@5</span>
+💬 <span class="hljs-number">5</span>: 還行啊 <span class="hljs-variable">@bot</span>
+🤖: good to hear <span class="hljs-variable">@5</span>
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                                        </li>
+                                                        <li><p>機器人每次重新返回<strong>預設對話狀態時</strong>，會從第一則訊息 <code>good to hear</code> 開始回覆。</p></li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <p>當有成員在論壇中發布貼文時，機器人會在貼文底下留言：<code>Nice post</code>，並標記發文者。</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>範例（<code>&lt;成員 ID&gt;: 【&lt;成員貼文標題&gt;】&lt;貼文內容&gt; @&lt;標記&gt;</code>、<code>🤖 comment in post &lt;貼文 ID&gt;: &lt;留言內容&gt; @&lt;標記&gt;</code>）。</p>
+<pre class="relative group"><code><span class="hljs-attribute">2</span>: 【物件導向冷知識】和大家分享一個冷知識，其實是先有「物件」才有「類別」喔！大家學會了嗎？
+🤖 comment in post <span class="hljs-number">1</span>: Nice post <span class="hljs-variable">@2</span>
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><p>當有成員<strong>登入</strong>時，機器人會評估目前在線人數是否 <code>≥ 10</code> ，如果 <code>≥ 10</code> 則機器人會進入「互動狀態」。</p></li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                    <blockquote>
+                                        <p>請注意，在線人數的計算要包含機器人，也就是說如果除機器人以外有 9 位成員登入，則在第 9 位成員登入後，在線人數就已達 10 人。</p>
+                                    </blockquote>
+                                    <ol>
+                                        <li>
+                                            <strong>互動狀態（Interacting State)</strong>：
+                                            <ol>
+                                                <li>
+                                                    <p>當有成員在聊天室中傳遞訊息時，機器人會依序回覆該成員以下兩則訊息之一（兩則輪完之後就回到第一則訊息），訊息中會標記該成員：</p>
+                                                    <ol>
+                                                        <li><p><code>Hi hi😁</code></p></li>
+                                                        <li><p><code>I like your idea!</code></p></li>
+                                                        <li>
+                                                            <p>範例（<code>💬 &lt;成員 ID&gt;: &lt;成員訊息&gt; @&lt;標記&gt;</code>、<code>🤖: &lt;機器人訊息&gt; @&lt;標記&gt;</code>）</p>
+<pre class="relative group"><code>💬 <span class="hljs-attribute">1</span>: wow 有 <span class="hljs-number">10</span> 個人在線上了呢（包含機器人）
+🤖: Hi hi😁 <span class="hljs-variable">@1</span>
+💬 <span class="hljs-number">1</span>: 大家早安，今天要吃麥當勞嗎？
+🤖: I like your idea! <span class="hljs-variable">@1</span>
+💬 <span class="hljs-number">1</span>: 謝謝 <span class="hljs-variable">@bot</span>
+🤖: Hi hi😁 <span class="hljs-variable">@1</span>
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                                        </li>
+                                                        <li><p>機器人每次重新返回<strong>互動狀態時</strong>，會從第一則訊息 <code>Hi hi😁</code> 開始回覆。</p></li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    <p>當有成員在論壇中發布貼文時，機器人會在貼文底下標記所有在線上的成員（包含機器人自己），並且留言：<code>How do you guys think about it?</code></p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>範例（<code>&lt;成員 ID&gt;: 【&lt;成員貼文標題&gt;】&lt;貼文內容&gt; @&lt;標記&gt;</code>、<code>🤖 comment in post &lt;貼文 ID&gt;: &lt;留言內容&gt; @&lt;標記&gt;</code>），假設目前在線上的用戶有： <code>@bot, @1, @2, @3, @4, @5, @6, @7, @8, @9</code>。</p>
+<pre class="relative group"><code><span class="hljs-attribute">8</span>: 【分享一個關於 單一職責原則 的笑話，每次講起來都還是覺得很好笑】(<span class="hljs-number">1</span>) 欸你這個類別這樣做太多事了吧，違反單一職責原則啊，每個類別只能有一個職責，只能做一件事。 (<span class="hljs-number">2</span>) 這個類別，確實只做一件事，那就是實現需求！
+🤖 comment in post <span class="hljs-number">2</span>: How do you guys think about it? <span class="hljs-variable">@bot</span>, <span class="hljs-variable">@1</span>, <span class="hljs-variable">@2</span>, <span class="hljs-variable">@3</span>, <span class="hljs-variable">@4</span>, <span class="hljs-variable">@5</span>, <span class="hljs-variable">@6</span>, <span class="hljs-variable">@7</span>, <span class="hljs-variable">@8</span>, <span class="hljs-variable">@9</span>
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><p>當有成員<strong>登出</strong>時，機器人會評估目前在線人數是否 <code>&lt; 10</code> ，如果 <code>&lt; 10</code> 則機器人會回去「預設對話狀態」。</p></li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p><strong>錄音狀態 （Record State）</strong>：</p>
+                                    <ol>
+                                        <li><p>錄音狀態又存在兩個子狀態：<strong>等待狀態（Waiting）</strong> 和 <strong>錄音中狀態（Recording）。</strong></p></li>
+                                        <li><p>如果已經有講者正在廣播，初始狀態為錄音中狀態，<strong>否則會直接進入等待狀態</strong>。</p></li>
+                                        <li>
+                                            <p><strong>等待狀態（Waiting）</strong>：</p>
+                                            <ol>
+                                                <li>當有成員開始廣播之後，就會進入「錄音中狀態」。</li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p><strong>錄音中狀態（Recording）</strong>：</p>
+                                            <ol>
+                                                <li>當有成員講者 (Speaker) 在傳輸語音訊息 (Speak) 時，會將每一筆語音訊息的文字記錄下來。</li>
+                                                <li>直到該講者結束廣播後，會將講者廣播過程中錄下的所有語音訊息，以「Record Replay（請見第五項）」格式輸出、標記講者且傳訊到聊天室中，最後回到等待狀態。</li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p><strong>指令</strong>：</p>
+                                            <ol>
+                                                <li>
+                                                    <code>stop-recording</code>
+                                                    <ol>
+                                                        <li><strong>額度</strong>：0</li>
+                                                        <li><strong>權限</strong>：只有錄音者方可使用</li>
+                                                        <li>
+                                                            <strong>效果</strong>：
+                                                            <ol>
+                                                                <li>如果此時為錄音中狀態，會將講者廣播過程中截至目前錄下的所有語音訊息，以「Record Replay（請見第五項）」格式輸出、標記「錄音者」且傳訊到聊天室中。</li>
+                                                                <li>回到正常狀態（結束錄音）。</li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p><strong>Record Replay 格式：</strong></p>
+<pre class="relative group"><code><span class="hljs-string">[Record Replay]</span> &lt;每一筆語音訊息之間會以「換行符號」隔開&gt;
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                        </li>
+                                        <li>
+                                            <p>範例（<code>💬 &lt;成員 ID&gt;: &lt;成員訊息&gt; @&lt;標記&gt;</code>、<code>🤖: &lt;機器人訊息&gt; @&lt;標記&gt;</code>、<code>📢 &lt;講者 ID&gt;: &lt;廣播語音訊息&gt;</code>）</p>
+<pre class="relative group"><code>💬 <span class="hljs-attribute">3</span>: record <span class="hljs-variable">@bot</span>
+🤖:good to hear <span class="hljs-variable">@3</span>
+📢 <span class="hljs-number">4</span> is broadcasting...
+📢 <span class="hljs-number">4</span>: 大家好，我是小華！
+📢 <span class="hljs-number">4</span>: 歡迎來到小華脫口秀
+📢 <span class="hljs-number">4</span>: 請問大家⋯⋯軟體工程師最常說的謊言有哪些？
+📢 <span class="hljs-number">4</span>: 是 TODO 註解！！
+📢 <span class="hljs-number">4</span>: 身為IT從業人員，你覺得有什麼工具大大提高了工作效率？
+📢 <span class="hljs-number">4</span>: 單身
+📢 <span class="hljs-number">4</span>: 感謝大家的支持，這就是今晚的小華脫口秀啦！
+📢 <span class="hljs-number">4</span> stop broadcasting
+🤖: [Record Replay] 大家好，我是小華！
+歡迎來到小華脫口秀
+請問大家⋯⋯軟體工程師最常說的謊言有哪些？
+是 TODO 註解！！
+身為IT從業人員，你覺得有什麼工具大大提高了工作效率？
+單身
+感謝大家的支持，這就是今晚的小華脫口秀啦！ <span class="hljs-variable">@3</span>
+📢 <span class="hljs-number">3</span> is broadcasting...
+📢 <span class="hljs-number">3</span>: 我再來補一個笑話！
+📢 <span class="hljs-number">3</span>: 這個世界上有 <span class="hljs-number">10</span> 種人啊
+📢 <span class="hljs-number">3</span>: 懂二進制的人⋯⋯
+📢 <span class="hljs-number">3</span>: 和不懂二進制的人！！
+💬 <span class="hljs-number">3</span>: stop-recording <span class="hljs-variable">@bot</span>
+🤖: [Record Replay] 我再來補一個笑話！
+這個世界上有 <span class="hljs-number">10</span> 種人啊
+懂二進制的人⋯⋯
+和不懂二進制的人！！ <span class="hljs-variable">@3</span>
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p><strong>知識王狀態 (Knowledge King)</strong>：</p>
+                                    <ol>
+                                        <li>知識王狀態又存在兩個子狀態：<strong>出題狀態（Questioning）</strong> 和<strong>感謝參與狀態（ThanksForJoining）</strong>，初始狀態為出題狀態。</li>
+                                        <li>
+                                            <strong>指令</strong>：
+                                            <ol>
+                                                <li>
+                                                    <code>king-stop</code>
+                                                    <ol>
+                                                        <li>額度：0</li>
+                                                        <li><strong>權限</strong>：只有<strong>管理員</strong>方可使用</li>
+                                                        <li><strong>效果</strong>：機器人會進入「正常」狀態。</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <strong>出題狀態（Questioning）</strong>：
+                                            <ol>
+                                                <li>
+                                                    知識王為「考題競賽」遊戲，總共有 3 題題目：
+                                                    <ol>
+                                                        <li>
+                                                            <p><strong>第 1 題：</strong></p>
+<pre class="relative group"><code>請問哪個 SQL 語句用於選擇所有的行？
+A) <span class="hljs-keyword">SELECT</span> *
+B) <span class="hljs-keyword">SELECT</span> <span class="hljs-literal">ALL</span>
+C) <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">ROWS</span>
+D) <span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">DATA</span>
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                                            <ul>
+                                                                <li><strong>答案</strong>：A</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <p><strong>第 2 題：</strong></p>
+<pre class="relative group"><code>請問哪個 CSS 屬性可用於設置文字的顏色？
+A) <span class="hljs-keyword">text</span>-<span class="hljs-keyword">align</span>
+B) font-<span class="hljs-keyword">size</span>
+C) <span class="hljs-keyword">color</span>
+D) padding
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                                            <ul>
+                                                                <li><strong>答案</strong>：C</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <p><strong>第 3 題：</strong></p>
+<pre class="relative group"><code>請問在計算機科學中，「XML」代表什麼？
+A) Extensible Markup <span class="hljs-keyword">Language</span>
+B) Extensible Modeling <span class="hljs-keyword">Language</span>
+<span class="hljs-keyword">C</span>) Extended Markup <span class="hljs-keyword">Language</span>
+<span class="hljs-keyword">D</span>) Extended Modeling <span class="hljs-keyword">Language</span>
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                                                            <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                                                            <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                                                            <ul>
+                                                                <li><strong>答案</strong>：A</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>當進入 Questioning 狀態時，機器人會先回應：「<code>KnowledgeKing is started!</code>」，然後開始出第一題。</li>
+                                                <li>每一題中的第一位正確答題者會獲得 1 分。</li>
+                                                <li>只要一有人正確答題，機器人首先會在聊天室傳遞訊息（標記獲勝者）<code>Congrats! you got the answer!</code>，並接著出下一題。如果每一題都答完了，就進入<strong>感謝參與狀態。</strong></li>
+                                                <li>依照分數多寡決定獲勝者，分數最多者獲勝，若多位參賽者獲得相同分數，則視為平手。</li>
+                                                <li>若在 1 小時之後，這 3 題尚未全部答完，那麼也會立即中斷且進入<strong>感謝參與狀態</strong>。</li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <strong>感謝參與狀態（ThanksForJoining）</strong>：
+                                            <ol>
+                                                <li>
+                                                    一進入感謝參與狀態時，分成兩種情況：如果此時沒有成員正在廣播，則機器人會進行廣播，並透過語音訊息公布遊戲結果，否則就會聊天訊息來公布遊戲結果。
+                                                    <ol>
+                                                        <li>
+                                                            格式：
+                                                            <ol>
+                                                                <li>如果無人獲勝：<code>Tie!</code></li>
+                                                                <li>如果有人獲勝：<code>The winner is &lt;獲勝者 Id&gt;</code></li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>20 秒之後，知識王狀態就會結束，機器人回到正常狀態。</li>
+                                                <li>
+                                                    <strong>指令：</strong>
+                                                    <ol>
+                                                        <li>
+                                                            <code>play again</code> ：
+                                                            <ol>
+                                                                <li>額度：5</li>
+                                                                <li><strong>權限</strong>：任何成員皆可使用</li>
+                                                                <li>
+                                                                    <strong>效果</strong>：
+                                                                    <ol>
+                                                                        <li>機器人在聊天室傳遞訊息：<code>KnowledgeKing is gonna start again!</code></li>
+                                                                        <li>機器人會進入「出題」狀態（再玩一次知識王）。</li>
+                                                                    </ol>
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h2 id="設計需求---1FSM-模組設計--讓開發者能更有表達力地描述機器人的運作邏輯">設計需求 - 1：FSM 模組設計 — 讓開發者能更有表達力地描述「機器人」的運作邏輯</h2>
+                    <p>如果你仔細實作出以上需求中提到的社群機器人，那在實作過程中也許你會覺得「有一點煩悶」。在實作過程中似乎就是不斷地寫著「當機器人在某個狀態下，發生什麼事情後，如果符合何等條件，則會做哪些事」的邏輯。這樣的邏輯不斷重複，使程式碼單純充斥著各式各樣的曹狀 If-else 條件式。</p>
+                    <p><strong>所以⋯⋯「邏輯」到底是哪裡重複了？</strong></p>
+                    <p>重複的部分，就剛剛好是<strong>狀態機</strong>中——「狀態 (State)」和「轉移 (Transition)」這兩者元素交互的邏輯。</p>
+                    <h3 id="1-複習狀態機圖-State-Machine-Diagram">1. 複習狀態機圖 (State Machine Diagram)</h3>
+                    <p>我們在副本三中的「狀態模式」時，學到了我們能藉由繪製「狀態機圖 (State Machine Diagram)」來分析複雜的類別行為。透過繪製狀態機圖，我們能夠大致拆解出類別的複雜行為，或者說：「我們能夠用『狀態機圖』來去定義一個類別的複雜行為/職責。」</p>
+                    <p>狀態機之所以被稱之為狀態機，就因為他像是機器般，能遵守狀態之間的轉移規則不斷運作下去。機器人也是如此，給定了一定的規則之後，機器人便永遠遵照這些定義好的規則，像機器般不斷運作下去。</p>
+                    <p><strong>那麼，如果「狀態機」中存在「有限」個狀態的話，我們就能稱他為一款「有限狀態機 (Finite-state Machine, FSM)」。</strong></p>
+                    <p>白話文來說，是因為以下這兩道邏輯不斷出現，使你在實作社群機器人時重複撰寫著 If-else 條件式：</p>
+                    <ol>
+                        <li>若機器人在某種狀態 (State) 下時，發生某個事件 (Event)，此時若某種條件 (Guard) 達成，機器人會觸發 (Trigger) 轉移 (Transition) 到另外一個狀態。(When an event occurs in a given state and meets the guard's criteria, it will trigger the transition to another state.)</li>
+                        <li>當機器人進入此狀態時，會先做「進場行為 (Entry Action)」；而當機器人離開此狀態時，則會做「出場行為 (Exit Action)」。</li>
+                    </ol>
+                    <h3 id="2-設計要點有表達力地描述社群機器人的複雜行為">2. 設計要點：有表達力地描述社群機器人的複雜行為</h3>
+                    <p>總結來說：只要你能開發出一款「有限狀態機模組」，接著就能用這台有限狀態機模組，來清楚表達任何大多數社群機器人的行為邏輯。</p>
+                    <p>好比以下這段虛擬程式碼所述：</p>
+<pre class="relative group"><code class="language-java">var A = <span class="hljs-keyword">new</span> State(enter=a)
+var B = <span class="hljs-keyword">new</span> State(enter=b, exit=b)
+
+var fsm = <span class="hljs-keyword">new</span> FiniteStateMachine(initial=A,
+     transitions = [
+                    <span class="hljs-keyword">new</span> Transition(from=A, event=E1, guard=G1, to=B),
+                    <span class="hljs-keyword">new</span> Transition(from=B, event=E2, guard=G2, action=b2, to=A)
+                    <span class="hljs-keyword">new</span> Transition(from=B, event=E3, guard=G1, action=b3, to=A)
+     ]
+)
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                    <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                    <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                    <ol>
+                        <li>這段虛擬程式碼，能夠建立出以下這張狀態機圖所表示的行為：</li>
+                    </ol>
+                    <p><img alt="c4g21-1-0" width="795" src="https://cdn.waterballsa.tw/software-design-pattern/content/c4g21/1/1743426733554-c4g21-1-0"></p>
+                    <ol>
+                        <li>
+                            狀態機能簡潔表達的狀態轉移行為，拿最下方的 <code>E2 [G2] / b + b2 + a</code> 這條轉移式作為例子，當 FSM 在 B 狀態時發生了 E2 事件，且符合 G2 條件，會依序執行 b, b2 和 a 這三道行為 (<code>b+b2+a</code>)。而這三道行為分別是來自於：
+                            <ol>
+                                <li>B 狀態的 <strong>exit action</strong> (也就是 b，宣告於第二行程式碼)</li>
+                                <li>這條轉移本身的 <strong>action</strong> (也就是 b2，宣告於第七行程式碼）</li>
+                                <li>A 狀態的 <strong>entry action</strong> (也就是 a，宣告於第一行程式碼）</li>
+                            </ol>
+                        </li>
+                        <li>並且，開發者會在 <code>A</code> 和 <code>B</code> 類別中專注描述該狀態下的各種事件響應行為。好比可能是在 <code>A</code> 狀態類別中撰寫程式描述，當聊天室有新訊息時，處於 <code>A</code> 狀態的機器人會如何回應該訊息⋯⋯等等。</li>
+                        <li>如果你能夠巧妙設計好 FSM 模組中的， <code>FiniteStateMachine</code> 和相關介面，如 <code>Transition</code> 、<code>Guard</code> 、<code>Trigger</code>、<code>Action</code>、<code>State</code>⋯⋯等等介面，並提供一組預設的有限狀態機實作，讓 Client 可以自由組裝自己想要的有限狀態機邏輯，那麼當我們在實作社群機器人時，同樣也就能善用 FSM 模組中的這些功能來高表達力地實現各式各樣的機器人邏輯。</li>
+                    </ol>
+                    <h3 id="3-總結設計需求">3. 總結設計需求</h3>
+                    <ol>
+                        <li>
+                            <p>你需要實作一個「有限狀態機模組 (FSM module)」，來最大化社群機器人行為撰寫的表達力，藉此同時增加開發者的生產力。</p>
+                            <blockquote>
+                                <p>模組其實就是套件的意思，你可以簡單將模組理解成只是「一堆類別和介面的集合」。</p>
+                            </blockquote>
+                            <blockquote>
+                                <p>不過有限狀態機應該要是一個獨立的模組，FSM 模組並不知曉「社群機器人」這個概念，此模組唯一的職責範圍就是允許開發者輕鬆建立有限狀態機，並能注入開發者想要的行為至有限狀態機中。</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <p>此 FSM 模組在一定的限度下遵守 OCP，當 Client 在從事以下維護/開發行為時，無需修改 FSM 模組的既有程式碼：</p>
+                            <ol>
+                                <li>調整狀態之間的轉移 (Transition) 邏輯</li>
+                                <li>擴充新的狀態</li>
+                                <li>擴充新的 Trigger、Guard、Action</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p>FSM 模組，必須支援「<strong>子狀態機 (Sub-state machine)</strong>」功能：在我們的社群機器人中，每個主要狀態都涵蓋多個子狀態，而多個子狀態之間也有轉移規則，這代表你在 FSM 模組的設計上，須支援「有限狀態機中有子狀態機」的功能。以錄音狀態作為示範，如下圖所示：</p>
+                            <p><img alt="c4g21-1-1" width="710" src="https://cdn.waterballsa.tw/software-design-pattern/content/c4g21/1/1743426733468-c4g21-1-1"></p>
+                            <ol>
+                                <li><p>錄音狀態 (Record) 本身為社群機器人的三大狀態之一，但其本身又具備等待 (Waiting) 和錄音中 (Recording) 兩項子狀態，換句話說，錄音狀態本身也是一台有限狀態機，並且機器中擁有 等待 (Waiting) 和錄音中 (Recording) 兩項狀態，以及相關轉移規則。</p></li>
+                                <li>
+                                    <p>如果你將錄音狀態放到一台有限狀態機中的話，會長得像以下這樣：</p>
+                                    <p><img alt="c4g21-1-2" width="823" src="https://cdn.waterballsa.tw/software-design-pattern/content/c4g21/1/1743426733400-c4g21-1-2"></p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><p>你在 FSM 模組中所設計的「子狀態機」功能必須支援「任何深度」，如子狀態機、子子狀態機、子子子狀態機⋯⋯等等，任何深度皆可支援。</p></li>
+                        <li><p>FSM 模組設計在「子狀態機」的支援上遵守 OCP 原則，在支援或是取消支援「子狀態機」相關功能時，能完全不修改既有 <code>FiniteStateMachine</code> （以及其實作類別）的既有程式碼。具體來說，你可以將「子狀態機」相關功能設計成插件 (Plugin)，只有在 Client 專案中有引入該插件依賴後，才能使用子狀態機相關功能。</p></li>
+                    </ol>
+                    <h2 id="設計需求---2Waterball-社群機器人模組設計">設計需求 - 2：Waterball 社群機器人模組設計</h2>
+                    <p>在設計完有限狀態機模組之後，下一步要思考的是什麼呢？</p>
+                    <ol>
+                        <li>試想一下，如果「Waterball 社群」真的是公司核心競爭力所在的其中一環，那麼接下來公司肯定會繼續提出更多 Waterball 社群機器人的需求，來瘋狂改進和擴充現存的社群機器人行為，甚至開發出多款不同的社群機器人來做交互測試（e.g., A/B Test)。</li>
+                        <li>FSM 模組中可能充斥著各式各樣的有限狀態機介面，如 <code>FiniteStateMachine</code>、<code>State</code>、<code>Transition</code>、<code>Trigger</code>、<code>Guard</code>、<code>Action</code>，甚至還有「子狀態機」插件等相關功能。學習成本可能有點高，不利於社群機器人開發者所用。</li>
+                    </ol>
+                    <p>根據 1 和 2，可知你需要額外設計 <strong>Waterball 社群機器人模組</strong>作為門面來簡化開發者的認知複雜度。</p>
+                    <p>請你開發一個「<strong>社群機器人模組 (bot module)</strong>」來盡可能最佳化公司「社群機器人」以下兩種開發行為時的產能：</p>
+                    <ol>
+                        <li>開發者能撰寫「最少量」且「最有可讀性」的程式來開發出新的 Waterball 社群機器人。</li>
+                        <li>開發者在改進既有版本的社群機器人時，能享有最小的認知複雜度（維護者在修改程式碼時，不必留意過多細節）。</li>
+                    </ol>
+                    <h2 id="魔王題架構總結">魔王題架構總結</h2>
+                    <ol>
+                        <li>你需要先設計好有限狀態機模組 (FSM Module)。</li>
+                        <li>接著設計 Waterball 社群機器人模組，此模組會透過某種設計，提供更簡潔的語法來允許開發人員善用 FSM 模組來輕鬆定義機器人行為。</li>
+                        <li>最後開發人員藉由使用 Waterball 社群機器人模組來輕鬆實作 Waterball 社群機器人。</li>
+                    </ol>
+                    <p>總結來說，你所設計的軟體架構看起來應該如下：</p>
+                    <p><img alt="c4g21-1-3" width="1461" src="https://cdn.waterballsa.tw/software-design-pattern/content/c4g21/1/1743426733303-c4g21-1-3"></p>
+                    <p>總共有三「層」，就像蓋一棟房子般，先從「<strong>行為地基</strong>」開始建立起，也就是從有限狀態機模組開始。有了地基之後，接著決定房子的框架，在地基之上有豎立好房子的雛形，也就是設計好社群機器人模組。此機器人模組會奠定未來公司整體開發／維護的產能。</p>
+                    <p>而最後最上層的就是「應用層 (Application Layer)」，有了地基、有了框架，最後就是要去「應用」來快速且游刃有餘地實現需求和持續地交付軟體價值，於是我們將這一層稱之為「應用層」，可以將它視為是一個模組。理想上，應用層只需要依賴社群機器人模組，就能簡單地實作出各式各樣的Waterball 社群機器人。</p>
+                    <p>不同的 forces、不同的 problem，會落在不同的模組中。</p>
+                    <h2 id="輸入格式">輸入格式</h2>
+                    <ol>
+                        <li>輸入格式十分統一：每一行代表發生「一個事件」。</li>
+                        <li>
+                            每一行的格式為：<code>[&lt;event's name&gt;] &lt;payload in JSON format&gt;</code> ，有兩項組成：
+                            <ol>
+                                <li><code>event’s name</code> ：事件的英文名稱，不同事件會有不同的名稱。</li>
+                                <li><code>payload in JSON format</code> ：此事件的「內容」，由於內容以多項欄位組成，為了方便起見，以 JSON 格式表達。有些事件沒有內容，那該行輸入就不會存在 payload。</li>
+                            </ol>
+                        </li>
+                        <li>
+                            以下為事件列表，記載每一個事件的名稱以及該事件內容 payload 的欄位描述：
+                            <ol>
+                                <li>
+                                    <strong>開始</strong>
+                                    <ol>
+                                        <li>事件名稱：<code>[started]</code></li>
+                                        <li>
+                                            <strong>payload:</strong>
+                                            <ol>
+                                                <li><code>time</code> ：時間格式的字串，格式為 <code>YYYY-MM-DD HH:mm:ss</code> ，代表執行此次機器人程式的模擬初始時間。</li>
+                                                <li><code>quota</code>：大於 0 的整數，代表機器人的初始額度。</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例</strong>：<code>[started] {"time": "2023-08-07 00:00:00", "quota": 10}</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>登入</strong>
+                                    <ol>
+                                        <li>事件名稱：<code>[login]</code></li>
+                                        <li>
+                                            <strong>payload:</strong>
+                                            <ol>
+                                                <li><code>userId</code> ：字串，為登入成員的 ID</li>
+                                                <li><code>isAdmin</code> ：登入成員是否為管理員</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例</strong>：<code>[login] {"userId": "1", "isAdmin": true}</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>登出</strong>
+                                    <ol>
+                                        <li>事件名稱：<code>[logout]</code></li>
+                                        <li>
+                                            <strong>payload:</strong>
+                                            <ol>
+                                                <li><code>userId</code> ：字串，為登出成員的 ID</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例</strong>：<code>[logout] {"userId": "1"}</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>時間流逝</strong>：
+                                    <ol>
+                                        <li>
+                                            事件名稱：<code>[&lt;n&gt; &lt;time-unit&gt; elapsed]</code>
+                                            <ol>
+                                                <li><code>n</code> 為正整數（包含 0）。</li>
+                                                <li><code>time-unit</code> 為時間單位，只有以下幾種可能的值：秒 (<code>seconds</code>)、分鐘(<code>minutes</code>)、小時(<code>hours</code>)。</li>
+                                            </ol>
+                                        </li>
+                                        <li>解釋：這件事件的用途是「模擬在現實世界中的時間流逝」，在一些情境下，機器人會根據「時間流逝」來決定接續的行為。好比在「知識王」的感謝參與狀態（ThanksForJoining）中需求提及，在 20 秒過後，機器人就會結束知識王狀態，並且回到正常狀態。</li>
+                                        <li>沒有 payload。</li>
+                                        <li><strong>範例</strong>：<code>[10 seconds elapsed]</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>聊天室中有新訊息</strong>：
+                                    <ol>
+                                        <li><strong>事件名稱</strong>：<code>[new message]</code></li>
+                                        <li>
+                                            <strong>payload:</strong>
+                                            <ol>
+                                                <li><code>authorId</code> ：字串，為訊息發送者的 ID</li>
+                                                <li><code>content</code> ：字串（最多有 1000 個字元），代表此訊息的內容。</li>
+                                                <li><code>tags</code> ：為一個字串陣列，存放所有此訊息標記的用戶 Id。</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例</strong>：<code>[new message] {"authorId": "5", "content": "嗯，今天大家都在幹嘛？", "tags": ["1", "3", "bot"]}</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>論壇中有人發布新貼文：</strong>
+                                    <ol>
+                                        <li><strong>事件名稱</strong>：<code>[new post]</code></li>
+                                        <li>
+                                            <strong>payload:</strong>
+                                            <ol>
+                                                <li><code>id</code> ：字串，為此貼文的 ID，保證不與其他貼文重複。</li>
+                                                <li><code>authorId</code> ：字串，為貼文作者的 ID</li>
+                                                <li><code>title</code> ：字串，為貼文標題（最多有 50 個字元）</li>
+                                                <li><code>content</code> ：字串（最多有 1000 個字元），為此貼文的內容。</li>
+                                                <li><code>tags</code> ：為一個字串陣列，存放所有此貼文內容標記的用戶 Id。</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例</strong>：<code>[new post] {"id": "1", "authorId": "8", "title": "分享一個關於 單一職責原則 的笑話，每次講起來都還是覺得很好笑", "content": "(1) 欸你這個類別這樣做太多事了吧，違反單一職責原則啊，每個類別只能有一個職責，只能做一件事。 (2) 這個類別，確實只做一件事，那就是實現需求！", "tags": ["1", "2", "3"]}</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>開始廣播</strong>
+                                    <ol>
+                                        <li><strong>事件名稱：</strong><code>[go broadcasting]</code> ，代表有成員開始廣播。</li>
+                                        <li>
+                                            <strong>payload:</strong>
+                                            <ol>
+                                                <li><code>speakerId</code>：字串，為廣播者的 ID</li>
+                                            </ol>
+                                        </li>
+                                        <li>範例：<code>[go broadcasting] {"speakerId": "4"}</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>廣播中傳遞語音訊息</strong>
+                                    <ol>
+                                        <li><strong>事件名稱：</strong><code>[speak]</code> ，代表廣播成員正在傳遞語音訊息。</li>
+                                        <li>
+                                            <strong>payload:</strong>
+                                            <ol>
+                                                <li><code>speakerId</code>：字串，為廣播者的 ID</li>
+                                                <li><code>content</code>：字串，為廣播者正在傳遞的語音訊息內容</li>
+                                            </ol>
+                                        </li>
+                                        <li>範例：<code>[speak] {"speakerId": "4", "content": "大家早安"}</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>停止廣播</strong>
+                                    <ol>
+                                        <li><strong>事件名稱：</strong><code>[stop broadcasting]</code> ，代表有成員停止廣播。</li>
+                                        <li>
+                                            <strong>payload:</strong>
+                                            <ol>
+                                                <li><code>speakerId</code>：字串，為廣播者的 ID</li>
+                                            </ol>
+                                        </li>
+                                        <li>範例：<code>[stop broadcasting] {"speakerId": "4"}</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>程式終止</strong>
+                                    <ol>
+                                        <li><strong>事件名稱：</strong><code>[end]</code>，代表整份輸入和程式的終止。</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h2 id="範例輸入">範例輸入</h2>
+<pre class="relative group"><code>[started] {<span class="hljs-attr">"time"</span>: <span class="hljs-string">"2023-08-07 00:00:00"</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">true</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"2"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[<span class="hljs-number">3</span> seconds elapsed]
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"5"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"6"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"大家早安，今天我第一天上班呢"</span>, <span class="hljs-attr">"tags"</span>: []}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"7"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"祝大家今天事事順利"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"1"</span>]}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"9"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[<span class="hljs-number">10</span> seconds elapsed]
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"wow 有 10 個人在線上了呢（包含機器人）"</span>, <span class="hljs-attr">"tags"</span>: []}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"大家早安，今天要吃麥當勞嗎？"</span>, <span class="hljs-attr">"tags"</span>: []}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"發了一個文，分享笑話，哈哈"</span>, <span class="hljs-attr">"tags"</span>: []}
+[new post]  {<span class="hljs-attr">"id"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-attr">"title"</span>: <span class="hljs-string">"分享一個關於 單一職責原則 的笑話，每次講起來都還是覺得很好笑"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"(1) 欸你這個類別這樣做太多事了吧，違反單一職責原則啊，每個類別只能有一個職責，只能做一件事。 (2) 這個類別，確實只做一件事，那就是實現需求！"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>, <span class="hljs-string">"3"</span>]}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"king"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"6"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"A"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"C"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[<span class="hljs-number">3</span> seconds elapsed]
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"C"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"2"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"A"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[<span class="hljs-number">20</span> seconds elapsed]
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"record"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[go broadcasting] {<span class="hljs-attr">"speakerId"</span>: <span class="hljs-string">"4"</span>}
+[speak] {<span class="hljs-attr">"speakerId"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"大家早安"</span>}
+[speak] {<span class="hljs-attr">"speakerId"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"各位有吃早餐嗎？"</span>}
+[stop broadcasting] {<span class="hljs-attr">"speakerId"</span>: <span class="hljs-string">"4"</span>}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"stop-recording"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[logout] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"9"</span>}
+[logout] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"8"</span>}
+[<span class="hljs-number">3</span> seconds elapsed]
+[logout] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"7"</span>}
+[logout] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"6"</span>}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"呀，大家下線了"</span>, <span class="hljs-attr">"tags"</span>: []}
+[end]
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                    <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                    <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                    <h2 id="輸出格式">輸出格式</h2>
+                    <p>輸出格式十分統一，每一行代表一件在社群中發生的事，只有以下事件會被記載在輸出中：</p>
+                    <ol>
+                        <li>
+                            <p><strong>時間流逝</strong></p>
+                            <ol>
+                                <li>
+                                    <strong>格式：</strong><code>🕑 &lt;n&gt; &lt;time-unit&gt; elapsed…</code>
+                                    <ol>
+                                        <li><code>n</code> 為正整數（包含 0）。</li>
+                                        <li><code>time-unit</code> 為時間單位，只有以下幾種可能的值：秒 (<code>seconds</code>)、分鐘(<code>minutes</code>)、小時(<code>hours</code>)。</li>
+                                    </ol>
+                                </li>
+                                <li><strong>範例：</strong><code>🕑 10 seconds elapsed…</code></li>
+                            </ol>
+                            <p><strong>聊天室中有新訊息</strong></p>
+                            <ol>
+                                <li>
+                                    <strong>成員訊息：</strong>
+                                    <ol>
+                                        <li><strong>格式：</strong><code>💬 &lt;id&gt;: &lt;content&gt; &lt;tags&gt;</code></li>
+                                        <li><strong>範例：</strong><code>💬 3: 哈哈哈，今天有點疲憊呢，不想上班 @1, @2, @4</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>機器人訊息：</strong>
+                                    <ol>
+                                        <li><strong>格式：</strong><code>🤖: &lt;content&gt; &lt;tags&gt;</code></li>
+                                        <li><strong>範例：</strong><code>🤖: thank you @3, @4</code></li>
+                                    </ol>
+                                </li>
+                                <li><code>id</code> ：為訊息發布者的 ID</li>
+                                <li><code>content</code> ：為訊息內文（有可能為多行）</li>
+                                <li><code>tags</code> ：為所有訊息標記成員的 ID，每一個 ID 之前標注 <code>@</code> 符號，每個 ID 之間以一個逗號加上一個空白隔開 (e.g., <code>@3, @4, @bot</code> ) 。</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><strong>成員在論壇中發布新貼文</strong></p>
+                            <ol>
+                                <li>
+                                    <strong>格式：</strong><code>&lt;id&gt;: 【&lt;title&gt;】&lt;content&gt; &lt;tags&gt;</code>
+                                    <ol>
+                                        <li><code>id</code> ：為訊息發布者的 ID</li>
+                                        <li><code>title</code> ：為訊息的標題</li>
+                                        <li><code>content</code> ：為訊息內文有可能為多行）</li>
+                                        <li><code>tags</code> ：為所有訊息標記成員的 ID，每一個 ID 之前標注 <code>@</code> 符號，每個 ID 之間以一個逗號加上一個空白隔開 (e.g., <code>@3, @4, @bot</code> ) 。</li>
+                                    </ol>
+                                </li>
+                                <li><strong>範例：</strong><code>4: 【分享一個關於 單一職責原則 的笑話，每次講起來都還是覺得很好笑】(1) 欸你這個類別這樣做太多事了吧，違反單一職責原則啊，每個類別只能有一個職責，只能做一件事。 (2) 這個類別，確實只做一件事，那就是實現需求！ @1, @2</code></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><strong>機器人在論壇貼文中的留言</strong></p>
+                            <ol>
+                                <li>
+                                    <strong>格式：</strong><code>🤖 comment in post &lt;post id&gt;: &lt;content&gt; &lt;tags&gt;</code>
+                                    <ol>
+                                        <li><code>post id</code> ：為留言貼文的 ID</li>
+                                        <li><code>content</code> ：為留言內文（有可能為多行）</li>
+                                        <li><code>tags</code> ：為所有訊息標記成員的 ID，每一個 ID 之前標注 <code>@</code> 符號，每個 ID 之間以一個逗號加上一個空白隔開 (e.g., <code>@3, @4, @bot</code> ) 。</li>
+                                    </ol>
+                                </li>
+                                <li><strong>範例：</strong><code>🤖 comment in post 1: Nice post @2</code></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><strong>有成員開始廣播</strong></p>
+                            <ol>
+                                <li>
+                                    <strong>成員廣播：</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>格式：</strong><code>📢 &lt;id&gt; is broadcasting...</code>
+                                            <ol>
+                                                <li><code>id</code> ：為廣播成員的 ID</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例：</strong><code>📢 4 is broadcasting...</code></li>
+                                    </ol>
+                                </li>
+                                <li><strong>機器人廣播：</strong><code>🤖 go broadcasting...</code></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><strong>有成員在廣播中傳遞語音訊息</strong></p>
+                            <ol>
+                                <li>
+                                    <strong>成員傳遞語音訊息：</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>格式：</strong><code>📢 &lt;id&gt;: &lt;speak message&gt;</code>
+                                            <ol>
+                                                <li><code>id</code> ：為廣播成員的 ID</li>
+                                                <li><code>speak message</code>：為語音訊息的內文</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例：</strong><code>📢 3: 這個世界上有 10 種人啊</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>機器人傳遞語音訊息：</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>格式：</strong><code>🤖 speaking: &lt;speak message&gt;</code>
+                                            <ol>
+                                                <li><code>speak message</code>：為語音訊息的內文</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例：</strong><code>🤖 speaking: The winner is 2</code></li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><strong>有成員停止廣播</strong></p>
+                            <ol>
+                                <li>
+                                    <strong>成員停止廣播：</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>格式：</strong><code>📢 &lt;id&gt; stop broadcasting</code>
+                                            <ol>
+                                                <li><code>id</code> ：為廣播成員的 ID</li>
+                                            </ol>
+                                        </li>
+                                        <li><strong>範例：</strong><code>📢 4 stop broadcasting</code></li>
+                                    </ol>
+                                </li>
+                                <li><strong>機器人停止廣播：</strong><code>🤖 stop broadcasting...</code></li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h1 id="範例輸出入">範例輸出入</h1>
+                    <h2 id="範例輸入">範例輸入</h2>
+<pre class="relative group"><code>[started] {<span class="hljs-attr">"time"</span>: <span class="hljs-string">"2023-08-07 00:00:00"</span>, <span class="hljs-attr">"quota"</span>: <span class="hljs-number">20</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">true</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"2"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[<span class="hljs-number">3</span> seconds elapsed]
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"5"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"6"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"大家早安，今天我第一天上班呢"</span>, <span class="hljs-attr">"tags"</span>: []}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"7"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"祝大家今天事事順利"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"1"</span>]}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[login] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"9"</span>, <span class="hljs-attr">"isAdmin"</span>: <span class="hljs-literal">false</span>}
+[<span class="hljs-number">10</span> seconds elapsed]
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"wow 有 10 個人在線上了呢（包含機器人）"</span>, <span class="hljs-attr">"tags"</span>: []}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"大家早安，今天要吃麥當勞嗎？"</span>, <span class="hljs-attr">"tags"</span>: []}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"發了一個文，分享笑話，哈哈"</span>, <span class="hljs-attr">"tags"</span>: []}
+[new post]  {<span class="hljs-attr">"id"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-attr">"title"</span>: <span class="hljs-string">"分享一個關於 單一職責原則 的笑話，每次講起來都還是覺得很好笑"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"(1) 欸你這個類別這樣做太多事了吧，違反單一職責原則啊，每個類別只能有一個職責，只能做一件事。 (2) 這個類別，確實只做一件事，那就是實現需求！"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>, <span class="hljs-string">"3"</span>]}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"king"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"6"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"A"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"8"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"C"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[<span class="hljs-number">3</span> seconds elapsed]
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"C"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"2"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"A"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[<span class="hljs-number">20</span> seconds elapsed]
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"record"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[go broadcasting] {<span class="hljs-attr">"speakerId"</span>: <span class="hljs-string">"4"</span>}
+[speak] {<span class="hljs-attr">"speakerId"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"大家早安"</span>}
+[speak] {<span class="hljs-attr">"speakerId"</span>: <span class="hljs-string">"4"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"各位有吃早餐嗎？"</span>}
+[stop broadcasting] {<span class="hljs-attr">"speakerId"</span>: <span class="hljs-string">"4"</span>}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"3"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"stop-recording"</span>, <span class="hljs-attr">"tags"</span>: [<span class="hljs-string">"bot"</span>]}
+[logout] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"9"</span>}
+[logout] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"8"</span>}
+[<span class="hljs-number">3</span> seconds elapsed]
+[logout] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"7"</span>}
+[logout] {<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"6"</span>}
+[new message] {<span class="hljs-attr">"authorId"</span>: <span class="hljs-string">"1"</span>, <span class="hljs-attr">"content"</span>: <span class="hljs-string">"呀，大家下線了"</span>, <span class="hljs-attr">"tags"</span>: []}
+[end]
+
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                    <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                    <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                    <h2 id="範例輸出">範例輸出</h2>
+<pre class="relative group"><code><span class="hljs-number">3</span> seconds elapsed...
+💬 <span class="hljs-number">1</span>: 大家早安，今天我第一天上班呢
+🤖: good <span class="hljs-keyword">to</span> hear <span class="hljs-symbol">@1</span>
+💬 <span class="hljs-number">4</span>: 祝大家今天事事順利 <span class="hljs-symbol">@1</span>
+🤖: thank you <span class="hljs-symbol">@4</span>
+🕑 <span class="hljs-number">10</span> seconds elapsed...
+💬 <span class="hljs-number">1</span>: wow 有 <span class="hljs-number">10</span> 個人在線上了呢（包含機器人）
+🤖: Hi hi😁 <span class="hljs-symbol">@1</span>
+💬 <span class="hljs-number">1</span>: 大家早安，今天要吃麥當勞嗎？
+🤖: I like your idea! <span class="hljs-symbol">@1</span>
+💬 <span class="hljs-number">8</span>: 發了一個文，分享笑話，哈哈
+🤖: Hi hi😁 <span class="hljs-symbol">@8</span>
+<span class="hljs-number">8</span>: 【分享一個關於 單一職責原則 的笑話，每次講起來都還是覺得很好笑】(<span class="hljs-number">1</span>) 欸你這個類別這樣做太多事了吧，違反單一職責原則啊，每個類別只能有一個職責，只能做一件事。 (<span class="hljs-number">2</span>) 這個類別，確實只做一件事，那就是實現需求！ <span class="hljs-symbol">@1</span>, <span class="hljs-symbol">@2</span>, <span class="hljs-symbol">@3</span>
+🤖 comment <span class="hljs-keyword">in</span> post <span class="hljs-number">1</span>: How <span class="hljs-keyword">do</span> you guys think about it? <span class="hljs-symbol">@bot</span>, <span class="hljs-symbol">@1</span>, <span class="hljs-symbol">@2</span>, <span class="hljs-symbol">@3</span>, <span class="hljs-symbol">@4</span>, <span class="hljs-symbol">@5</span>, <span class="hljs-symbol">@6</span>, <span class="hljs-symbol">@7</span>, <span class="hljs-symbol">@8</span>, <span class="hljs-symbol">@9</span>
+💬 <span class="hljs-number">1</span>: king <span class="hljs-symbol">@bot</span>
+🤖: I like your idea! <span class="hljs-symbol">@1</span>
+🤖: KnowledgeKing is started!
+🤖: <span class="hljs-number">0.</span> 請問哪個 SQL 語句用於選擇所有的行？
+A) <span class="hljs-keyword">SELECT</span> *
+B) <span class="hljs-keyword">SELECT</span> ALL
+C) <span class="hljs-keyword">SELECT</span> ROWS
+D) <span class="hljs-keyword">SELECT</span> DATA
+💬 <span class="hljs-number">6</span>: A <span class="hljs-symbol">@bot</span>
+🤖: Congrats! you got the answer! <span class="hljs-symbol">@6</span>
+🤖: <span class="hljs-number">1.</span> 請問哪個 CSS 屬性可用於設置文字的顏色？
+A) text-align
+B) font-size
+C) color
+D) padding
+💬 <span class="hljs-number">8</span>: C <span class="hljs-symbol">@bot</span>
+🤖: Congrats! you got the answer! <span class="hljs-symbol">@8</span>
+🤖: <span class="hljs-number">2.</span> 請問在計算機科學中，「XML」代表什麼？
+A) Extensible Markup Language
+B) Extensible Modeling Language
+C) Extended Markup Language
+D) Extended Modeling Language
+🕑 <span class="hljs-number">3</span> seconds elapsed...
+💬 <span class="hljs-number">3</span>: C <span class="hljs-symbol">@bot</span>
+💬 <span class="hljs-number">2</span>: A <span class="hljs-symbol">@bot</span>
+🤖: Congrats! you got the answer! <span class="hljs-symbol">@2</span>
+🤖 go broadcasting...
+🤖 speaking: Tie!
+🤖 stop broadcasting...
+🕑 <span class="hljs-number">20</span> seconds elapsed...
+💬 <span class="hljs-number">3</span>: record <span class="hljs-symbol">@bot</span>
+🤖: Hi hi😁 <span class="hljs-symbol">@3</span>
+📢 <span class="hljs-number">4</span> is broadcasting...
+📢 <span class="hljs-number">4</span>: 大家早安
+📢 <span class="hljs-number">4</span>: 各位有吃早餐嗎？
+📢 <span class="hljs-number">4</span> stop broadcasting
+🤖: [Record Replay] 大家早安
+各位有吃早餐嗎？ <span class="hljs-symbol">@3</span>
+💬 <span class="hljs-number">3</span>: stop-recording <span class="hljs-symbol">@bot</span>
+🕑 <span class="hljs-number">3</span> seconds elapsed...
+💬 <span class="hljs-number">1</span>: 呀，大家下線了
+🤖: good <span class="hljs-keyword">to</span> hear <span class="hljs-symbol">@1</span>
+</code><button class="copy-code-button absolute top-2 right-2 h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity z-10 bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:bg-background hover:opacity-100 rounded-md flex items-center justify-center" aria-label="複製程式碼" title="複製程式碼"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+                    <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                    <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"></path>
+			</svg></button></pre>
+                    <h2 id="測試檔案">測試檔案</h2>
+                    <p><a href="https://cdn.waterballsa.tw/software-design-pattern/content/c4m21/testcases.zip">測試檔案.zip</a></p>
+                </div>
+            </section>
+        </div><div class="ui-gym-challenge-submission"><div class="bg-background text-foreground p-8"><div class="max-w-3xl mx-auto"><h3 class="text-2xl font-bold mb-6 text-primary">提交挑戰</h3><div class="rounded-lg border text-card-foreground bg-card shadow-md p-6 mb-6"><div class="text-center"><h4 class="text-lg mb-2 text-gray-700 dark:text-gray-300">提交狀態</h4><div class="text-xl font-bold text-red-600">未提交</div></div></div><div class="rounded-lg border text-card-foreground bg-card shadow-md p-6 mb-4"><div class="flex justify-between items-start"><div><h3 class="text-lg font-semibold mb-2 text-blue-700">物件導向分析 (OOA)</h3><p class="text-gray-600 dark:text-gray-400 text-sm mb-2">上傳你的 OOA 領域類別圖 (png, jpg, bmp, gif 檔案)</p></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 min-w-[100px] bg-blue-600 hover:bg-blue-700 text-white"><input id="file-ooa_uml" type="file" accept="image/png,image/jpeg,image/bmp,image/gif" class="hidden">上傳檔案</button></div></div><div class="rounded-lg border text-card-foreground bg-card shadow-md p-6 mb-4"><div class="flex justify-between items-start"><div><h3 class="text-lg font-semibold mb-2 text-blue-700">循序圖設計 (OOD)</h3><p class="text-gray-600 dark:text-gray-400 text-sm mb-2">上傳你的 OOD 循序圖設計 (png, jpg, bmp, gif 檔案)</p></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 min-w-[100px] bg-blue-600 hover:bg-blue-700 text-white"><input id="file-ood_sequence_diagram" type="file" accept="image/png,image/jpeg,image/bmp,image/gif" class="hidden">上傳檔案</button></div></div><div class="rounded-lg border text-card-foreground bg-card shadow-md p-6 mb-4"><div class="flex justify-between items-start"><div><h3 class="text-lg font-semibold mb-2 text-blue-700">物件導向設計 (OOD)</h3><p class="text-gray-600 dark:text-gray-400 text-sm mb-2">上傳你的 OOD 類別圖 (png, jpg, bmp, gif 檔案)</p></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 min-w-[100px] bg-blue-600 hover:bg-blue-700 text-white"><input id="file-ood_uml" type="file" accept="image/png,image/jpeg,image/bmp,image/gif" class="hidden">上傳檔案</button></div></div><div class="rounded-lg border text-card-foreground bg-card shadow-md p-6 mb-4"><div class="flex justify-between items-start"><div><h3 class="text-lg font-semibold mb-2 text-blue-700">專案壓縮檔</h3><p class="text-gray-600 dark:text-gray-400 text-sm mb-2">請將你專案的原始碼壓縮至 ZIP 中並且上傳。(只包含原始碼檔案就好囉,不要包含編譯後的檔案。) (zip 檔案)</p></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 min-w-[100px] bg-blue-600 hover:bg-blue-700 text-white"><input id="file-code_files" type="file" accept="application/zip,application/x-zip-compressed" class="hidden">上傳檔案</button></div></div><div class="flex flex-col gap-4 mt-6"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 rounded-md px-8 bg-blue-600 hover:bg-blue-700 text-white" disabled="">提交</button></div></div></div><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-inherit hover:text-accent-foreground h-11 rounded-md px-8 mt-6 w-full border-red-600 text-red-600 dark:text-red-600 hover:bg-red-50 dark:hover:bg-red-950 dark:hover:text-white" aria-label="Give up challenge">放棄挑戰</button></div>
+    </div>
+</main>
