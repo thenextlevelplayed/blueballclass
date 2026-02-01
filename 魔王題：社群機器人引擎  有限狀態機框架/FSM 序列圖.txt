@@ -1,0 +1,107 @@
+@startuml
+' Participants / lifelines
+participant Client
+participant HierarchicalStateMachine as HSM
+participant SubMachineState as SubState
+participant ChildFSM
+participant IConsumptionPolicy as Policy
+participant CoreFSM as Core
+
+== External event (child-first) ==
+Client -> HSM : Handle(ctx = TriggerContext(e, signal=None))
+activate HSM
+
+HSM -> HSM : current = _inner.CurrentState
+alt current is SubMachineState
+    HSM -> SubState : get InternalMachine
+    HSM -> ChildFSM : Handle(ctx)  <<child-first dispatch>>
+    activate ChildFSM
+    ChildFSM --> HSM : childResult (Handled?, StateChanged?, logs)
+    deactivate ChildFSM
+
+    HSM -> Policy : ShouldConsume(ctx, childResult)?
+    activate Policy
+    Policy --> HSM : decision (Consume / Bubble)
+    deactivate Policy
+
+    alt decision = Consume
+        note right of HSM
+          Policy decided to consume.
+          Stop propagation — parent not invoked.
+        end note
+        HSM --> Client : return childResult
+        deactivate HSM
+    else decision = Bubble
+        note right of HSM
+          Policy decided to bubble.
+          Proceed to core FSM handling.
+        end note
+
+        HSM -> Core : Handle(ctx)  // bubble to parent/core
+        activate Core
+        Core -> Core : LookupTransition(ctx)
+        Core -> Core : ExecuteTransition(t, ctx)\n(if external: Exit->Action->Entry)
+        alt ExecuteTransition sets CurrentState = SubMachineState
+            Core -> SubState : Entry(entryCtx = ctx.WithSignal(Entry))
+            activate SubState
+            SubState -> ChildFSM : Start(entryCtx)  // child initialisation
+            activate ChildFSM
+            ChildFSM -> ChildFSM : InitialState.Entry(entryCtx)
+            ChildFSM -> ChildFSM : ResolveAutomaticTransitions(entryCtx) [loop until stable]
+            ChildFSM --> SubState : startResult (Handled?, StateChanged?)
+            deactivate ChildFSM
+            SubState --> Core : subEntryDone
+            deactivate SubState
+        end
+        Core -> Core : ResolveAutomaticTransitions(ctx.WithSignal(Entry)) [parent-level on-entry]
+        Core --> HSM : parentResult (Handled?, StateChanged?)
+        deactivate Core
+
+        HSM -> HSM : finalResult = Merge(childResult, parentResult)
+        HSM --> Client : return finalResult
+        deactivate HSM
+    end
+else current is not SubMachineState
+    HSM -> Core : Handle(ctx)  // no child — straight to core
+    activate Core
+    Core -> Core : LookupTransition(ctx)
+    Core -> Core : ExecuteTransition(t, ctx)
+    Core -> Core : ResolveAutomaticTransitions(ctx.WithSignal(Entry))
+    Core --> HSM : parentResult
+    deactivate Core
+
+    HSM --> Client : return parentResult
+    deactivate HSM
+end
+
+== Parent-initiated Start (system init or explicit Start) ==
+note over Core, HSM: Separately, FSM.Start(entryCtx) path (initialization)
+
+Client -> Core : Start(entryCtx) // entryCtx.signal = Entry
+activate Core
+Core -> Core : CurrentState = InitialState
+Core -> Core : CurrentState.Entry(entryCtx)
+alt CurrentState is SubMachineState
+    Core -> SubState : Entry(entryCtx)
+    activate SubState
+    SubState -> ChildFSM : Start(entryCtx) // internal Start -> initial Entry + auto transitions
+    activate ChildFSM
+    ChildFSM -> ChildFSM : InitialState.Entry(entryCtx)
+    ChildFSM -> ChildFSM : ResolveAutomaticTransitions(entryCtx)
+    ChildFSM --> SubState : startResult
+    deactivate ChildFSM
+    SubState --> Core : subStarted
+    deactivate SubState
+end
+Core -> Core : ResolveAutomaticTransitions(entryCtx) // parent-level auto transitions
+Core --> Client : startResult (FsmResult)
+deactivate Core
+
+note right
+- Entry calls use ctx.WithSignal(Entry) so Triggers (OnEntryTrigger) observe Entry signal.
+- SubMachineState.Entry invokes internalMachine.Start(entryCtx).
+- Decorator is the only place that does child-first external-event dispatch.
+- Fire(InputEvent) can be implemented as a convenience method on FiniteStateMachine:
+  Fire(e) => Handle(new TriggerContext(e, signal=None))
+end note
+@enduml
