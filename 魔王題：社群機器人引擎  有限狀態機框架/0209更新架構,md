@@ -1,0 +1,378 @@
+沒問題，我已經將您指定的「核心類別行為」、「事件處理流程」、「策略」與「TriggerContext.WithSignal」章節，**一字不差**地還原回規格書中，並保留了 V4 架構中關於應用層介面 (Context/Domain) 的完整定義。
+
+這份是最終修訂後的完整 .md 檔案：
+
+---
+
+# WaterballBot FSM 架構規格書 (2026-02-01 V4 - 完整詳解版)
+
+**文件狀態**：Final Specification
+**目標讀者**：系統架構師、開發人員、測試人員
+**目的**：定義支援 HFSM（階層式狀態機）、Child-first Dispatch（子狀態優先）、可插拔消耗策略（IConsumptionPolicy）的通用 FSM 核心，以及 WaterballBot 具體的應用層介面與配置模型。
+
+---
+
+## 第一部分：核心 FSM 架構設計 (Core Engine)
+
+本章節說明狀態機底層運作機制，解決 HFSM 深度遞迴與事件傳遞問題。
+
+### 1.1 變更總覽與設計決策
+
+為了解決 HFSM 與「child-first then parent」的行為要求，架構採用以下核心設計：
+
+* **生命週期 API**：在 `IStateMachine` 新增 `Start(ctx)` 與 `Stop(ctx)`。`Start` 負責執行 Entry 並觸發 `ResolveAutomaticTransitions`。
+* **統一上下文 (Context)**：使用 `TriggerContext<T>` 作為事件傳遞結構，並引入 `WithSignal(...)` 產生不可變副本以區分 Entry/Exit/None 訊號。
+* **子狀態適配 (Adapter)**：`SubMachineState` 負責包裝內部機器，不自動轉發外部事件，而是暴露 `InternalMachine`。
+* **裝飾器模式 (Decorator)**：引入 `HierarchicalStateMachine` 作為 Decorator，實作 Child-first 邏輯與 `IConsumptionPolicy`（決定事件是消耗還是冒泡）。
+
+### 1.2 核心介面定義
+
+#### TriggerContext (事件載體)
+
+這是貫穿整個 FSM 的資料結構。
+
+```csharp
+public class TriggerContext<T>
+{
+    // 應用層上下文 (The God Interface)
+    public T Context { get; } 
+    
+    // 事件輸入
+    public InputEvent? Input { get; }
+    
+    // 生命週期訊號 (None | Entry | Exit)
+    public LifecycleSignal Signal { get; }
+    
+    // Metadata
+    public string? EventId { get; } // 用於冪等性/追蹤
+    public DateTime Timestamp { get; }
+    public IDictionary<string, object>? Metadata { get; }
+
+    // Helper: 產生變更 Signal 的新 Context (Immutable)
+    public TriggerContext<T> WithSignal(LifecycleSignal signal);
+}
+
+```
+
+#### FsmResult (處理結果)
+
+用於回報事件在各層級的處理狀態，供 Policy 判斷。
+
+```csharp
+public struct FsmResult
+{
+    public bool Handled { get; }      // 是否被處理
+    public bool StateChanged { get; } // 是否發生狀態轉移
+    public static FsmResult Ignored();
+    public static FsmResult Consumed();
+    // 支援合併結果: Handled = OR, StateChanged = OR
+}
+
+```
+
+#### IStateMachine (元件介面)
+
+```csharp
+public interface IStateMachine<T>
+{
+    FsmResult Handle(TriggerContext<T> ctx);
+    FsmResult Start(TriggerContext<T> entryCtx); // signal = Entry
+    void      Stop(TriggerContext<T> exitCtx);   // signal = Exit
+    State<T>  CurrentState { get; }
+    State<T>  InitialState { get; }
+}
+
+```
+
+#### IConsumptionPolicy (消耗策略)
+
+決定子狀態處理完事件後，是否攔截該事件（不再往父層冒泡）。
+
+```csharp
+public interface IConsumptionPolicy
+{
+    bool ShouldConsume(TriggerContext ctx, FsmResult childResult);
+}
+
+```
+
+---
+
+## 三、核心類別行為說明（語意/流程）
+
+下面說明各類的職責與事件流（概念化，不含完整程式碼）。
+
+1. FiniteStateMachine
+
+* Start(entryCtx)：
+  - 強制 entryCtx.Signal = Entry（使用 WithSignal）
+  - CurrentState = InitialState
+  - CurrentState.Entry(entryCtx)
+  - 呼 ResolveAutomaticTransitions(entryCtx)（處理 OnEntry / eventless transitions）
+  - 回傳合併後的 FsmResult（代表初始化造成的變化）
+* Handle(ctx)：
+  - LookupTransition(ctx)（Trigger.IsTriggered(ctx) && Guard.Evaluate(ctx)）
+  - 若無 match，回 FsmResult.Ignored()
+  - ExecuteTransition(t, ctx) // 執行 Exit -> Action -> Entry 或 internal action
+  - ResolveAutomaticTransitions(ctx) // 用 ctx.WithSignal(Entry)
+  - 回傳 Merge(executedResult, autoResult)
+* ExecuteTransition(t, ctx)：
+  - 若 t.To != null 且 t.From == CurrentState：
+    - Exit(t, ctx) -> CurrentState.Exit(ctx)
+    - ExecuteAction(t, ctx) -> t.Action.Execute(ctx)
+    - Entry(t, ctx) -> CurrentState = t.To; CurrentState.Entry(entryCtx)
+    - 回傳 FsmResult.External()
+  - 否則（internal）：
+    - ExecuteAction(t, ctx)
+    - 回傳 FsmResult.Internal()
+* ResolveAutomaticTransitions(baseCtx)：
+  - ctx = baseCtx.WithSignal(Entry)
+  - 迴圈查找 OnEntry/eventless transitions，執行直到穩定或到達上限（防止無限循環）
+
+2. SubMachineState（Adapter / Facade）
+
+* 欄位：IStateMachine InternalMachine
+* Entry(ctx)：呼 InternalMachine.Start(entryCtx)（entryCtx = ctx.WithSignal(Entry)）
+  - 不 forward 原始外部事件（你選擇不 forward）
+* Do(ctx)：可呼 InternalMachine.Handle(ctx) 或 InternalMachine.Update(ctx)（視需求）
+* Exit(ctx)：呼 InternalMachine.Stop(exitCtx)
+* 提供 InternalMachine 屬性，供 Hierarchical decorator 在 child-first 階段呼叫
+
+3. StateMachineDecorator（抽象）
+
+* 持有 IStateMachine _inner
+* 轉發 Handle/Start/Stop 給 _inner（virtual），ConcreteDecorator 可 override
+
+4. HierarchicalStateMachine（ConcreteDecorator）
+
+* Handle(ctx) 的 child-first 流程：
+  - childResult = Ignored
+  - if _inner.CurrentState is SubMachineState sub:
+      childResult = sub.InternalMachine.Handle(ctx)  // child-first
+  - if policy.ShouldConsume(ctx, childResult) return childResult
+  - parentResult = _inner.Handle(ctx)
+  - return Merge(childResult, parentResult)
+* Start/Stop 轉發到 inner（或可在 decorator 加入額外 orchestration）
+
+---
+
+## 四、事件處理流程（兩條主線）
+
+A) 外部事件到達（child-first → bubble/consume → parent）
+
+1. Client: Fire(e) → ctx(signal=None)
+2. HSM.Handle(ctx):
+   - 若 currentState is SubMachineState → childResult = child.InternalMachine.Handle(ctx)
+   - policy.ShouldConsume(ctx, childResult)?
+     - yes → return childResult (consume)
+     - no  → parentResult = inner.Handle(ctx)
+   - return Merge(childResult, parentResult)
+
+B) 父層 transition 進入 SubMachineState（Entry init）
+
+1. parent ExecuteTransition → Entry(t, ctx)
+2. Entry(t, ctx) 將 CurrentState 設為 SubMachineState 並呼 sub.Entry(entryCtx)（entryCtx = ctx.WithSignal(Entry)）
+3. sub.Entry(entryCtx) 呼 internalMachine.Start(entryCtx)
+4. internalMachine.Start 做 initial state's Entry 與 ResolveAutomaticTransitions（不 forward 原始事件）
+5. parentResult 回傳給呼叫者；Decorator 將合併 child/parent 處理結果並回傳
+
+---
+
+## 五、策略（Policy）示意（決策要點）
+
+* DefaultConsumptionPolicy（推薦預設）
+  - if childResult.StateChanged == true → Consume
+  - else → Bubble
+* StrictConsumptionPolicy
+  - if childResult.Handled == true → Consume
+  - else → Bubble
+* RuleBasedPolicy（可配置）
+  - 以 (statePath, eventType, transition, timeWindow) 設規則：例如在 KnowledgeKing.Questioning，任何 new message → Consume
+
+策略實作建議：policy.ShouldConsume(ctx, childResult) 接受 ctx 與 childResult，以便在上下文（例如 CurrentState path）做決策。
+
+---
+
+## 六、TriggerContext.WithSignal 的必要性（重點）
+
+* 為何要有 WithSignal：
+  - 同一事件在不同階段需用不同 Signal（Entry/Exit/None），不能 mutate 原 ctx，避免 side-effect 與調試困難。
+  - 讓 Trigger/Guard/Trigger.IsTriggered 能依 signal 正確分辨（例如 OnEntryTrigger 只在 Entry signal 時返回 true）。
+* 建議實作為不可變物件（readonly），WithSignal 回傳新實例，並保留 eventId/timestamp metadata 以便 trace。
+
+---
+
+## 第二部分：應用層介面與配置 (Application Layer)
+
+本章節說明 WaterballBot 特有的介面、配置物件與領域模型。
+
+### 2.1 應用層介面 (Interfaces)
+
+所有功能介面最終聚合於 `IWaterballBotContext`。
+
+#### 資源與社群
+
+```csharp
+public interface IQuotaManager
+{
+    bool TryConsume(int amount);
+    int GetRemaining();
+}
+
+public interface ICommunityQuery
+{
+    IEnumerable<string> GetOnlineMemberIds();
+    bool IsAdmin(string userId);
+    bool IsBroadcasting();
+    string? GetCurrentBroadcasterId();
+}
+
+```
+
+#### 訊息與溝通
+
+```csharp
+public interface IMessageSender
+{
+    void SendMessage(string content, params string[] tags);
+    Task CommentOnPostAsync(string postId, string content, params string[] tags);
+}
+
+public interface IBroadcastController
+{
+    bool IsBroadcasting { get; }
+}
+
+public interface IVoiceStateProvider
+{
+    bool IsSpeaking(string userId);
+    IEnumerable<string> GetSpeakers();
+}
+
+```
+
+#### 功能服務
+
+```csharp
+public interface ITimerManager
+{
+    void StartGameTimer(TimeSpan duration);
+}
+
+public interface IRecordingService
+{
+    StringBuilder ContentBuffer { get; }
+    void Append(string speakerId, string content, DateTime timestamp);
+    IEnumerable<string> PopAll();
+}
+
+public interface IBotConfiguration
+{
+    string BotUserId { get; }
+}
+
+```
+
+#### The God Interface (聚合介面)
+
+```csharp
+// TContext 的具體型別，供 State Action 直接使用
+public interface IWaterballBotContext : 
+    IQuotaManager,
+    IMessageSender,
+    IBroadcastController,
+    ICommunityQuery,
+    ITimerManager,
+    IRecordingService,
+    IVoiceStateProvider,
+    IBotConfiguration
+{
+}
+
+```
+
+### 2.2 Bot 配置與工廠 (Framework)
+
+開發者透過配置物件定義機器人行為，支援泛型 `T` (即 `IWaterballBotContext`)。
+
+```csharp
+// 配置類別
+public class BotConfiguration<T>
+{
+    public string InitialState { get; set; }
+    public List<StateConfig<T>> States { get; set; } = new List<StateConfig<T>>();
+}
+
+public class StateConfig<T>
+{
+    public string Name { get; set; }
+    // 生命週期 Action
+    public Action<TriggerContext<T>> Entry { get; set; }
+    public Action<TriggerContext<T>> Exit { get; set; }
+    // 轉移與子狀態
+    public List<TransitionConfig<T>> Transitions { get; set; } = new List<TransitionConfig<T>>();
+    public List<StateConfig<T>> SubStates { get; set; } = new List<StateConfig<T>>(); // 遞迴結構
+}
+
+public class TransitionConfig<T>
+{
+    public string Trigger { get; set; } // 事件名稱
+    public Func<TriggerContext<T>, bool> Guard { get; set; }
+    public Action<TriggerContext<T>> Action { get; set; }
+    public string To { get; set; } // null 代表 Internal Transition
+}
+
+// 工廠類別
+public class BotFactory
+{
+    public FiniteStateMachine<T> Create<T>(BotConfiguration<T> config)
+    {
+        // 負責遞迴建立 State, SubMachineState 並組裝 Transition
+    }
+}
+
+```
+
+### 2.3 Domain 領域模型
+
+```csharp
+public class ChatRoom
+{
+    private List<Message> _messages = new List<Message>();
+    public void AddMessage(Message message) { /*...*/ }
+}
+
+public class Message
+{
+    public string Content { get; set; }
+    public string AuthorId { get; set; }
+    public List<string> Tags { get; set; }
+}
+
+public class Broadcast : IVoiceStateProvider, IBroadcastController
+{
+    public bool IsBroadcasting { get; private set; }
+    public string CurrentSpeakerId { get; private set; }
+    // 實作介面邏輯...
+}
+
+```
+
+---
+
+## 第三部分：遷移指南與測試 (Migration & QA)
+
+### 3.1 遷移步驟
+
+1. **定義 Context**：實作 `TriggerContext<IWaterballBotContext>` 及其 `WithSignal` helper。
+2. **擴充 FSM**：在 `FiniteStateMachine` 實作 `Start/Stop` 與 `ResolveAutomaticTransitions`。
+3. **實作 Adapter**：建立 `SubMachineState`，確保 Entry 呼叫內部的 `Start`。
+4. **實作 Decorator**：建立 `HierarchicalStateMachine` 處理 Child-first 邏輯。
+5. **配置注入**：使用 `BotFactory` 讀取 Config 並生成包含 Decorator 的 FSM 實例。
+
+### 3.2 關鍵測試向量 (Acceptance Tests)
+
+* **TC1 (Bubble)**: King 遊戲中，User 發送一般訊息。Child (Normal) 處理但不轉移狀態 -> Policy 判斷 Bubble -> Parent (King) 處理並轉移至 KnowledgeKing。
+* **TC2 (Consume)**: KnowledgeKing 答題中。Child 處理答題邏輯 -> Policy 判斷 Consume -> Parent 不會收到該事件。
+* **TC3 (Lifecycle)**: Parent 進入 SubMachineState。驗證 Sub.Entry 會觸發 InternalMachine.Start (含 Initial Entry + Auto Transitions)。
+* **TC4 (Deep Nesting)**: 多層 HFSM，確保最內層優先處理。
