@@ -333,36 +333,113 @@ public class BotFactory
 
 ```
 
-### 2.3 Domain 領域模型
+---
+
+## 三、Domain 領域模型 (Domain Models)
+
+系統中的具體資料結構與業務邏輯實作。
+
+### 1. 社群 (Community)
+
+聚合了配置與查詢功能。
+
+```csharp
+public class Community : IBotConfiguration, ICommunityQuery
+{
+    public int Quota { get; set; } // 全社群共用額度
+
+    // --- 實作 IBotConfiguration ---
+    public string BotUserId { get; set; }
+
+    // --- 實作 ICommunityQuery ---
+    public IEnumerable<string> GetOnlineMemberIds() { /* ... */ }
+    public bool IsAdmin(string userId) { /* ... */ }
+    
+    // 這些方法可能需要委派給 Broadcast 物件，或由 Context 組合時處理
+    public bool IsBroadcasting() { /* ... */ }
+    public string? GetCurrentBroadcasterId() { /* ... */ }
+}
+
+```
+
+### 2. 廣播 (Broadcast)
+
+聚合了狀態提供與控制器功能。
+
+```csharp
+public class Broadcast : IVoiceStateProvider, IBroadcastController
+{
+    public bool IsBroadcasting { get; set; }
+    public string CurrentSpeakerId { get; set; }
+
+    // --- 實作 IBroadcastController ---
+    // IsBroadcasting 屬性已定義
+
+    // --- 實作 IVoiceStateProvider ---
+    public bool IsSpeaking(string userId) 
+    {
+        return IsBroadcasting && CurrentSpeakerId == userId;
+    }
+
+    public IEnumerable<string> GetSpeakers() { /* ... */ }
+}
+
+```
+
+### 3. 聊天室模組
 
 ```csharp
 public class ChatRoom
 {
-    private List<Message> _messages = new List<Message>();
-    public void AddMessage(Message message) { /*...*/ }
+    public void AddMessage(Message message) { /* ... */ }
 }
 
 public class Message
 {
     public string Content { get; set; }
     public string AuthorId { get; set; }
-    public List<string> Tags { get; set; }
 }
 
-public class Broadcast : IVoiceStateProvider, IBroadcastController
+public class Tag
 {
-    public bool IsBroadcasting { get; private set; }
-    public string CurrentSpeakerId { get; private set; }
-    // 實作介面邏輯...
+    public List<string> MemberIds { get; set; }
+}
+
+public class ChatRoomMessageSender : IMessageSender
+{
+    public Task SendMessage(string content, params string[] tags) { /* ... */ }
+    public Task CommentOnPostAsync(string postId, string content, params string[] tags) { /* ... */ }
+}
+
+```
+
+### 4. 論壇模組
+
+```csharp
+public class Forum
+{
+    // ...
+}
+
+public class Post
+{
+    public string Title { get; set; }
+    public string Content { get; set; }
+}
+
+public class Comment
+{
+    public string Content { get; set; }
+    public string AuthorId { get; set; }
 }
 
 ```
 
 ---
 
-## 第三部分：遷移指南與測試 (Migration & QA)
+## 第四部分：遷移指南與測試 (Migration & QA)
 
-### 3.1 遷移步驟
+### 4.1 遷移步驟
 
 1. **定義 Context**：實作 `TriggerContext<IWaterballBotContext>` 及其 `WithSignal` helper。
 2. **擴充 FSM**：在 `FiniteStateMachine` 實作 `Start/Stop` 與 `ResolveAutomaticTransitions`。
@@ -370,7 +447,7 @@ public class Broadcast : IVoiceStateProvider, IBroadcastController
 4. **實作 Decorator**：建立 `HierarchicalStateMachine` 處理 Child-first 邏輯。
 5. **配置注入**：使用 `BotFactory` 讀取 Config 並生成包含 Decorator 的 FSM 實例。
 
-### 3.2 關鍵測試向量 (Acceptance Tests)
+### 4.2 關鍵測試向量 (Acceptance Tests)
 
 * **TC1 (Bubble)**: King 遊戲中，User 發送一般訊息。Child (Normal) 處理但不轉移狀態 -> Policy 判斷 Bubble -> Parent (King) 處理並轉移至 KnowledgeKing。
 * **TC2 (Consume)**: KnowledgeKing 答題中。Child 處理答題邏輯 -> Policy 判斷 Consume -> Parent 不會收到該事件。
