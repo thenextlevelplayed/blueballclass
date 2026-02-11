@@ -1,0 +1,15 @@
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\bin\Debug\net10.0\FSM.exe
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\bin\Debug\net10.0\FSM.deps.json
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\bin\Debug\net10.0\FSM.runtimeconfig.json
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\bin\Debug\net10.0\FSM.dll
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\bin\Debug\net10.0\FSM.pdb
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\FSM.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\FSM.AssemblyInfoInputs.cache
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\FSM.AssemblyInfo.cs
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\FSM.csproj.CoreCompileInputs.cache
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\FSM.sourcelink.json
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\FSM.dll
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\refint\FSM.dll
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\FSM.pdb
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\FSM.genruntimeconfig.cache
+D:\新增資料夾\blueballclass\魔王題：社群機器人引擎  有限狀態機框架\FSM\FSM\obj\Debug\net10.0\ref\FSM.dll
